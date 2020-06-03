@@ -16,40 +16,37 @@
 		<h1>Discovery Module - Web Sites using Django</h1>
 		<h2>Overview</h2>
 
-        <p>TBD</p>
+        <p>Django is a Python library that is used to create a Web App with dynamically generated websites.  When a request is made to your Web App, the Django framework will call the appropriate python code (a function in your <code>views.py</code>) file).  The python code will then parse the request and prepare a response.  To prepare a response, your code might read a database, download some data from another web server, or perform some calculations.  To produce the response, a template html file is populated with data created by the python function.  The response is then automatically sent bak by the Django framework.  Using a framework can reduce the time it takes to create web content.  In the case of Django, you also have the benefit of using the Python programming language to process requests.
+        </p>
 			
 		<p>You can read more from sites like the following:</p>
 		<ul>
-		    <li><p><a href="">Site</a> (company sponsored site, tutorial site, official site, open collaboration site)</p></li>
+            <li><p><a href="https://docs.djangoproject.com/en/3.0/contents/">Django Documentation and Tutorial (official site)</a></p></li>
+            <li><p><a href="https://www.tutorialspoint.com/django/index.htm">Django Tutorial - TutorialsPoint (tutorial site)</a></p></li>
+            <li><p><a href="https://realpython.com/get-started-with-django-1/">Django Tutorial - RealPython (tutorial site)</a></p></li>
 		</ul>
 		
 		<h2>Module Requirements</h2>
 		
 		<p>To complete this module, you need to do the following:</p>
 		<ul>
-            <!-- SAMPLE - Need at least instructions to build something that demonstrate specific things
-
-            <li><p>Write a program that interacts with a relational database using SQL.  The purpose of the program and the type of data stored is up to you.  The program can be written in any programming language and use any relational database.  See the notes below for guidance about this step.</p></li>
-            <li><p>Create a database for your program to use including at least one table to store the data.</p></li>
-            <li><p>The program should demonstrate the following capabilities working with the database:</p></li>
+            <li><p>Write a Web App that has at least four web pages using Python and Django.   Each of the four web pages should be reprsented by a Python function in the <code>views.py</code> file.  In summary, your app should support at least the following URL's when running on your local machine with the default port:</p>            </li>
+                
                 <ul>
-                    <li><p>Insert new data into a table.</p></li>
-                    <li><p>Modify existing data in the table.</p></li>
-                    <li><p>Delete existing data from the table.</p></li>
-                    <li><p>Retrieve (e.g., query) data from the table.</p></li>
+                <li><p>http://127.0.0.1:8000/app_name/page_name_1</p></li>
+                <li><p>http://127.0.0.1:8000/app_name/page_name_2</p></li>
+                <li><p>http://127.0.0.1:8000/app_name/page_name_3</p></li>
+                <li><p>http://127.0.0.1:8000/app_name/page_name_4</p></li>
                 </ul>
-            -->
+
+            <li><p>The purpose of the program is up to you. The web sites should take inputs from the user and provide a response based on those inputs.  The task that is performed should be meaningful.</p></li>
+            <li><p>The Web App should run on your local computer using the built-in web-server provided by Django.</p></li>
             
             <li><p>The program needs to be published to a public GitHub repository as part of your personal programming portfolio.  Be careful not to include any passwords or keys in your published material.  Ensure that the repository has a good description and is tagged appropriately.  The README.md file in your repository should be well documented with at least the following information:</p></li>
                 <ul>
                     <li><p>A description of your program.</p></li>
                     <li><p>How to setup the development environment including all tools.  Provide detailed steps so that you or another engineer could replicate the environment.</p></li>
                     <li><p>How to build (if applicable), execute, and use your program.</p></li>
-                    
-                    <!-- SAMPLE - Any unique things related to this module
-                    <li><p>Description of the SQL commands you used in the program.</p></li>
-                    -->
-                    
                     <li><p>A list of useful websites that you found to assist your development work.</p></li>
                 </ul>
 		</ul>
@@ -59,31 +56,26 @@
 		
 		<p>You can earn additional bonus points by completing one of the following stretch challenges:</p>
         <ul>
-            <li><p>TBD 1</p></li>
-            <li><p>TBD 2</p></li>
-            <li><p>TBD 3</p></li>
+            <li><p>Create a database (i.e. model) using Django and have your web pages read and write from it.</p></li>
+            <li><p>Use sessions in Django to remember user data with Cookies.</p></li>
+            <li><p>Deploy your Web App on a web server like Heroku.</p></li>
         </ul>
         
         <p>The implementaiton of a stretch challenge must be done within the same GitHub repository and reflected in the descriptions found in your README.md file.</p>
 		
 		<h2>Guidance</h2>
 		
-        <!-- SAMPLE: Suggest certain environment to use and provide some high level instructions and useful websites:
-		<p>You should consider using Python and PostgreSQL for this module.  Here are some useful notes when using this suggested environment:</p>
+		<p>For this module, you must use Python and Django.  In addition to the tutorials in the overview section above, the following notes may be useful to you:</p>
 		<ul>
-			<li><p>You need to install PostgreSQL on your computer.  Installation instructions can be found on the <a href="https://www.postgresql.org/">PostgreSQL</a> website.</p></li>
-			<li><p>When you install PostgreSQL, you will be prompted to create an administrator password.  It is very important that you save this password so you can access the SQL Shell for setup and debugging.  The SQL Shell (also called psql) is installed with PostgreSQL.  The SQL Shell supports SQL commands as well as specific commands (they start with a backward slash) to help you navigate the database.  You should refer to the PostgreSQL website or one of the tutorials below to learn how to use these commands.</p></li>
-			<li><p>Use <code>psycopg</code> to access a PostgreSQL database from Python.  You can use pip to install: <code>pip install psycopg2</code></p></li>
+			<li><p>You can use pip to install Django: <code>pip install Django</code></p></li>
+            <li><p>Django projects have several files which do not need to be manually written.  The following commands are useful:</p>
+                <ul>
+                <li><p><code>djagno-admin startproject my_project_name</code> - This will create the initial project files</p></li>
+                <li><p><code>python manage.py startapp my_app_name</code> - This will create an app in your project</p></li>
+                <li><p><code>python manage.py runserver</code> - This will start your web app.  You will need to open a web browser to open the web pages.</p></li>
+                </ul>
+            </li>
 		</ul>
-		
-		<p>Here is a list of websites that you might find useful when working in these suggested environment:</p>
-		<ul>
-		<li><p><a href="https://www.postgresql.org/">PostgreSQL</a> (official site)</p></li>
-		<li><p><a href="https://www.psycopg.org/">psycopg</a> (official site)</p></li>
-		<li><p><a href="https://www.tutorialspoint.com/postgresql/">TutorialsPoint - PostgreSQL</a> (tutorial site)</p></li>
-		<li><p><a href="https://www.postgresqltutorial.com/postgresql-python/">PostgreSQL tutorial using psycopg</a> (tutorial site)</p></li>	
-		</ul>
-        -->
 		
 		<h2>Grading Rubric</h2>
 		
