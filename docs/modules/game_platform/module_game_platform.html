@@ -16,7 +16,7 @@
 		<h1>Discovery Module - Writing a Game using a Platform</h1>
 		<h2>Overview</h2>
 
-        <p>Games have been part of computing for a long time.  The ability for a single individual to play a game or for hundreds around the world to play the same game has great appeal.  Games have several components to them including:       </p>
+        <p>Games bring entertainment and education to many people using their computers and devices.  However, we frequently don't realize the software code that is running behind those games.  Games have several components to them including:       </p>
         <ul>
         <li><p>User Interface including Graphics and Sound</p></li>
         <li><p>Event Processing (Keyboard, Mouse)</p></li>
@@ -24,12 +24,12 @@
         <li><p>Network, Database and Notifications</p></li>
         </ul>
 
-        <p>With so many moving components to a game, it is useful to use a Game platform for development.  There are several inluding  Unity, Lumberyard, Unreal, Cryengine, and Urho3D.  Many of these platforms conatin professional tools for graphics and animation.  There are also several tools using Python including Arcade, PyGame, Kivy and Panda3D.</p>
+        <p>With so many moving components in a game, it is useful to use a game platform for development.  There are several inluding  <a href="https://unity.com/">Unity</a>, <a href="https://aws.amazon.com/lumberyard/">Lumberyard</a>, <a href="https://www.unrealengine.com/en-US/">Unreal Engine</a>, <a href="https://www.unrealengine.com/en-US/">Cryengine</a>, and <a href="https://urho3d.github.io/">Urho3D</a>.  Many of these platforms conatin professional tools for graphics and animation.  There are also several tools using Python including <a href="https://arcade.academy/">Arcade</a>, <a href="https://www.pygame.org/">PyGame</a>, <a href="https://kivy.org/">Kivy</a> and <a href="https://www.panda3d.org/">Panda3D</a>.</p>
 		<p>You can read more from sites like the following:</p>
 		<ul>
-		    <li><p><a href="">Site</a> (company sponsored site, tutorial site, official site, open collaboration site)</p></li>
-            https://en.wikipedia.org/wiki/List_of_game_engines
-            https://en.wikipedia.org/wiki/Game_engine
+            <li><p><a href="https://en.wikipedia.org/wiki/Game_engine">Game Engines - Wikipedia</a> (open collaboration site)</p></li>
+            <li><p><a href="https://en.wikipedia.org/wiki/List_of_game_engines">List of Game Engines - Wikipedia </a> (open collaboration site)</p></li>
+            
             
 		</ul>
 		
@@ -37,29 +37,20 @@
 		
 		<p>To complete this module, you need to do the following:</p>
 		<ul>
-            <!-- SAMPLE - Need at least instructions to build something that demonstrate specific things
-
-            <li><p>Write a program that interacts with a relational database using SQL.  The purpose of the program and the type of data stored is up to you.  The program can be written in any programming language and use any relational database.  See the notes below for guidance about this step.</p></li>
-            <li><p>Create a database for your program to use including at least one table to store the data.</p></li>
-            <li><p>The program should demonstrate the following capabilities working with the database:</p></li>
+            <li><p>Write a simple game with the following requirements:</p>
+                
                 <ul>
-                    <li><p>Insert new data into a table.</p></li>
-                    <li><p>Modify existing data in the table.</p></li>
-                    <li><p>Delete existing data from the table.</p></li>
-                    <li><p>Retrieve (e.g., query) data from the table.</p></li>
+                <li><p>The game must be implemented using a game platform.</p></li>
+                <li><p>The game should have either an entertainment or education purpose.</p></li>
+                <li><p>The game should be graphical, take user input, and have moveable objects in the game.</p></li>
                 </ul>
-            -->
             
             <li><p>The program needs to be published to a public GitHub repository as part of your personal programming portfolio.  Be careful not to include any passwords or keys in your published material.  Ensure that the repository has a good description and is tagged appropriately.  The README.md file in your repository should be well documented with at least the following information:</p></li>
                 <ul>
                     <li><p>A description of your program.</p></li>
                     <li><p>How to setup the development environment including all tools.  Provide detailed steps so that you or another engineer could replicate the environment.</p></li>
                     <li><p>How to build (if applicable), execute, and use your program.</p></li>
-                    
-                    <!-- SAMPLE - Any unique things related to this module
-                    <li><p>Description of the SQL commands you used in the program.</p></li>
-                    -->
-                    
+                    <li><p>Explain the parts of the game platform that you used.</p></li>
                     <li><p>A list of useful websites that you found to assist your development work.</p></li>
                 </ul>
 		</ul>
@@ -69,31 +60,28 @@
 		
 		<p>You can earn additional bonus points by completing one of the following stretch challenges:</p>
         <ul>
-            <li><p>TBD 1</p></li>
-            <li><p>TBD 2</p></li>
-            <li><p>TBD 3</p></li>
+            <li><p>Allow the user to save and load the game.</p></li>
+            <li><p>Add music or sound effects to the game.</p></li>
+            <li><p>Provide levels in your game that change the difficulty of the game.</p></li>
         </ul>
         
         <p>The implementaiton of a stretch challenge must be done within the same GitHub repository and reflected in the descriptions found in your README.md file.</p>
 		
 		<h2>Guidance</h2>
 		
-        <!-- SAMPLE: Suggest certain environment to use and provide some high level instructions and useful websites:
-		<p>You should consider using Python and PostgreSQL for this module.  Here are some useful notes when using this suggested environment:</p>
+		<p>You should consider using Python and Arcade for this module.  Here are some useful notes when using this suggested environment:</p>
 		<ul>
-			<li><p>You need to install PostgreSQL on your computer.  Installation instructions can be found on the <a href="https://www.postgresql.org/">PostgreSQL</a> website.</p></li>
-			<li><p>When you install PostgreSQL, you will be prompted to create an administrator password.  It is very important that you save this password so you can access the SQL Shell for setup and debugging.  The SQL Shell (also called psql) is installed with PostgreSQL.  The SQL Shell supports SQL commands as well as specific commands (they start with a backward slash) to help you navigate the database.  You should refer to the PostgreSQL website or one of the tutorials below to learn how to use these commands.</p></li>
-			<li><p>Use <code>psycopg</code> to access a PostgreSQL database from Python.  You can use pip to install: <code>pip install psycopg2</code></p></li>
+			<li><p>You need to install Arcade on your computer.  You can use pip to install: <code>pip install arcade</code>.
+            <li><p>You should consider using Sprite classes in Arcade for any moving objects in the game.</p></li>
+            <li><p>If you have any picture or sound files you want to include with your game, make sure they are in the same folder as your python code.</p></li>
 		</ul>
 		
 		<p>Here is a list of websites that you might find useful when working in these suggested environment:</p>
 		<ul>
-		<li><p><a href="https://www.postgresql.org/">PostgreSQL</a> (official site)</p></li>
-		<li><p><a href="https://www.psycopg.org/">psycopg</a> (official site)</p></li>
-		<li><p><a href="https://www.tutorialspoint.com/postgresql/">TutorialsPoint - PostgreSQL</a> (tutorial site)</p></li>
-		<li><p><a href="https://www.postgresqltutorial.com/postgresql-python/">PostgreSQL tutorial using psycopg</a> (tutorial site)</p></li>	
+		<li><p><a href="https://arcade.academy/examples/index.html">Arcade Examples</a> (official site)</p></li>
+		<li><p><a href="https://realpython.com/arcade-python-game-framework/">Arcade Tutorial - RealPython</a> (tutorial site)</p></li>
+
 		</ul>
-        -->
 		
 		<h2>Grading Rubric</h2>
 		
