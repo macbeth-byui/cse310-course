@@ -17,30 +17,30 @@
         
 		<h2>Overview</h2>
         
-        <p>Communication between two computers (or even two pieces of software on the same computer) can be done using the networking stack.  A network is more than just physical wire (or wireless) that connects a computer to a network, but also includes the data that is transmitted on that wire.  The data is organized into layers according to the Open Systems Interconnection (OSI) model.  These layers include the physical, datalink, network, and transport layers.  These layers are used to package, route, and transmit data between computers.  Common transport layers include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).  On top of all of these layers is the data that we actually want to communicate to another computer.  This data frequently is organized a message structure that both the sending computer and receiving computer understand.  Defined formats like JSON, HTML, or XML are all commonly used.</p>
+        <p>Communication between two computers (or even two pieces of software on the same computer) can be done using the networking stack.  A network is more than just physical wire (or wireless) that connects a computer to a network; it also includes the data that is transmitted through that connection.  The data is organized into layers according to the Open Systems Interconnection (OSI) model.  These layers include the physical, datalink, network, and transport layers.  These layers are used to package, route, and transmit data between computers.  Common transport layers include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).  On top of all of these layers is the data that we actually want to communicate to another computer.  This data is frequently organized by a message structure that both the sending computer and receiving computer understand.  Defined formats like JSON, HTML, or XML are all commonly used.</p>
             
-        <p>Any information can be sent on a network connection.  Some examples include:</p>
+        <p>Any information can be sent on a network connection.  Some examples include the following:</p>
         
         <ul>
-        <li><p>Collaboration System: A text message to be displayed with a message saying it was received.</p></li>
-        <li><p>Problem Solving System: A request to solve a math problem like "3+2" with a response of "5"</p></li>
-        <li><p>File Delivery System: A request that contains a filename with a response that displays the content of the file (simalar to what a web browser does with a web server).</p></li>
-        <li><p>Embedded System (IoT - Internet of Things): A request for temperature to a raspberry pi that is connected to a temperature sensor.  The response would be the temperature.  In this case, the server may have several sensors connected and the request would specify which sensor to read (e.g. "temperature", "humidity", "pressure", etc)</p></li>
+        <li><p>Collaboration system: A text message to be displayed with a message saying it was received.</p></li>
+        <li><p>Problem solving system: A request to solve a math problem like "3 + 2" with a response of "5."</p></li>
+        <li><p>File delivery system: A request that contains a filename with a response that displays the content of the file (similar to what a web browser does with a web server).</p></li>
+        <li><p>Embedded system (IoT or Internet of Things): A request for temperature to a Raspberry Pi that is connected to a temperature sensor.  The response would be the temperature.  In this case, the server may have several sensors connected and the request would specify which sensor to read (e.g. "temperature", "humidity", "pressure", etc)</p></li>
         </ul>
         
-        <p>When developing networking software, there are two types of models we can look at including the following:</p>
+        <p>When developing networking software, there are two types of models we can look at:</p>
         
         <ul>
         <li><p>Client-Server: The server receives requests from many clients, processes each one, and sends the responses back to the client.</p></li>
         <li><p>Peer-to-Peer: A computer (peer) communicates directly to another commputer without going through a server.  In this model, there may be a server that is used by a computer to get address information for the other computer.</p></li>
         </ul>
         
-		<p>You can read more from sites such as the following:</p>
+		<p>You can read more on sites such as the following:</p>
 		<ul>
-            <li><p><a href="https://en.wikipedia.org/wiki/OSI_model" target="_blank">OSI Model - Wikipedia (open collaboration site)</a></p></li>
-            <li><p><a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank">Client-Server model - Wikipedia (open collaboration site)</a></p></li>
-            <li><p><a href="https://www.tutorialspoint.com/Peer-to-Peer-Computing" target="_blank">Peer-to-Peer Computing - TutorialsPoint (tutorial site)</a></p></li>
-            <li><p><a href="https://www.howtogeek.com/190014/htg-explains-what-is-the-difference-between-tcp-and-udp/" target="_blank">What's the Difference Between TCP and UDP - How-To Geek (tutorial site)</a></p></li>
+            <li><p><a href="https://en.wikipedia.org/wiki/OSI_model" target="_blank">OSI Model - Wikipedia</a> (open collaboration site)</p></li>
+            <li><p><a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank">Client-Server model - Wikipedia</a> (open collaboration site)</p></li>
+            <li><p><a href="https://www.tutorialspoint.com/Peer-to-Peer-Computing" target="_blank">Peer-to-Peer Computing - TutorialsPoint</a> (tutorial site)</p></li>
+            <li><p><a href="https://www.howtogeek.com/190014/htg-explains-what-is-the-difference-between-tcp-and-udp/" target="_blank">What's the Difference Between TCP and UDP? - How-To Geek</a> (tutorial site)</p></li>
 		</ul>
 		
 		<h2>Module Requirements</h2>
@@ -51,17 +51,17 @@
 
             <li><p>Write a program that allows one computer to communicate with another computer using either of the following:</p></li>
                 <ul>
-                    <li><p>Client-Server Model - Need to write one program for the client and one program for the server</p></li>
-                    <li><p>Peer-to-Peer Model - Need to write one program for the peer to both send and receive</p></li>
+                    <li><p>Client-Server Model - You will need to write one program for the client and one program for the server</p></li>
+                    <li><p>Peer-to-Peer Model - You will need to write one program for the peer to both send and receive</p></li>
                 </ul>
-            <li><p>The software should implement a collaboration system, problem solving system, file delivery system, or an embedded system.  Examples of each of these system is shown in the Overview section above.  The software may be written in any programming language.   </p></li>
-            <li><p>Only one kind of request needs to be sent between computers with the appropriate response.</p></li>
-            <li><p>The program can run from the command line (i.e. no graphics).</p></li>
+            <li><p>The software should implement either a collaboration system, problem solving system, file delivery system, or embedded system.  Examples of each of these systems are shown in the Overview section above.  The software may be written in any programming language.   </p></li>
+            <li><p>Only one kind of request needs to be sent between computers, with the appropriate response.</p></li>
+            <li><p>The program can run from the command line (no graphics needed).</p></li>
             <li><p>You can use either TCP or UDP.</p></li>
-            <li><p>The program needs to be published to a public GitHub repository as part of your personal programming portfolio.  Be careful not to include any passwords or keys in your published material.  Ensure that the repository has a good description and is tagged appropriately.  The README.md file in your repository should be well-documented with at least the following information:</p></li>
+            <li><p>The program needs to be published to a public GitHub repository as part of your personal programming portfolio.  Be careful not to include any passwords or keys in your published material.  Ensure that the repository has a good description and is tagged appropriately.  The README.md file in your repository should be well-documented, with at least the following information:</p></li>
                 <ul>
                     <li><p>A description of your program.</p></li>
-                    <li><p>How to set up the development environment including all tools.  Provide detailed steps so that you or another engineer could replicate the environment.</p></li>
+                    <li><p>How to set up the development environment, including all tools.  Provide detailed steps so that you or another engineer could replicate the environment.</p></li>
                     <li><p>How to build (if applicable), execute, and use your program.</p></li>
                     <li><p>Screenshots of your software running.</p></li>
                     <li><p>A description of the message structure (both request and response).</p></li>
@@ -74,8 +74,8 @@
 		
 		<p>You can earn additional bonus points by completing one of the following stretch challenges:</p>
         <ul>
-            <li><p>Provide support for multiple different kinds of requests by formatting the information using <a href="https://docs.python.org/3.6/library/json.html" target="_blank">JSON</a>.</p></li>
-            <li><p>Provide configuration files that are read at software initialization that define ip addresses, ports, etc.</p></li>
+            <li><p>Provide support for multiple different kinds of requests by formatting the information using <a href="https://docs.python.org/3.6/library/json.html" target="_blank">Javascript object notation (JSON)</a>.</p></li>
+            <li><p>Provide configuration files that are read at software initialization to define IP addresses, ports, etc.</p></li>
             <li><p>Provide a graphical user interface (GUI) for your program instead of the command line.</p></li>
         </ul>
         
@@ -86,7 +86,7 @@
 		<p>You should consider using Python and standard networking libraries for this module.  Here are some useful notes when using this suggested environment:</p>
 		<ul>
 			<li><p>Python already has libraries to read and write from TCP and UDP sockets and servers.  See the links below for information and examples.</p></li>
-            <li><p>You will need to run two programs at the same time to test your software.  It may be easier to run these programs on seperate computers that have different IP addresses.  If you don't have this option, you can consider installing a <a href="https://www.virtualbox.org/" target="_blank">virtual machine</a> running <a href="https://ubuntu.com/download/desktop" target="_blank">Linux</a> or configure your software to send and receive on different ports.</p></li>
+            <li><p>You will need to run two programs at the same time to test your software.  It may be easier to run these programs on separate computers that have different IP addresses.  If you don't have this option, you might consider installing a <a href="https://www.virtualbox.org/" target="_blank">virtual machine</a> running <a href="https://ubuntu.com/download/desktop" target="_blank">Linux</a>, or configuring your software to send and receive on different ports.</p></li>
 		</ul>
 		
 		<p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
