@@ -15,77 +15,56 @@
     <article>
 		<h1>Discovery Module - Web Sites using NodeJS and Rust</h1>
 		<h2>Overview</h2>
-        
-        <p>TBD - Consider using Android Studio and Flutter and Kotlin (official documentation from Android is better for Kotlin)</p>
-        
-		<p>You can read more from sites such as the following:</p>
+		<p>From the article, <a href="https://stackoverflow.blog/2020/01/20/what-is-rust-and-why-is-it-so-popular/">What is Rust and why is it so popular?</a> we read that Rust has been on Stackoverflow's most loved languages list for years and that it solves many pain points of other programming languauges. It is growing quickly and has incredible potential in many different fields. </p>
+		<p>Likewise, with more than a billion downloads, Node.js is growing at an incredible rate. It thrives in building real-time applications, Internet of Things, and micro services. Many advantages of using Node.js can be read about <a href="https://www.monterail.com/blog/nodejs-development-enterprises">here</a>.</p>
+		<p>Considering these two things, this module is meant to build your expertise in both of these areas. In the article <a href="https://blog.logrocket.com/rust-and-node-js-a-match-made-in-heaven/">Rust and Node.js: A match made in heaven</a>, we read:</p>
+		<div style="margin-left:40px; font-size:85%;">
+			<p>Node.js is a very popular JavaScript runtime for writing backend applications. Its flexibility and nonblocking nature have made it the premier choice for API consumption.</p>
+			<p>Since it is a scripting language, JavaScript can be pretty slow. But thanks to V8 optimization, it is fast enough for practical applications. That said, Node.js is not good for heavy lifting; since it’s single-threaded, it is dangerous to block the main thread for doing long calculations. That’s where worker threads come in. Node.js has support for worker threads, so it can be used to perform long calculations.</p>
+			<p>As great as worker threads are, JavaScript is still slow. Moreover, worker thread are not available in all supported LTS versions of Node. Fortunately, we can use Rust to build a native add-on for Node.js. FFI is another alternative, but it’s slower than the add-on approach. Rust is blazing fast and has fearless concurrency. Since Rust has a very small runtime (or “not runtime”), our binary size should also be pretty small.</p>
+		</div>	
+		<p>You can read more from sites like the following:</p>
 		<ul>
-            <li><p><a href="">Site</a> (company sponsored site, tutorial site, official site, open collaboration site)</p></li>
+			 <li><p><a href="https://www.quora.com/What-are-the-advantages-of-the-Rust-programming-language">What are the advantages of the Rust programming language?</a></p></li>
+			 <li><p><a href="https://www.mindinventory.com/blog/pros-and-cons-of-node-js-web-app-development/">The Positive and Negative Aspects of Node.js Web App Development</a></p></li>
 		</ul>
 		
 		<h2>Module Requirements</h2>
 		
 		<p>To complete this module, you need to do the following:</p>
-        
-        <ul>
-            <!-- SAMPLE - Need at least instructions to build something that demonstrate specific things
-
-            <li><p>Write a simple game with the following requirements:</p></li>
-                
-                <ul>
-                <li><p>The game must be implemented using a game platform.</p></li>
-                <li><p>The game should have either an entertainment or education purpose.</p></li>
-                <li><p>The game should display graphics, take user input, and have moveable objects.</p></li>
-                </ul>
-           
-            -->
-        
-            <li><p>The program needs to be published to a public GitHub repository as part of your personal programming portfolio.  Be careful not to include any passwords or keys in your published material.  Ensure that the repository has a good description and is tagged appropriately.  The README.md file in your repository should be well-documented with at least the following information:</p></li>
-                <ul>
-                    <li><p>A description of your program.</p></li>
-                    <li><p>How to set up the development environment including all tools.  Provide detailed steps so that you or another engineer could replicate the environment.</p></li>
-                    <li><p>How to build (if applicable), execute, and use your program.</p></li>
-                    <li><p>Screenshots of your software running.</p></li>
-                    
-                    <!-- SAMPLE - Any unique things related to this module
-                    <li><p>Description of the SQL commands you used in the program.</p></li>
-                    -->
-                    
-                    <li><p>A list of useful websites that you found to assist your development work.</p></li>
-                </ul>
+		<ul>
+			<li><p><strong>Develop a useful NodeJS application.</strong> This can be a simple web application but should do something beneficial and be useful enough to someone that they would want to use it. <a href="https://code.visualstudio.com/docs/nodejs/nodejs-tutorial">Here</a> is a good article on getting started with a Node.js app in VS Code. Alternatively, you can start on the <a href="https://nodejs.org/en/download/">Node.js install page</a>. It is not required that this project is pushed to the cloud to complete this module. You can develop and complete it locally (localhost) and submit a zipfile upon completion.</p></li>
+			<li><p><strong>Encorporate a Rust module into this application.</strong> This can be a simple module but should compliment your node application. <a href="https://www.rust-lang.org/learn/get-started">Here</a> is where you can get started with Rust. Be sure to view the guidance resources below as well.</p></li>
+			<li><p>The program needs to be published to a public GitHub repository as part of your personal programming portfolio.  Be careful not to include any passwords or keys in your published material.  Ensure that the repository has a good description and is tagged appropriately.  The README.md file in your repository should be well documented with at least the following information:</p></li>
+				<ul>
+					<li><p>A description of your program.</p></li>
+					<li><p>How to setup the development environment including all tools.  Provide detailed steps so that you or another engineer could replicate the environment.</p></li>
+					<li><p>How to build (if applicable), execute, and use your program.</p></li>
+					<li><p>A list of useful websites that you found to assist your development work.</p></li>
+				</ul>
 		</ul>
-        
-                
-        <h2>Stretch Challenges</h2>
-		
+		<h2>Stretch Challenges</h2>
 		<p>You can earn additional bonus points by completing one of the following stretch challenges:</p>
         <ul>
-            <li><p>TBD 1</p></li>
-            <li><p>TBD 2</p></li>
-            <li><p>TBD 3</p></li>
+            <li><p>Deploy this application to the cloud so that anyone get view it with the url</p></li>
+            <li><p>Incorporate a database such as Firebase, MySQL, MongoDB, or PostgreSQL to save application data</p></li>
         </ul>
-        
-        <p>The implementation of a stretch challenge must be done within the same GitHub repository, and reflected in the descriptions found in your README.md file.</p>
-		
+        <p>The implementaiton of a stretch challenge must be done within the same GitHub repository and reflected in the descriptions found in your README.md file.</p>
 		<h2>Guidance</h2>
-    
-        <!-- SAMPLE: Suggest certain environment to use and provide some high level instructions and useful websites:
-		
-		<p>You should consider using Python and Arcade for this module.  Here are some useful notes when using this suggested environment:</p>
-		<ul>
-			<li><p>You need to install Arcade on your computer.  You can use pip to install: <code>pip install arcade</code>.</p></li>
-            <li><p>You should consider using Sprite classes in Arcade for any moving objects in the game.</p></li>
-            <li><p>If you have any picture or sound files you want to include with your game, make sure they are in the same folder as your Python code.</p></li>
-		</ul>
-		
-		<p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
-		<ul>
-		<li><p><a href="https://arcade.academy/examples/index.html"  target="_blank">Arcade Examples</a> (official site)</p></li>
-		<li><p><a href="https://realpython.com/arcade-python-game-framework/"  target="_blank">Arcade Tutorial - RealPython</a> (tutorial site)</p></li>
+		  <ul>
+			  <h3>Node.js</h3>
+			  <li><p><a href="https://auth0.com/blog/create-a-simple-and-stylish-node-express-app/">Create a Simple and Stylish Node Express App</a></p></li>
+			  <li><p><a href="https://stormpath.com/blog/build-nodejs-express-stormpath-app">A Simple Web App With Node.js, Express, Bootstrap & Stormpath</a></p></li>
+			  <li><p><a href="https://openclassrooms.com/en/courses/2504541-ultra-fast-applications-using-node-js/2504972-creating-your-first-app-with-node-js">Creating your first app with Node.js</a></p></li>
+			  <h3>Rust</h3>
+			  <li><p><a href="https://doc.rust-lang.org/1.27.2/book/first-edition/getting-started.html">Rust docs - Getting Started</a></p></li>
+			  <li><p><a href="https://hacks.mozilla.org/2015/05/diving-into-rust-for-the-first-time/">Diving into Rust for the first time</a></p></li>
+			  <h3>Node and Rust</h3>
+			  <li><p><a href="https://blog.risingstack.com/node-js-native-modules-with-rust/">Writing fast and safe native Node.js modules with Rust</a></p></li>
+			  <li><p><a href="https://blog.risingstack.com/how-to-use-rust-with-node-when-performance-matters/">How to Use Rust with Node.js When Performance Matters</a></p></li>
+			  <li><p><a href="https://medium.com/@a7ul/using-rust-modules-for-javascript-web-development-part-3-3-nodejs-7c71e4ae23fe">Using rust modules in JavaScript/Web Development</a></p></li>
+		  </ul>
 
-		</ul>
-
-        -->
 		
 		<h2>Grading Rubric</h2>
 		
