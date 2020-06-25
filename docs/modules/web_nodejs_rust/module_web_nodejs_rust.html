@@ -23,6 +23,7 @@
 			<p>“Since it is a scripting language, JavaScript can be pretty slow. But thanks to V8 optimization, it is fast enough for practical applications. That said, Node.js is not good for heavy lifting; since it’s single-threaded, it is dangerous to block the main thread for doing long calculations. That’s where worker threads come in. Node.js has support for worker threads, so it can be used to perform long calculations.</p>
 			<p>“As great as worker threads are, JavaScript is still slow. Moreover, worker threads are not available in all supported LTS versions of Node. Fortunately, we can use Rust to build a native add-on for Node.js. FFI is another alternative, but it’s slower than the add-on approach. Rust is blazing fast and has fearless concurrency. Since Rust has a very small runtime (or “not runtime”), our binary size should also be pretty small.”</p>
 		</div>	
+		<p>Overall, there are many reasons why you would consider to use Rust in a Node.JS project. As mentioned above, Rust is able to perform heavy tasks with extreme efficiency and security. While most tasks you could technically perform with Node.js, many will perform much better with Rust because of the CPU-intensive processing they require. Some examples include cryptography, image processing, video processing, or anything that utilizes a lot of data. For example, several large apps that perform complex tasks in programming languages similar to Rust are Amazon, Google and Facebook.</p>
 		<p>You can read more from sites like the following:</p>
 		<ul>
 			 <li><p><a href="https://www.quora.com/What-are-the-advantages-of-the-Rust-programming-language">What Are the Advantages of the Rust Programming Language?</a></p></li>
@@ -33,9 +34,28 @@
 		
 		<p>To complete this module, you need to do the following:</p>
 		<ul>
-			<li><p><strong>Develop a useful Node.js application.</strong> This can be a simple web application, but should do something beneficial and be useful enough to someone that they would want to use it. This is a good article on getting started with a Node.js app in VS Code: <a href="https://code.visualstudio.com/docs/nodejs/nodejs-tutorial">Node.js Tutorial in Visual Studio Code</a>. Alternatively, you can start on the <a href="https://nodejs.org/en/download/">Node.js install page</a>. It is not required that this project be pushed to the cloud to complete this module. You can develop and complete it locally (localhost) and submit a ZIP file upon completion.</p></li>
-			<li><p><strong>Incorporate a Rust module into this application.</strong> This can be a simple module, but should complement your Node application. To get started with Rust, go to <a href="https://www.rust-lang.org/learn/get-started">Rust's Getting Started page</a>. Be sure to view the guidance resources below as well.</p></li>
-			<li><p>The program needs to be published to a public GitHub repository as part of your personal programming portfolio.  Be careful not to include any passwords or keys in your published material.  Ensure that the repository has a good description and is tagged appropriately.  The README.md file in your repository should be well-documented, with at least the following information:</p></li>
+			<li>
+				<p><strong>Node.JS Application</strong> </p>
+				<ul>
+					<li><p>Download the following Node.js application from <a href="./nodejs_template.zip">here</a>.</p></li>
+					<li><p>Inspect the code and run it. Begin to think about ways you could build an application that would effectively utilize Rust. </p></li>
+					<li><p>Your web application must contain at least a single page and should effectively utilize Rust. </p></li>
+					<li><p>It should do something beneficial and be useful enough to someone that they would want to use it. </p></li>
+					<li><p>This is a good article on getting started with a Node.js app in VS Code: <a href="https://code.visualstudio.com/docs/nodejs/nodejs-tutorial">Node.js Tutorial in Visual Studio Code</a>. Alternatively, you can start on the <a href="https://nodejs.org/en/download/">Node.js install page</a>. </p></li> 
+					<li><p>is not required that this project be pushed to the cloud to complete this module. You can develop and complete it locally (localhost) and submit a ZIP file upon completion.</p></li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				<strong>Rust Module</strong> 
+				</p>
+				<ul>
+						<li><p>Incorporate a Rust module into this application.</p></li>
+						<li><p>This can be a simple module, but should complement your Node application. </p></li>
+						<li><p>To get started with Rust, go to <a href="https://www.rust-lang.org/learn/get-started">Rust's Getting Started page</a>. Be sure to view the guidance resources below as well.</p></li>
+					</ul>
+			</li>
+			<li><p><strong>The program needs to be published to a public GitHub repository</strong> as part of your personal programming portfolio.  Be careful not to include any passwords or keys in your published material.  Ensure that the repository has a good description and is tagged appropriately.  The README.md file in your repository should be well-documented, with at least the following information:</p></li>
 				<ul>
 					<li><p>A description of your program.</p></li>
 					<li><p>How to set up the development environment including all tools.  Provide detailed steps so that you or another engineer could replicate the environment.</p></li>
@@ -47,7 +67,8 @@
 		<p>You can earn additional bonus points by completing one of the following stretch challenges:</p>
         <ul>
             <li><p>Deploy this application to the cloud so that anyone can view it with the URL.</p></li>
-            <li><p>Incorporate a database such as Firebase, MySQL, MongoDB, or PostgreSQL to save application data.</p></li>
+				<li><p>Incorporate a database such as Firebase, MySQL, MongoDB, or PostgreSQL to save application data.</p></li>
+				<li><p>Incorporate threading into the Rust module</p></li>
         </ul>
         <p>The implementation of a stretch challenge must be done within the same GitHub repository and reflected in the descriptions found in your README.md file.</p>
 		<h2>Guidance</h2>
@@ -59,6 +80,7 @@
 			  <h3>Rust</h3>
 			  <li><p><a href="https://doc.rust-lang.org/1.27.2/book/first-edition/getting-started.html">Rust Docs - Getting Started</a></p></li>
 			  <li><p><a href="https://hacks.mozilla.org/2015/05/diving-into-rust-for-the-first-time/">Diving into Rust for the First Time</a></p></li>
+			  <li><p><a href="https://doc.rust-lang.org/stable/rust-by-example/std_misc/threads.html">Threading</a></p></li>
 			  <h3>Node and Rust</h3>
 			  <li><p><a href="https://blog.risingstack.com/node-js-native-modules-with-rust/">Writing Fast and Safe Native Node.js Modules with Rust</a></p></li>
 			  <li><p><a href="https://blog.risingstack.com/how-to-use-rust-with-node-when-performance-matters/">How to Use Rust with Node.js when Performance Matters</a></p></li>
