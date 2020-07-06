@@ -251,6 +251,10 @@ article ul li p:before {
 	margin-right: 0.5em;
 }
 
+article ul ul li p:before {
+    content: "-";
+}
+
 @media only screen and (max-width: 1250px) {
     aside.pull-right, aside.pull-left {
     	width: 96.5%;
