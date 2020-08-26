@@ -60,9 +60,9 @@
 		
 		<p>After your complete the module requirements, you can earn additional bonus points by completing one of the following stretch challenges:</p>
         <ul>
-            <li><p>Add an additional table to your database and perform a join in your software between the two tables: <a href="https://www.tutorialspoint.com/postgresql/postgresql_using_joins.htm" target="_blank">PostgreSQL Using Joins - Tutorials Point</a>.</p></li>
-            <li><p>Create an account that only has privileges to do SELECT SQL commands, and test it with your application to verify that this user can not change anything in the database: <a href="https://www.tutorialspoint.com/postgresql/postgresql_privileges.htm" target="_blank">PostgreSQL Privileges - Tutorials Point</a>.</p></li>
-            <li><p>Implement a query that does wildcard matching: <a href="https://www.tutorialspoint.com/postgresql/postgresql_like_clause.htm" target="_blank">PostgreSQL LIKE Clause - Tutorials Point</a>.</p></li>
+            <li><p>Add additional tables to your database and perform a <a href="https://www.sqlitetutorial.net/sqlite-inner-join/" target="_blank">join</a> in your software between two of the tables.</p></li>
+            <li><p>Use at least two of the <a href="https://www.sqlitetutorial.net/sqlite-aggregate-functions/" target="_blank">aggregate functions</a> to summarize numerical data in your database.</p></li>
+            <li><p>Demonstrate the use of a column containing a date or time along with a query that demonstrates filtering within a date or time range.</p></li>
         </ul>
         
         <p>The implementation of a stretch challenge must be done within the same GitHub repository, and reflected in the descriptions found in your README.md file.</p>
@@ -71,19 +71,13 @@
 		
 		<h2>Guidance</h2>
 		
-		<p>You should consider using Python and PostgreSQL for this module.  Here are some useful notes when using this suggested environment:</p>
+		<p>You should consider using Python and SQLite for this module.  SQLite is already support in Python by importing the sqlite3 library. </p>
+
+        <p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
 		<ul>
-			<li><p>You need to install PostgreSQL on your computer.  Installation instructions can be found on the <a href="https://www.postgresql.org/">PostgreSQL website</a>.</p></li>
-			<li><p>When you install PostgreSQL, you will be prompted to create an administrator password.  It is very important that you save this password so you can access the SQL Shell for setup and debugging.  The SQL Shell (also called psql) is installed with PostgreSQL.  The SQL Shell supports SQL commands as well as specific commands (they start with a backward slash \) to help you navigate the database.  You should refer to the PostgreSQL website or one of the tutorials below to learn how to use these commands.</p></li>
-			<li><p>Use <code>psycopg</code> to access a PostgreSQL database from Python.  You can use pip to install: <code>pip install psycopg2</code></p></li>
-		</ul>
-		
-		<p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
-		<ul>
-		<li><p><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> (official site)</p></li>
-		<li><p><a href="https://www.psycopg.org/" target="_blank">psycopg</a> (official site)</p></li>
-		<li><p><a href="https://www.tutorialspoint.com/postgresql/" target="_blank">TutorialsPoint - PostgreSQL</a> (tutorial site)</p></li>
-		<li><p><a href="https://www.postgresqltutorial.com/postgresql-python/" target="_blank">PostgreSQL tutorial using psycopg</a> (tutorial site)</p></li>	
+		<li><p><a href="https://www.sqlitetutorial.net/" target="_blank">SQLite Tutorial</a> (tutorial site)</p></li>
+		<li><p><a href="https://docs.python.org/3.8/library/sqlite3.html" target="_blank">Python sqlite3</a> (official site)</p></li>
+		<li><p><a href="https://www.tutorialspoint.com/sqlite/sqlite_python.htm" target="_blank">TutorialsPoint - SQLIte - Python</a> (tutorial site)</p></li>
 		</ul>
 		
 		<h2>Grading Rubric</h2>

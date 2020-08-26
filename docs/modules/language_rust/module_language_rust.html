@@ -17,13 +17,13 @@
 
         <h2>Overview</h2>
         
-        <p>The C++ language is an object-oriented language that is used for embedded and application development.  It is based on the C language.  C++ requires the use of a compiler and linker, which are operating system– and processor-specific.  C++ includes the Standard Template Library (STL), which provides support for data structures and threading.</p>
+        <p>The Rust language is used for embedded and application development.  While similair to C or C++, it has improvements memory management and variable ownership.  Support for object-oriented methodologies is support as well as data structures and threading.  Rust comes with a build environment called cargo which is used both for library management and building.</p>
         
 		<p>You can read more on sites such as the following:</p>
 		<ul>
-            <li><p><a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++ - Wikipedia</a> (open collaboration site)</p></li>
-            <li><p><a href="https://www.w3schools.com/cpp/">C++ Tutorial - W3Schools</a> (tutorial site)</p></li>
-            <li><p><a href="http://www.cplusplus.com/reference/stl/">C++ STL Reference</a> (reference site)</p></li>
+            <li><p><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" target="_blank">Rust - Wikipedia</a> (open collaboration site)</p></li>
+            <li><p><a href="https://www.tutorialspoint.com/rust/index.htm" target="_blank">Rust Tutorial - TutorialsPoint</a> (tutorial site)</p></li>
+            <li><p><a href="https://www.rust-lang.org/" target="_blank">Rust</a> (official site)</p></li>
 		</ul>
 		
 		<h2>Module Requirements</h2>
@@ -36,13 +36,12 @@
             <li><p>Write <strong>three separate</strong> programs that demonstrate the following:</p></li>
                 
                 <ul>
-                <li><p>Variables</p></li>
+                <li><p>Variables (mutable and unumutable)</p></li>
                 <li><p>Expressions</p></li>                    
                 <li><p>Conditionals</p></li>                    
                 <li><p>Loops</p></li>
                 <li><p>Functions</p></li>   
-                <li><p>Classes</p></li>
-                <li><p>Data structure from STL (e.g. vector, list, or map)</p></li>
+                <li><p>Data structures (e.g. Vec, LinkedList, HashMap)</p></li>
                 </ul>
             
             <li><p>Each program does not need to demonstrate all the items above.  Collectively, however, the three programs should cover all the programming topics.</p></li>
@@ -67,9 +66,9 @@
 		
 		<p>After your complete the module requirements, you can earn additional bonus points by completing one of the following stretch challenges:</p>
         <ul>
-            <li><p>Create makefiles for each of your three programs (<a href="https://www.tutorialspoint.com/makefile/index.htm" target="_blank">Learn Makefile - TutorialsPoint</a>).</p></li>
-            <li><p>Create a program or modify a program that demonstrates inheritance and virtual functions.</p></li>
-            <li><p>Create a program or modify a program that uses an external library (<a href="https://en.cppreference.com/w/cpp/links/libs">C++ External Libraries - Cppreference</a>).</p></li>
+            <li><p>Create a program or modify a program that uses a <a href="https://www.tutorialspoint.com/rust/rust_structure.htm" target="_blank">structure</a>.</p></li>
+            <li><p>Create a program or modify a program that uses <a href="https://www.tutorialspoint.com/rust/rust_slices.htm">slicing</a>.</p></li>
+            <li><p>Create a program or modify a program that uses an external <a href="https://crates.io/" target="_blank">Cargo Crate (library)</a></p></li>
         </ul>
         
         <p>The implementation of a stretch challenge must be done within the same GitHub repository, and reflected in the descriptions found in your README.md file.</p>
@@ -78,11 +77,12 @@
 		
 		<h2>Guidance</h2>
 		
-        <p>There are multiple options for getting C++, including the following:</p>
+        <p>To setup your development environment complete the following:</p>
         
         <ul>
-        <li><p>Install <a href="https://visualstudio.microsoft.com/downloads/" target="_blank">Visual Studio (Free Community Version)</a>.  This is a different tool from Visual Studio Code.  Visual Studio inludes C++ tools.</p></li>
-        <li><p>Install the <a href="https://sourceforge.net/projects/mingw/" target="_blank">MinGW Gnu Compiler Collection (GCC)</a>.  You should make sure the compiler and linker tools are in your path.  You can compile from within the Visual Studio Code terminal window.</p></li>
+        <li><p>Install <a href="https://www.rust-lang.org/tools/install" target="_blank">Rust</a>.</p></li>
+        <li><p>Visual Studio Code has support for Rust.  The <a href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust">Rust extension</a> can be installed in Visual Studio Code.</p></li>
+        <li><p>Follow chapter 1 of the <a href="https://doc.rust-lang.org/book/index.html" target="_blank">Rust Programming Language Book</a> for step by step instructions for building a Hello, World application using the cargo tool.</p></li>
         </ul>
         
         <p>There are other development environments that are provided completely online (e.g. <a href="https://repl.it/">repl.it</a>), but this module requires that you install the required development environment on your computer.  Online environments can be useful for learning.  However, demonstrating the ability to setup your environment will better prepare your for industry.</p>
