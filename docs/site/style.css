@@ -128,7 +128,7 @@ article ol li code {
 
 article {
 	margin: 10px auto;
-	max-width: 750px;
+	/*max-width: 750px;*/
 	padding: 20px;
     counter-reset: figures;
 }
@@ -450,6 +450,14 @@ th, td {
 th {
   font-weight: bold;
   text-align: center;
+}
+
+th p {
+    font-size: 18px;
+}
+
+tr p {
+    font-size: 18px;
 }
 
 .center {
