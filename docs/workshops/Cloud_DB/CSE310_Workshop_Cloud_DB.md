@@ -119,11 +119,10 @@ The callback function `notify_bad_price` must have 3 parameters to hold the data
 ```python
 def notify_bad_price(results, changes, read_time):
     for change in changes:
-        if change.type.name == "ADDED": # 
-            print()
-            print(f"OUT OF STOCK ALERT!! ORDER MORE: {change.document.id}")
-            print()
+        if change.type.name == "ADDED": 
+            print(f"Item Added to the Query: {change.document.id}")
+        elif change.type.name == "MODIFIED":
+            print(f"Existing Item in Query was Modified: {change.document.id}")
         elif change.type.name == "REMOVED":
-            print()
-            print(f"ITEM HAS BEEN RE-STOCKED!! READY TO USE: {change.document.id}")
-            print()
+            print(f"Previously Existing Item in Query was Removed: {change.document.id}")
+```
