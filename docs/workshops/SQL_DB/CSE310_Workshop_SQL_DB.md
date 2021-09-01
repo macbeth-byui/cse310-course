@@ -10,9 +10,13 @@
 
 ```sql
 CREATE TABLE IF NOT EXISTS table (column1 TEXT, column2 INT, column3 REAL, …)
+
 SELECT columns FROM table WHERE condition ORDER BY column ASC|DESC
+
 INSERT INTO table VALUES (value1, value2, …)
+
 UPDATE table SET column = value WHERE condition
+
 DELETE FROM table WHERE condition
 ```
 
@@ -27,7 +31,7 @@ cursor = connection.cursor()
 
 The python library will execute SQL commands (strings) using the `cursor` object and the `execute` function.  A common first command you will always need is to create the database table.  In these examples, a simple books table is created.
 
-![books_table](C:\git\CS310_Workshops\books_table.jpg)
+![books_table](books_table.jpg)
 
 ```python
 cursor.execute("CREATE TABLE IF NOT EXISTS books (title TEXT, author TEXT)")
@@ -64,3 +68,4 @@ def update_author(cursor, title, author):
     values = (title, author) # Order is important here
     cursor.exeute("UPDATE books SET author = ? WHERE title = ?", values)
     cursor.connection.commit() # You can get the connection from the cursor
+```
