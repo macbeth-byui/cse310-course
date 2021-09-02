@@ -1,6 +1,11 @@
 # CSE 310 – SQL Database Workshop
 
-## Useful Reference Links:
+## Example Classroom Code
+
+* Starting Code: https://replit.com/@cmacbeth/CSE310SQLDBWorkshop
+* Solution Code: https://replit.com/@cmacbeth/CSE310SQLDBWorkshopSolution
+
+## Useful Reference Links
 
 * https://docs.python.org/3/library/sqlite3.html
 * https://www.sqlite.org/lang.html

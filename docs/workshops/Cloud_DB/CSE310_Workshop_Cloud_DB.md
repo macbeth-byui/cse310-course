@@ -1,8 +1,14 @@
 # CSE 310 – Cloud Database Workshop
 
-## Useful Reference Links:
+## Example Classroom Code
+
+* Starting Code: https://replit.com/@cmacbeth/CSE310CloudDBWorkshop
+* Solution Code: https://replit.com/@cmacbeth/CSE310CloudDBWorkshopSolution
+
+## Useful Reference Links
 
 * https://firebase.google.com/docs/firestore
+* https://towardsdatascience.com/nosql-on-the-cloud-with-python-55a1383752fc
 
 ## Firestore Structure
 
@@ -12,7 +18,7 @@ Firestore is a non-SQL (or key/value pair) cloud database provided by Google.  I
 
 A collection is like a table.  Each document in a collection is like a row in a table.  Each field in a document is like a column value in a row of a table.
 
-Each document name (or ID) must be unique.  The name could be meningful like the picture above or the name could be an auto-generated value like the picture below.
+Each document name (or ID) must be unique.  The name could be meaningful like the picture above or the name could be an auto-generated value like the picture below.  The auto-generated values are guarenteed to be unique.
 
 ![firestore](firestore2.png)
 
@@ -61,6 +67,12 @@ The document can either be specified (make sure its unique if you are adding new
 
 ```python
 db.collection("inventory").document("Pencil").set(data)
+```
+
+If you wanted to update a single field in a document, the `update` function can be used as well.
+
+```python
+db.collection("inventory").document("Pencil").update({"price" : 0.99})
 ```
 
 To create an auto-generated document ID, we need use the `add` function instead of the `set` function.  If we want to update a document that had an auto-genereated ID, then we need to save that ID number and use the `set` function like.
@@ -125,4 +137,14 @@ def notify_bad_price(results, changes, read_time):
             print(f"Existing Item in Query was Modified: {change.document.id}")
         elif change.type.name == "REMOVED":
             print(f"Previously Existing Item in Query was Removed: {change.document.id}")
+```
+
+## Deleting Data
+
+To remove a document, we use the `delete` function.  We can also use the `update` function if we want to remove a single field within a document.  When deleting a single field, we use the `firestore.DELETE_FIELD` value.
+
+```python
+db.collection("inventory").document("Pencil").delete()
+
+db.collection("inventory").document("Toaster").update({"price" : firestore.DELETE_FIELD})
 ```
