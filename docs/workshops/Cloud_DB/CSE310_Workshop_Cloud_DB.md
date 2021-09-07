@@ -139,7 +139,7 @@ def notify_bad_price(results, changes, read_time):
             print(f"Previously Existing Item in Query was Removed: {change.document.id}")
 ```
 
-## Deleting Data
+### Deleting Data
 
 To remove a document, we use the `delete` function.  We can also use the `update` function if we want to remove a single field within a document.  When deleting a single field, we use the `firestore.DELETE_FIELD` value.
 
