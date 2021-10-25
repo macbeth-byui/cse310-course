@@ -1,4 +1,4 @@
-# CSE 310 – Kotlin Workshop
+# CSE 310 – Mobile App Workshop
 
 ## Example Classroom Code
 
@@ -99,6 +99,49 @@ val message = intent.getStringExtra("Message")
 ```
 
 If you want to go back to the previous screen, just call the `finish()` function.
+
+### Binding vs FindViewById
+
+In the previous examples above, `findViewById` was used to obtain an object that represented the current state of component in the layout.  Alternatively, Android in Kotlin provides a binding features to reduce code and variables.  To enable binding, the following must be added to the module `gradle.build` file:
+
+```gradle
+buildFeatures {
+    viewBinding true
+}
+```
+
+In the code, we are going to replace all of the `findViewById` calls with a single binding object.  Since we want to use this binding object in all of our activity class funcitons, we will make it an attribute of the class.  However, since we can't initialize this binding object until the onCreate funciton (which is not the constructor), we need to use some kotlin techniques to declare a variable that will be initialized later.
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+
+        // Associate the layout XML with this activity
+        setContentView(binding.root)
+
+    }
+}
+```
+    
+In the code above, the `lateinit var` is the only way to allow us to initialize the binding object in the onCreate function.  In the onCreate function, we use the `inflate` function in the auto-generated class `ActivityMainBinding` (named after the activity_main.xml file).  Note that the parameter `layoutInflater` is a property of the `AppCompatActivity` class already inherited.  When we inflate a binding, we are brining it into existence within Android.  Finally, we use the binding in our `setContentView` instead of specifying the layout ID (note that if you use a binding object, you must use it for `setContentView`).
+
+All of this works makes it now easier to access the layout XML without `findViewById`.  The examples we saw earlier are redone using the binding object below.  Notice that the ID's from the XML file are attributes of the binding object now.
+
+```kotlin
+val f_temp = 100.0f
+binding.tempOutput.text = "${"%.1f".format(f_temp)} F"
+```
+
+To read a value from an `EditText`:
+
+```kotlin
+val c_temp = binding.tempInput.text.toString().toFloat()
+```
 
 ### Other Stuff
 
