@@ -145,4 +145,12 @@ val c_temp = binding.tempInput.text.toString().toFloat()
 
 ### Other Stuff
 
+Using the logcat window in Android Studio is useful to determine if errors are occurring in your software.  If you do a `println`, the output will be sent to the logcat window.
+
+If you want to display a Toast message (popup on the bottom on the phone screen), the following can be done:
+
+```kotlin
+Toast.makeText(this, "Your Message Here", Toast.LENGTH_LONG).show()
+```
+
 The Android SDK contains many things including support for databases, sensors, graphics, and many other things.  One useful approach to searching on the web is: `android kotlin <what i want to do>`.
