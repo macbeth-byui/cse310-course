@@ -49,7 +49,7 @@
             
         <p>Each module will require you to use your current programming knowledge to learn new languages, tools, techniques, and libraries.  During the first week of the course, you completed a Course Plan where you selected the modules you wanted to complete this semester.  You are allowed to select different modules but you must make sure that the module you select is something that you have not previously learned (unless you plan to learn more advanced topics).  Even though you can only select each module once during the semester, you can build upon software written for a previous module.  For example, over three modules you could first learn Kotlin, then create an Android app with that Kotlin code, and then finally you can connect your Android app with a cloud database like Firestore.</p>
         
-        <p>Each module will be completed in a two week period.  You will need to submit a plan during the first week.  By the end of the second week, you will need to submit your final product for the module.  Your module will be graded based on your compliance to common and unique module requirements described below.</p>
+        <p>Each module will be completed in a two week Sprint.  You will need to submit a plan during the first week.  The plan document describes the expectation for time spent working on the module.  By the end of the second week, you will need to submit your final product for the module.  Your module will be graded based on your compliance to common and unique module requirements described below.</p>
         
         <h2>Common Requirements for all Modules</h2>
         
@@ -58,12 +58,12 @@
             <li><p>You must write software of your own creation to demonstrate your understanding of the module.  Submitting the code your wrote as part of a published tutorial online is not sufficient.</p></li>
             <li><p>The software must be at least 100 lines of code.  In many cases, you will need more than 100 lines to adequately demonstrate understanding.</p></li>
             <li><p>All code must be documented with useful comments.</p></li>
-            <li><p>The software must include a README.md file at the top folder of the project.  The template for each README.md file written in <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown Language</a> is different for each module and is provided in the detailed table below.  You must fill out the template completely.  This file will be publically viewable in GitHub so make sure has good spelling and grammar and is professional.</p></li>
+            <li><p>The software must include a README.md file at the top folder of the project.  The template for each README.md file written in <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown Language</a> is different for each module and is provided in the detailed table below.  You must fill out the template completely.  This file will be publically viewable in GitHub so make sure to use good spelling, good grammar, and maintain professionalisim.</p></li>
             <li><p>A 4-5 minute video demonstrating the execution of the software and a walkthrough of the code must be created and uploaded publically (or unlisted if desired) to a site like YouTube.  A link to the video must be included in the README.md file.  The video should serve as a training video for someone else to learn what you learned.</p></li>
-            <li><p>All the code including the README.md file must be published in a public GitHub repository.  Each module must be in a separate GitHub repository.  The name of the repository should reflect the software you wrote (e.g. MenuPlanner) or the technology that you used (e.g. KotlinPractice).  Don't use generic names like "Module1" or "CSE310Project2".</p></li>
+            <li><p>All the code including the README.md file must be published in a public GitHub repository.  Each module must be in a <strong>separate GitHub repository</strong>.  The name of the repository should reflect the software you wrote (e.g. MenuPlanner) or the technology that you used (e.g. KotlinPractice).  Don't use generic names like "Module1" or "CSE310Project2".</p></li>
         </ul>
         
-        <p>If you are modifying software written in a previous module to support your new module, then you should also reuse the same GitHub repository.  However, the documentation and video need to be updated to reflect the changes made to your software by the new module.</p>
+        <p>If you are modifying software written in a previous module to support your new module, then you should reuse the same GitHub repository.  However, the documentation and video need to be updated to reflect the changes made to your software by the new module.</p>
         
         <h2>Detailed Module Descriptions</h2>
         
@@ -84,7 +84,7 @@
                 <td>
                     <p style="font-weight: bold">Cloud Databases</p>
                     
-                    <p>Cloud data storage is a convenient solution which removes the requirement for an individual or company to maintain their own database server.  Tools like <a href="https://firebase.google.com/" target="_blank">Google Firebase</a>, <a href="https://aws.amazon.com/dynamodb/" target="_blank">Amazon DynamoDB</a>, and <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> will provide you a database which you can access using an API (function calls from a library).  The use of these cloud databases is frequently free for simple projects, but will cost when scaled up.  Cloud databases provide a mix of various types of databases, including relational and key/value.  A key/value database (which is recommended in the instructions below) will store data into maps that can be queried either in whole, in parts, or in filtered parts.  A key/value database is also commonly called a NoSQL database.  The APIs for each database will vary and provide these capabilities. </p>
+                    <p>Cloud data storage is a convenient solution which removes the requirement for an individual or company to maintain their own database server.  Tools like <a href="https://firebase.google.com/" target="_blank">Google Firebase</a>, <a href="https://aws.amazon.com/dynamodb/" target="_blank">Amazon DynamoDB</a>, and <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> will provide you a database which you can access using an API (function calls from a library).  The use of these cloud databases is frequently free for simple projects, but will cost when scaled up.  Cloud databases provide a mix of various types of databases, including relational and key/value.  A key/value database (which is recommended in the instructions) will store data into maps that can be queried either in whole, in parts, or in filtered parts.  A key/value database is also commonly called a NoSQL database.  The APIs for each database will vary and provide these capabilities. </p>
 
                     <p>You can read more on sites like the following:</p>
                     <ul>
@@ -107,13 +107,14 @@
                     <ul>
                         <li><p>Receive notifications in your software when data in the cloud changes.</p></li>
                         <li><p>Create two or more tables that are related to each other.</p></li>
+						<li><p>Implement user authentication.</p></li>
                     </ul>                    
                 </td>
                 <td>
                     <p>You should consider using Python and Firestore (part of Google Firebase) for this module.  Here are some useful notes when using this suggested environment:</p>
                     <ul>
-                        <li><p>Use <code>firebase-admin</code> to access a Firebase database from Python.  You can use pip to install: <code>pip install firebase-admin</code></p></li> 
-                        <li><p>You will need to create a free Firebase account and create a Firebase Project.  </p></li>
+                        <li><p>Use <code>firebase-admin</code> to access a Firestore database from Python.  You can use pip to install: <code>pip install firebase-admin</code></p></li> 
+                        <li><p>You will need to create a free Firebase account, create a Firebase project, and create a Firestore database in the project.</p></li>
                         <li><p>During the process of getting your account and database set up, you will need to download a Service Account File, which is a JSON file.  This file along with the project name will be needed when you initialize your connection to the Firestore database within your code.  The Service Account File is secret and should not be shared in the GitHub repository.</p></li>
                     </ul>
 
@@ -147,6 +148,7 @@
                         <li><p>You must demonstrate the ability to do one or more of the following to achieve each answer: filter, sort, aggregate (sum, average, count), or data conversion.  </p></li>
                         <li><p>While there is no right or wrong answer, your answer should be justified by your analysis.</p></li>
                     </ul>
+					<p>You can also use this module to explore Machine Learning.  You will need to propose a project different requirements in your project plan.</p>
                     
                     <p>Use the <a href="data_analysis/README.md" target="_blank">Data Analysis README.md</a> template.</p>
                     
@@ -202,7 +204,7 @@
                         <li><p>The game should have moveable objects</p></li>
                     </ul>
                     
-                    <p>Use the <a href="game_platform/README.md" target="_blank">Game Platform README.md</a> template.</p>
+                    <p>Use the <a href="game_framework/README.md" target="_blank">Game Framework README.md</a> template.</p>
                     
                     <p>Stretch Challenges (select one):</p>  
                     <ul>
@@ -239,11 +241,10 @@
                     </ul>                    
                 </td>
                 <td>
-                    <p>Create a website or mobile app that generates a map with markers on the map showing useful information.  The map must have the following characeterstics:</p>
+                    <p>Create a website or mobile app that generates a map using a mapping library like ArcGIS or Google Maps.  The map should include markers showing useful information.  The map must have the following characeterstics:</p>
                     <ul>
-                        <li><p>You must use the ArcGIS library.</p></li>
                         <li><p>You must have at least 20 markers on the map</p></li>
-                        <li><p>When the user clicks on a marker, a popup should be displayed showing information about the marker.</p></li>
+                        <li><p>When the user clicks on a marker, a popup should be displayed showing information about the marker.  If you are using a mobile app, you can display the information in something native to the platform (e.g. Android Toast).</p></li>
                     </ul>
                     
                     <p>Use the <a href="gis_mapping/README.md" target="_blank">GIS Mapping README.md</a> template.</p>
@@ -267,12 +268,17 @@
                 <td>
                     <p style="font-weight: bold">Mobile App</p>
 
-                    <p>Did you know that there are close to three million applications in the Google Play Store? Did you also know that the average Android developer makes well over <a href="https://www.indeed.com/career/android-developer/salaries" target="_blank">$100k/year</a>? Android is everywhere, and the ability to make Android applications has never been more sought after or desirable than it is now. Android applications are typically written in Java or Kotlin using Android Studio, and while many applications are published to the Google Play Store or other application markets, developers are able to create applications and distribute them without such deployments. This module is intended for you to learn how to develop Android applications quickly.</p>
+                    <p>Mobile is everywhere, and the ability to make mobile applications has never been more sought after or desirable than it is now. Android applications are typically written in Java or Kotlin using Android Studio.  iOS applications are written in Swift using XCode (using a Mac).</p>
                     
+					<p>Other platforms have been created to make it easier to port to multiple platforms.  React Native uses JavaScript to create apps that will run on both platforms.  Flutter uses the Dart language to achieve the same result.</p>
+					
                     <p>You can read more from sites such as the following:</p>
                     <ul>
                         <li><p><a href="https://en.wikipedia.org/wiki/Android_software_development" target="_blank">Android Apps - Wikipedia</a> (reference site)</p></li>
                         <li><p><a href="https://developer.android.com/studio" target="_blank">Android Studio</a> (official site)</p></li>
+						<li><p><a href="https://developer.apple.com/tutorials/app-dev-training" target="_blank">Develop Apps for iOS</a> (official site)</p></li>
+						<li><p><a href="https://reactnative.dev/" target="_blank">React Native</a> (official site)</p></li>
+						<li><p><a href="https://flutter.dev/" target="_blank">Flutter</a> (official site)</p></li>
                     </ul>
                 </td>
                 <td>
@@ -281,7 +287,7 @@
 						<li><p>Android - Java or Kotlin</p></li>
 						<li><p>iOS - Swift - Note that you need a Mac using XCode for this option</p></li>
 						<li><p><a href="https://reactnative.dev/" target="_blank">React Native</a> - Javascript - Creates Android/iOS compatible apps</p></li>
-						<li><p><a href="https://flutter.dev/" target="_blank">Flutter</a>Dart - Creates Web/Android/iOS compatible apps</p></li>
+						<li><p><a href="https://flutter.dev/" target="_blank">Flutter/Dart</a> - Creates Web/Android/iOS compatible apps</p></li>
 					</ul>	 
                     <p>The app should have the following characteristics:</p>
                     
@@ -438,14 +444,15 @@
 					<ul>
 						<li><p>Django - Python</p></li>
 						<li><p>Node - Javascript</p></li>
+						<li><p>React - Javascript</p></li>
 					</ul>
 					
 					The web app must have the following characteristics:</p>
                     
                     <ul>
-                        <li><p>Must have at least two HTML pages populated by content determined by your Python (Django) or JavaScript (NodeJS) code.  However, if you use React for the front end, you can keep to single page with multiple calls to the backend serviced by your Django or NodeJS.</p></li>
-                        <li><p>The content must be in some part based on user input.  For example, your HTML might have have an input form which is processed by the Python (Django) or JavaScript (NodeJS) code.</p></li>
-                        <li><p>The web app should run on your local computer using the test server provided by Django or NodeJS.</p></li>
+                        <li><p>Must have at least two HTML pages populated by content determined by your Python (Django) or JavaScript (NodeJS) code. However, if you use React, then you can keep to a single page with multiple interactions.</p></li>
+                        <li><p>Your software must be interactive meaning that the content displayed in your web app must be in some part based on user input.  </p></li>
+                        <li><p>The web app should run on your local computer using the test server provided by your framework.</p></li>
                     </ul>
                     
                     <p>Use the <a href="web_app/README.md" target="_blank">Web App README.md</a> template.</p>
@@ -514,6 +521,7 @@
                     <ul>
                         <li><p>Install <a href="https://visualstudio.microsoft.com/downloads/" target="_blank">Visual Studio (Free Community Version)</a>.  This is a different tool from Visual Studio Code.  Visual Studio includes C++ tools.</p></li>
                         <li><p>Install the <a href="https://osdn.net/projects/mingw/" target="_blank">MinGW Gnu Compiler Collection (GCC)</a>.  You should make sure the compiler and linker tools are in your path. You can either <a href="https://code.visualstudio.com/docs/languages/cpp" target="_blank">integrate the GCC into Visual Studio Code</a> or run the GCC tools (g++) from within the Visual Studio Code terminal window.</p></li>
+						<li><p>Install <a href="https://www.jetbrains.com/clion/" target="_blank">CLion</a> from JetBrains which will install the MinGW compiler automatically for you.</p></li>
                     </ul>                
                 </td>
             </tr>
@@ -543,6 +551,8 @@
                         <li><p>Classes</p></li>
                         <li><p>Data structure from Java Collection Framework (such as ArrayList, TreeSet, or HashMap)</p></li>
                     </ul>       
+					
+					<p>You may use this module also to learn C#.  You may need to modify some of the requirements if you learn C# instead.</p>
                     
                     <p>Use the <a href="language_java/README.md" target="_blank">Java README.md</a> template.</p>
                     
@@ -632,16 +642,18 @@
 						<li><p><a href="https://erlangbyexample.org/" target="_blank">Erlang by Example</a> (tutorial site)</p></li>
             		</ul></td>
                 <td>
-                    <p>Write multiple functions in Erlang that demonstrates the following:</p>
+                    <p>Write multiple functions (not necessarily part of a single piece of software) in Erlang that demonstrates the following:</p>
                 
                     <ul>
                         <li><p>Display output to the screen using <code>format</code>.</p></li>
-						<li><p>Pattern Matching in funciton parameters</p></li>
+						<li><p>Pattern Matching in function parameters</p></li>
 						<li><p>Recursion</p></li>
 						<li><p>Guards</p></li>
 						<li><p>Lists</p></li>
 						<li><p>Using lambda functions with <code>lists:map</code>, <code>lists:filter</code>, or <code>lists:foldl</code></p></li>
                     </ul>
+					
+					<p>You can use this module to learn any Functional Programming Languages.  If you pick a different language, you may need to modify the requirements.</p>
                     
                     <p>Use the <a href="language_erlang/README.md" target="_blank">Erlang README.md</a> template.</p>
                     
@@ -692,7 +704,7 @@
                     <ul>
                         <li><p>Modify your program to use <a href="https://www.tutorialspoint.com/rust/rust_structure.htm" target="_blank">a data structure (e.g. Vec, LinkedList, Hashmap)</a>.</p></li>
                         <li><p>Modify your program to use <a href="https://www.tutorialspoint.com/rust/rust_slices.htm" target="_blank">slicing</a>.</p></li>
-                        <li><p>Modify your program to demonstrate how functions can take <a href="https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html" target="_blank">ownership or reference</a> of parameters it receives.</p></li>
+                        <li><p>Modify your program to demonstrate <a href="https://doc.rust-lang.org/book/ch17-00-oop.html" target="_blank">object oriented</a> techniques using both <code>struct</code> and <code>impl</code>.
                     </ul>
                 </td>
                 <td>
