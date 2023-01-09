@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,275 +8,407 @@
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <title>CSE 310 - Module Summary</title>
 </head>
+
 <body>
     <header id="courseTitle">
         <span class="icon-byui-logo"></span>
         <h1>CSE 310 | Applied Programming</h1>
     </header>
     <article>
-		<h1>Module Descriptions</h1>
-        
-		<h2>Overview</h2>
-        
-        <p>In this course, you will select multiple modules to complete individually.  The following modules are available:</p>
-        
-        <table>
-            <tr>
-                <td style="width: 25%"><p><a href="#m_cloud">Cloud Databases</a></p></td>
-                <td style="width: 25%"><p><a href="#m_data">Data Analysis</a></p></td>
-                <td style="width: 25%"><p><a href="#m_game">Game Framework</a></p></td>
-                <td style="width: 25%"><p><a href="#m_gis">GIS Mapping</a></p></td>
-            </tr>
-            <tr>
-                <td><p><a href="#m_mobile">Mobile App</a></p></td>
-                <td><p><a href="#m_network">Networking</a></p></td>
-                <td><p><a href="#m_sql">SQL Relational Databases</a></p></td>
-                <td><p><a href="#m_web">Web Apps</a></p></td>
-            </tr>
-            <tr>
-                <td><p><a href="#m_cpp">Language - C++</a></p></td>
-                <td><p><a href="#m_java">Language - Java</a></p></td>
-                <td><p><a href="#m_kotlin">Language - Kotlin</a></p></td>
-                <td><p><a href="#m_erlang">Language - Erlang</a></p></td>
-            </tr>
-            <tr>
-                <td><p><a href="#m_rust">Language - Rust</a></p></td>
-                <td><p><a href="#m_cyoa">Choose Your Own Adventure</a></p></td>
-                <td></td>
-                <td></td>				
-            </tr>
-        </table>
+        <h1>Module Descriptions</h1>
 
-            
-        <p>Each module will require you to use your current programming knowledge to learn new languages, tools, techniques, and libraries.  During the first week of the course, you completed a Course Plan where you selected the modules you wanted to complete this semester.  You are allowed to select different modules but you must make sure that the module you select is something that you have not previously learned (unless you plan to learn more advanced topics).  Even though you can only select each module once during the semester, you can build upon software written for a previous module.  For example, over three modules you could first learn Kotlin, then create an Android app with that Kotlin code, and then finally you can connect your Android app with a cloud database like Firestore.</p>
-        
-        <p>Each module will be completed in a two week Sprint.  You will need to submit a plan during the first week.  The plan document describes the expectation for time spent working on the module.  By the end of the second week, you will need to submit your final product for the module.  Your module will be graded based on your compliance to common and unique module requirements described below.</p>
-        
+        <h2>Overview</h2>
+
+        <p>In this course, you will select multiple modules to complete individually. The following modules are available:</p>
+
+        <div class="flexContainer">
+            <div class="flexChild">
+                <h4>Language Modules</h4>
+                <div class="buttonList">
+                    <a href="#m_cpp">C++</a>
+                    <a href="#m_java">Java</a>
+                    <a href="#m_kotlin">Kotlin</a>
+                    <a href="#m_r">R</a>
+                    <a href="#m_erlang">Erlang</a>
+                    <a href="#m_javascript">JavaScript</a>
+                    <a href="#m_csharp">C#</a>
+                    <a href="#m_typescript">TypeScript</a>
+                    <a href="#m_rust">Rust</a>
+                </div>
+            </div>
+            <div class="flexChild">
+                <div class="flexChild">
+                    <h4>Other Modules</h4>
+                    <div class="buttonList">
+                        <a href="#m_cloud">Cloud Databases</a>
+                        <a href="#m_data">Data Analysis</a>
+                        <a href="#m_game">Game Framework</a>
+                        <a href="#m_gis">GIS Mapping</a>
+                        <a href="#m_mobile">Mobile App</a>
+                        <a href="#m_network">Networking</a>
+                        <a href="#m_sql">SQL Relational Databases</a>
+                        <a href="#m_web">Web Apps</a>
+                        <a href="#m_cyoa">Choose Your Own Adventure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Each module will require you to use your current programming knowledge to learn new languages, tools, techniques, and libraries. During the first week of the course, you completed a Course Plan where you selected the modules you wanted to complete this semester. You are allowed to select different modules but you must make sure that the module you select is something that you have not previously learned (unless you plan to learn more advanced topics). Even though you can only select each module once during the semester, you can build upon software written for a previous module. For example, over three modules you could first learn Kotlin, then create an Android app with that Kotlin code, and then finally you can connect your Android app with a cloud database like Firestore.</p>
+
+        <p>Each module will be completed in a two week Sprint. You will need to submit a plan during the first week. The plan document describes the expectation for time spent working on the module. By the end of the second week, you will need to submit your final product for the module. Your module will be graded based on your compliance to common and unique module requirements described below.</p>
+
         <h2>Common Requirements for all Modules</h2>
-        
+
         <p>The software you write for each module has the following common requirements:</p>
         <ul>
-            <li><p>You must write software of your own creation to demonstrate your understanding of the module.  Submitting the code you wrote as part of a published tutorial online is not sufficient.</p></li>
-            <li><p>The software must be at least 100 lines of code.  In many cases, you will need more than 100 lines to adequately demonstrate understanding.</p></li>
-            <li><p>All code must be documented with useful comments.</p></li>
-            <li><p>The software must include a README.md file at the top folder of the project.  The template for each README.md file written in <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown Language</a> is different for each module and is provided in the detailed table below.  You must fill out the template completely.  This file will be publically viewable in GitHub so make sure to use good spelling, good grammar, and maintain professionalisim.</p></li>
-            <li><p>A 4-5 minute video demonstrating the execution of the software and a walkthrough of the code must be created and uploaded publically (or unlisted if desired) to a site like YouTube.  A link to the video must be included in the README.md file.  The video should serve as a training video for someone else to learn what you learned.</p></li>
-            <li><p>All the code including the README.md file must be published in a public GitHub repository.  Each module must be in a <strong>separate GitHub repository</strong>.  The name of the repository should reflect the software you wrote (e.g. MenuPlanner) or the technology that you used (e.g. KotlinPractice).  Don't use generic names like "Module1" or "CSE310Project2".</p></li>
+            <li>
+                <p>You must write software of your own creation to demonstrate your understanding of the module. Submitting the code you wrote as part of a published tutorial online is not sufficient.</p>
+            </li>
+            <li>
+                <p>The software must be at least 100 lines of code. In many cases, you will need more than 100 lines to adequately demonstrate understanding.</p>
+            </li>
+            <li>
+                <p>All code must be documented with useful comments.</p>
+            </li>
+            <li>
+                <p>The software must include a README.md file at the top folder of the project. The template for each README.md file written in <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown Language</a> is different for each module and is provided in the detailed table below. You must fill out the template completely. This file will be publically viewable in GitHub so make sure to use good spelling, good grammar, and maintain professionalisim.</p>
+            </li>
+            <li>
+                <p>A 4-5 minute video demonstrating the execution of the software and a walkthrough of the code must be created and uploaded publically (or unlisted if desired) to a site like YouTube. A link to the video must be included in the README.md file. The video should serve as a training video for someone else to learn what you learned.</p>
+            </li>
+            <li>
+                <p>All the code including the README.md file must be published in a public GitHub repository. Each module must be in a <strong>separate GitHub repository</strong>. The name of the repository should reflect the software you wrote (e.g. MenuPlanner) or the technology that you used (e.g. KotlinPractice). Don't use generic names like "Module1" or "CSE310Project2".</p>
+            </li>
         </ul>
-        
-        <p>If you are modifying software written in a previous module to support your new module, then you should reuse the same GitHub repository.  However, the documentation and video need to be updated to reflect the changes made to your software by the new module.</p>
-        
+
+        <p>If you are modifying software written in a previous module to support your new module, then you should reuse the same GitHub repository. However, the documentation and video need to be updated to reflect the changes made to your software by the new module.</p>
+
         <h2>Detailed Module Descriptions</h2>
-        
-        
+
+
         <p>The table below provides the unique requirements for each module including:</p>
         <ul>
-            <li><p>Stretch Challenges - Completion of one of these challenges will earn you bonus points.  You must complete the other requirements to be eligible for bonus points.</p></li>
-            <li><p>Guidance - Recommendations for language, library, or tool.  Unless otherwise specified in the requirements, you may use any language, library, or tool.</p></li>
+            <li>
+                <p>Stretch Challenges - Completion of one of these challenges will earn you bonus points. You must complete the other requirements to be eligible for bonus points.</p>
+            </li>
+            <li>
+                <p>Guidance - Recommendations for language, library, or tool. Unless otherwise specified in the requirements, you may use any language, library, or tool.</p>
+            </li>
         </ul>
-        
+
         <table>
             <tr id="m_cloud" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
             </tr>
-            <tr >
+            <tr>
                 <td>
                     <p style="font-weight: bold">Cloud Databases</p>
-                    
-                    <p>Cloud data storage is a convenient solution which removes the requirement for an individual or company to maintain their own database server.  Tools like <a href="https://firebase.google.com/" target="_blank">Google Firebase</a>, <a href="https://aws.amazon.com/dynamodb/" target="_blank">Amazon DynamoDB</a>, and <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> will provide you a database which you can access using an API (function calls from a library).  The use of these cloud databases is frequently free for simple projects, but will cost when scaled up.  Cloud databases provide a mix of various types of databases, including relational and key/value.  A key/value database (which is recommended in the instructions) will store data into maps that can be queried either in whole, in parts, or in filtered parts.  A key/value database is also commonly called a NoSQL database.  The APIs for each database will vary and provide these capabilities. </p>
+
+                    <p>Cloud data storage is a convenient solution which removes the requirement for an individual or company to maintain their own database server. Tools like <a href="https://firebase.google.com/" target="_blank">Google Firebase</a>, <a href="https://aws.amazon.com/dynamodb/" target="_blank">Amazon DynamoDB</a>, and <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> will provide you a database which you can access using an API (function calls from a library). The use of these cloud databases is frequently free for simple projects, but will cost when scaled up. Cloud databases provide a mix of various types of databases, including relational and key/value. A key/value database (which is recommended in the instructions) will store data into maps that can be queried either in whole, in parts, or in filtered parts. A key/value database is also commonly called a NoSQL database. The APIs for each database will vary and provide these capabilities. </p>
 
                     <p>You can read more on sites like the following:</p>
                     <ul>
-                        <li><p><a href="https://www.mongodb.com/cloud-database" target="_blank">Overview of Cloud Databases - MongoDB (company-sponsored site)</a></p>
+                        <li>
+                            <p><a href="https://www.mongodb.com/cloud-database" target="_blank">Overview of Cloud Databases - MongoDB (company-sponsored site)</a></p>
                         </li>
-                        <li><p><a href="https://learning.oreilly.com/library/view/an-introduction-to/9781492044857/ch01.html" target="_blank">An Introduction to Cloud Databases: Chapter 1 (electronic book)</a></p></li>
-                        <li><p><a href="https://www.guru99.com/nosql-tutorial.html" target="_blank">NoSQL Tutorial - Guru99 (tutorial site)</a></p></li>
-                    </ul>                    
-                </td>
-                <td>
-                    <p>Write a software program that interacts with a cloud database.  The software must have the following characteristics:</p>
-                    <ul>
-                        <li><p>You must create a database using a cloud service for your program to use including at least one table to store data into.</p></li>
-                        <li><p>Your software must demonstrate the ability to insert, modify, delete, and retrieve (or query) data.</p></li>
+                        <li>
+                            <p><a href="https://learning.oreilly.com/library/view/an-introduction-to/9781492044857/ch01.html" target="_blank">An Introduction to Cloud Databases: Chapter 1 (electronic book)</a></p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.guru99.com/nosql-tutorial.html" target="_blank">NoSQL Tutorial - Guru99 (tutorial site)</a></p>
+                        </li>
                     </ul>
-                    
-                    <p>Use the <a href="cloud_database/README.md" target="_blank">Cloud Databases README.md</a> template.</p>
-                    
-                    <p>Stretch Challenges (select one):</p> 
-                    <ul>
-                        <li><p>Receive notifications in your software when data in the cloud changes.</p></li>
-                        <li><p>Create two or more tables that are related to each other.</p></li>
-						<li><p>Implement user authentication.</p></li>
-                    </ul>                    
                 </td>
                 <td>
-                    <p>You should consider using Python and Firestore (part of Google Firebase) for this module.  Here are some useful notes when using this suggested environment:</p>
+                    <p>Write a software program that interacts with a cloud database. The software must have the following characteristics:</p>
                     <ul>
-                        <li><p>Use <code>firebase-admin</code> to access a Firestore database from Python.  You can use pip to install: <code>pip install firebase-admin</code></p></li> 
-                        <li><p>You will need to create a free Firebase account, create a Firebase project, and create a Firestore database in the project.</p></li>
-                        <li><p>During the process of getting your account and database set up, you will need to download a Service Account File, which is a JSON file.  This file along with the project name will be needed when you initialize your connection to the Firestore database within your code.  The Service Account File is secret and should not be shared in the GitHub repository.</p></li>
+                        <li>
+                            <p>You must create a database using a cloud service for your program to use including at least one table to store data into.</p>
+                        </li>
+                        <li>
+                            <p>Your software must demonstrate the ability to insert, modify, delete, and retrieve (or query) data.</p>
+                        </li>
+                    </ul>
+
+                    <p>Use the <a href="cloud_database/README.md" target="_blank">Cloud Databases README.md</a> template.</p>
+
+                    <p>Stretch Challenges (select one):</p>
+                    <ul>
+                        <li>
+                            <p>Receive notifications in your software when data in the cloud changes.</p>
+                        </li>
+                        <li>
+                            <p>Create two or more tables that are related to each other.</p>
+                        </li>
+                        <li>
+                            <p>Implement user authentication.</p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>You should consider using Python and Firestore (part of Google Firebase) for this module. Here are some useful notes when using this suggested environment:</p>
+                    <ul>
+                        <li>
+                            <p>Use <code>firebase-admin</code> to access a Firestore database from Python. You can use pip to install: <code>pip install firebase-admin</code></p>
+                        </li>
+                        <li>
+                            <p>You will need to create a free Firebase account, create a Firebase project, and create a Firestore database in the project.</p>
+                        </li>
+                        <li>
+                            <p>During the process of getting your account and database set up, you will need to download a Service Account File, which is a JSON file. This file along with the project name will be needed when you initialize your connection to the Firestore database within your code. The Service Account File is secret and should not be shared in the GitHub repository.</p>
+                        </li>
                     </ul>
 
                     <p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
                     <ul>
-                        <li><p><a href="https://firebase.google.com/docs/firestore" target="_blank">Firestore Tutorial</a> (official site)</p></li>
-                        <li><p><a href="https://firebase.google.com/docs/firestore" target="_blank">Firebase Console</a> (official site)</p></li>
-                        <li><p><a href="https://cloud.google.com/docs/authentication/getting-started" target="_blank">Google Authentication—Creating a Service Account</a> (official site)</p></li>
-                    </ul>                
+                        <li>
+                            <p><a href="https://firebase.google.com/docs/firestore" target="_blank">Firestore Tutorial</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://firebase.google.com/docs/firestore" target="_blank">Firebase Console</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://cloud.google.com/docs/authentication/getting-started" target="_blank">Google Authentication—Creating a Service Account</a> (official site)</p>
+                        </li>
+                    </ul>
                 </td>
             </tr>
             <tr id="m_data" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>			
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">Data Analysis</p>
 
-                    <p>As the processing power of computers has increased, the world has become able to capture the large amounts of data that it produces.  Surveys, transactions, and observations are captured every hour of every day.  A data scientist has the skills to capture, organize, and analyze large amounts of data and look for patterns, trends, and statistical relevance between datasets.  Since the possibilities of data analysis are endless, programming languages are used to write customized software to analyze data.  Some languages, like R, were designed specifically for data analysis.  Libraries like <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>, <a href="https://numpy.org/" target="_blank">NumPy</a>, <a href="https://matplotlib.org/" target="_blank">Matplotlib</a>, <a href="https://scrapy.org/" target="_blank">Scrapy</a>, <a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank">BeautifulSoup</a>, and <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a> provide the capabilities to do the analysis with the familar Python programming language.</p>
+                    <p>As the processing power of computers has increased, the world has become able to capture the large amounts of data that it produces. Surveys, transactions, and observations are captured every hour of every day. A data scientist has the skills to capture, organize, and analyze large amounts of data and look for patterns, trends, and statistical relevance between datasets. Since the possibilities of data analysis are endless, programming languages are used to write customized software to analyze data. Some languages, like R, were designed specifically for data analysis. Libraries like <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>, <a href="https://numpy.org/" target="_blank">NumPy</a>, <a href="https://matplotlib.org/" target="_blank">Matplotlib</a>, <a href="https://scrapy.org/" target="_blank">Scrapy</a>, <a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank">BeautifulSoup</a>, and <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a> provide the capabilities to do the analysis with the familar Python programming language.</p>
 
                     <p>You can read more from sites such as the following:</p>
                     <ul>
-                        <li><p><a href="https://en.wikipedia.org/wiki/Data_science" target="_blank">Data Science&mdash;Wikipedia</a> (open collaboration site)</p></li>
-                        <li><p><a href="https://pandas.pydata.org/docs/getting_started/overview.html" target="_blank">Overview of Pandas</a> (official site)</p></li>
-                        <li><p><a href="https://www.r-project.org/about.html" target="_blank">R Programming Language</a> (official site)</p></li>
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Data_science" target="_blank">Data Science&mdash;Wikipedia</a> (open collaboration site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://pandas.pydata.org/docs/getting_started/overview.html" target="_blank">Overview of Pandas</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.r-project.org/about.html" target="_blank">R Programming Language</a> (official site)</p>
+                        </li>
                     </ul>
                 </td>
                 <td>
                     <p>Write software to analyze a set of data to answer two questions about that data as detailed below:</p>
                     <ul>
-                        <li><p>Find a free dataset that interests you.</p></li>
-                        <li><p>Identify the two questions about the dataset on your own.  You might change your questions after you explore the data further.</p></li>
-                        <li><p>Write a program in any programming language using a statistics library (e.g. R or Python Pandas) to analyze the dataset and provide an answer to your questions. </p></li>
-                        <li><p>You must demonstrate the ability to do one or more of the following to achieve each answer: filter, sort, aggregate (sum, average, count), or data conversion.  </p></li>
-                        <li><p>While there is no right or wrong answer, your answer should be justified by your analysis.</p></li>
+                        <li>
+                            <p>Find a free dataset that interests you.</p>
+                        </li>
+                        <li>
+                            <p>Identify the two questions about the dataset on your own. You might change your questions after you explore the data further.</p>
+                        </li>
+                        <li>
+                            <p>Write a program in any programming language using a statistics library (e.g. R or Python Pandas) to analyze the dataset and provide an answer to your questions. </p>
+                        </li>
+                        <li>
+                            <p>You must demonstrate the ability to do one or more of the following to achieve each answer: filter, sort, aggregate (sum, average, count), or data conversion. </p>
+                        </li>
+                        <li>
+                            <p>While there is no right or wrong answer, your answer should be justified by your analysis.</p>
+                        </li>
                     </ul>
-					<p>You can also use this module to explore Machine Learning.  You will need to propose a project different requirements in your project plan.</p>
-                    
+                    <p>You can also use this module to explore Machine Learning. You will need to propose a project different requirements in your project plan.</p>
+
                     <p>Use the <a href="data_analysis/README.md" target="_blank">Data Analysis README.md</a> template.</p>
-                    
-                    <p>Stretch Challenges (select one):</p>  
+
+                    <p>Stretch Challenges (select one):</p>
                     <ul>
-                        <li><p>Update your software so it draws a graph showing some of the results.</p></li>
-                        <li><p>Identify a third question from your dataset and write code to answer it.</p></li>
+                        <li>
+                            <p>Update your software so it draws a graph showing some of the results.</p>
+                        </li>
+                        <li>
+                            <p>Identify a third question from your dataset and write code to answer it.</p>
+                        </li>
                     </ul>
-                    
+
                 </td>
                 <td>
-                    <p>You should consider using Python and Pandas for this module.  You should also consider using Kaggle to obtain a free dataset. Here are some useful notes when using this suggested environment:</p>
+                    <p>You should consider using Python and Pandas for this module. You should also consider using Kaggle to obtain a free dataset. Here are some useful notes when using this suggested environment:</p>
                     <ul>
-                        <li><p>You need to install Pandas on your computer.  You can use pip to install: <code>pip install pandas</code>.</p></li>
-                        <li><p>You can download a dataset from <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle.com</a>.  You should look for a dataset that has good documentation, which will help you understand the data.</p></li>
+                        <li>
+                            <p>You need to install Pandas on your computer. You can use pip to install: <code>pip install pandas</code>.</p>
+                        </li>
+                        <li>
+                            <p>You can download a dataset from <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle.com</a>. You should look for a dataset that has good documentation, which will help you understand the data.</p>
+                        </li>
                     </ul>
 
                     <p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
                     <ul>
-                        <li><p><a href="https://pandas.pydata.org/docs/user_guide/10min.html#min"  target="_blank">Pandas 10 Minute Tutorial</a> (official site)</p></li>
-                        <li><p><a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html" target="_blank">Pandas Getting Started Tutorials</a> (official site)</p></li>
-                        <li><p><a href="https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77"  target="_blank">Pandas Example with <i>Titanic</i> Data</a> (tutorial site)</p></li>
-                        <li><p><a href="https://www.kaggle.com/kashnitsky/topic-1-exploratory-data-analysis-with-pandas" target="_blank">Exploratory Data Analysis with Pandas</a> (tutorial site)</p></li>
-                    </ul>                
+                        <li>
+                            <p><a href="https://pandas.pydata.org/docs/user_guide/10min.html#min" target="_blank">Pandas 10 Minute Tutorial</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html" target="_blank">Pandas Getting Started Tutorials</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://towardsdatascience.com/getting-started-to-data-analysis-with-python-pandas-with-titanic-dataset-a195ab043c77" target="_blank">Pandas Example with <i>Titanic</i> Data</a> (tutorial site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.kaggle.com/kashnitsky/topic-1-exploratory-data-analysis-with-pandas" target="_blank">Exploratory Data Analysis with Pandas</a> (tutorial site)</p>
+                        </li>
+                    </ul>
                 </td>
             </tr>
             <tr id="m_game" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>			
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">Game Framework</p>
-                    
-                    <p>Games bring entertainment and education to many people using their computers and devices.  However, we frequently don't realize the software code that is running behind those games.  Games have several components to them, including the following:</p>
+
+                    <p>Games bring entertainment and education to many people using their computers and devices. However, we frequently don't realize the software code that is running behind those games. Games have several components to them, including the following:</p>
                     <ul>
-                        <li><p>User Interface including Graphics and Sound</p></li>
-                        <li><p>Event Processing (Keyboard, Mouse)</p></li>
-                        <li><p>Game Logic and Story</p></li>
-                        <li><p>Network, Database and Notifications</p></li>
+                        <li>
+                            <p>User Interface including Graphics and Sound</p>
+                        </li>
+                        <li>
+                            <p>Event Processing (Keyboard, Mouse)</p>
+                        </li>
+                        <li>
+                            <p>Game Logic and Story</p>
+                        </li>
+                        <li>
+                            <p>Network, Database and Notifications</p>
+                        </li>
                     </ul>
 
-                    <p>With so many moving components in a game, it is useful to use a game platform for development.  There are several inluding  <a href="https://unity.com/" target="_blank">Unity</a>, <a href="https://aws.amazon.com/lumberyard/" target="_blank">Lumberyard</a>, <a href="https://www.unrealengine.com/en-US/" target="_blank">Unreal Engine</a>, <a href="https://www.cryengine.com/" target="_blank">Cryengine</a>, and <a href="https://urho3d.github.io/" target="_blank">Urho3D</a>.  Many of these platforms contain professional tools for graphics and animation.  There are also several tools using Python including <a href="https://arcade.academy/" target="_blank">Arcade</a>, <a href="https://www.pygame.org/"  target="_blank">PyGame</a>, <a href="https://kivy.org/"  target="_blank">Kivy</a> and <a href="https://www.panda3d.org/"  target="_blank">Panda3D</a>.</p>
+                    <p>With so many moving components in a game, it is useful to use a game platform for development. There are several inluding <a href="https://unity.com/" target="_blank">Unity</a>, <a href="https://aws.amazon.com/lumberyard/" target="_blank">Lumberyard</a>, <a href="https://www.unrealengine.com/en-US/" target="_blank">Unreal Engine</a>, <a href="https://www.cryengine.com/" target="_blank">Cryengine</a>, and <a href="https://urho3d.github.io/" target="_blank">Urho3D</a>. Many of these platforms contain professional tools for graphics and animation. There are also several tools using Python including <a href="https://arcade.academy/" target="_blank">Arcade</a>, <a href="https://www.pygame.org/" target="_blank">PyGame</a>, <a href="https://kivy.org/" target="_blank">Kivy</a> and <a href="https://www.panda3d.org/" target="_blank">Panda3D</a>.</p>
                     <p>You can read more from sites such as the following:</p>
                     <ul>
-                        <li><p><a href="https://en.wikipedia.org/wiki/Game_engine"  target="_blank">Game Engines&mdash;Wikipedia</a> (open collaboration site)</p></li>
-                        <li><p><a href="https://en.wikipedia.org/wiki/List_of_game_engines"  target="_blank">List of Game Engines&mdash;Wikipedia </a> (open collaboration site)</p></li>
-                    </ul>                    
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Game_engine" target="_blank">Game Engines&mdash;Wikipedia</a> (open collaboration site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/List_of_game_engines" target="_blank">List of Game Engines&mdash;Wikipedia </a> (open collaboration site)</p>
+                        </li>
+                    </ul>
                 </td>
                 <td>
-                    <p>Write a simple game using a Python game framework (e.g. PyGame or Arcade) or a more complex platform such as Unity or Unreal.  Note that if you use Unity or Unreal, you may need to plan your time more carefully.</p>
-                        
+                    <p>Write a simple game using a Python game framework (e.g. PyGame or Arcade) or a more complex platform such as Unity or Unreal. Note that if you use Unity or Unreal, you may need to plan your time more carefully.</p>
+
                     <p>The game must have the following characteristics:</p>
                     <ul>
-                        <li><p>The game should display graphics</p></li>
-                        <li><p>The game should take user input from the keyboard or mouse</p></li>
-                        <li><p>The game should have moveable objects</p></li>
+                        <li>
+                            <p>The game should display graphics</p>
+                        </li>
+                        <li>
+                            <p>The game should take user input from the keyboard or mouse</p>
+                        </li>
+                        <li>
+                            <p>The game should have moveable objects</p>
+                        </li>
                     </ul>
-                    
+
                     <p>Use the <a href="game_framework/README.md" target="_blank">Game Framework README.md</a> template.</p>
-                    
-                    <p>Stretch Challenges (select one):</p>  
+
+                    <p>Stretch Challenges (select one):</p>
                     <ul>
-                        <li><p>Allow the user to save and load the game.</p></li>
-                        <li><p>Add music or sound effects to the game.</p></li>
-                        <li><p>Provide levels in your game that change the difficulty of the game.</p></li>
-                    </ul>                    
+                        <li>
+                            <p>Allow the user to save and load the game.</p>
+                        </li>
+                        <li>
+                            <p>Add music or sound effects to the game.</p>
+                        </li>
+                        <li>
+                            <p>Provide levels in your game that change the difficulty of the game.</p>
+                        </li>
+                    </ul>
                 </td>
                 <td>
-                    <p>You should consider using Python and Arcade for this module.  Here are some useful notes when using this suggested environment:</p>
+                    <p>You should consider using Python and Arcade for this module. Here are some useful notes when using this suggested environment:</p>
                     <ul>
-                        <li><p>You need to install Arcade on your computer.  You can use pip to install: <code>pip install arcade</code>.</p></li>
-                        <li><p>You should consider using Sprite classes in Arcade for any moving objects in the game.</p></li>
-                        <li><p>If you have any picture or sound files you want to include with your game, make sure they are in the same folder as your Python code.</p></li>
+                        <li>
+                            <p>You need to install Arcade on your computer. You can use pip to install: <code>pip install arcade</code>.</p>
+                        </li>
+                        <li>
+                            <p>You should consider using Sprite classes in Arcade for any moving objects in the game.</p>
+                        </li>
+                        <li>
+                            <p>If you have any picture or sound files you want to include with your game, make sure they are in the same folder as your Python code.</p>
+                        </li>
                     </ul>
 
                     <p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
                     <ul>
-                        <li><p><a href="https://api.arcade.academy/en/latest/examples/index.html"  target="_blank">Arcade Examples</a> (official site)</p></li>
-                        <li><p><a href="https://realpython.com/arcade-python-game-framework/"  target="_blank">Arcade Tutorial&mdash;RealPython</a> (tutorial site)</p></li>
-                    </ul>                    
+                        <li>
+                            <p><a href="https://api.arcade.academy/en/latest/examples/index.html" target="_blank">Arcade Examples</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://realpython.com/arcade-python-game-framework/" target="_blank">Arcade Tutorial&mdash;RealPython</a> (tutorial site)</p>
+                        </li>
+                    </ul>
                 </td>
             </tr>
             <tr id="m_gis" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>			
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">GIS Mapping</p>
-                    
-                    <p>Geographic Information Systems (GIS) involves the organization of information on a map.  The information can be physical (cities, landmarks, mountains, trails), economic (median incomes, tax rates, employment), social (gender, ethnicity, family, religion), or event driven (earthquake, lightning, crime, activity).  Using maps, decisions can be made, trends can be found, and information can be obtained.  The components in GIS include user interfaces, data storage, and analysis.</p>
+
+                    <p>Geographic Information Systems (GIS) involves the organization of information on a map. The information can be physical (cities, landmarks, mountains, trails), economic (median incomes, tax rates, employment), social (gender, ethnicity, family, religion), or event driven (earthquake, lightning, crime, activity). Using maps, decisions can be made, trends can be found, and information can be obtained. The components in GIS include user interfaces, data storage, and analysis.</p>
 
                     <p>You can read more from sites such as the following:</p>
                     <ul>
-                        <li><p><a href="https://www.nationalgeographic.org/encyclopedia/geographic-information-system-gis/" target="_blank">Geographic Information System&mdash;National Geographic (encyclopedia)</a></p></li>
-                        <li><p><a href="https://www.esri.com/en-us/what-is-gis/careers" target="_blank">Careers in GIS&mdash;Esri (company sponsored site)</a></p></li>
-                    </ul>                    
-                </td>
-                <td>
-                    <p>Create a website or mobile app that generates a map using a mapping library like ArcGIS or Google Maps.  The map should include markers showing useful information.  The map must have the following characeterstics:</p>
-                    <ul>
-                        <li><p>You must have at least 20 markers on the map</p></li>
-                        <li><p>When the user clicks on a marker, a popup should be displayed showing information about the marker.  If you are using a mobile app, you can display the information in something native to the platform (e.g. Android Toast).</p></li>
+                        <li>
+                            <p><a href="https://www.nationalgeographic.org/encyclopedia/geographic-information-system-gis/" target="_blank">Geographic Information System&mdash;National Geographic (encyclopedia)</a></p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.esri.com/en-us/what-is-gis/careers" target="_blank">Careers in GIS&mdash;Esri (company sponsored site)</a></p>
+                        </li>
                     </ul>
-                    
-                    <p>Use the <a href="gis_mapping/README.md" target="_blank">GIS Mapping README.md</a> template.</p>
-                    
-                    <p>Stretch Challenges (select one):</p>  
-                    <ul>
-                        <li><p>Obtain data automatically from a server publically available on the internet so that your map is always up to date.</p></li>
-                        <li><p>Provide a filter in the map to allow the user to display only some of the markers.</p></li>
-                        <li><p>Include more than one type of data on your map (with different marker graphics).</p></li>
-                    </ul>                    
                 </td>
                 <td>
-                    <p>You are required to use ArcGIS.  You should consider using Javascript and HTML to create your map.  ArcGIS offers many detailed tutorials for different programming languages.  Here is a list of websites that you might find useful:</p>
+                    <p>Create a website or mobile app that generates a map using a mapping library like ArcGIS or Google Maps. The map should include markers showing useful information. The map must have the following characeterstics:</p>
                     <ul>
-                        <li><p><a href="https://developers.arcgis.com/labs/browse/?product=javascript&topic=any"  target="_blank">ArGIS JavaScript Tutorial&mdash;ArcGIS</a> (official site)</p></li>
-                        <li><p><a href="https://www.w3schools.com/js" target="_blank">JavaScript&mdash;W3Schools</a> (tutorial site)</p></li>
+                        <li>
+                            <p>You must have at least 20 markers on the map</p>
+                        </li>
+                        <li>
+                            <p>When the user clicks on a marker, a popup should be displayed showing information about the marker. If you are using a mobile app, you can display the information in something native to the platform (e.g. Android Toast).</p>
+                        </li>
+                    </ul>
+
+                    <p>Use the <a href="gis_mapping/README.md" target="_blank">GIS Mapping README.md</a> template.</p>
+
+                    <p>Stretch Challenges (select one):</p>
+                    <ul>
+                        <li>
+                            <p>Obtain data automatically from a server publically available on the internet so that your map is always up to date.</p>
+                        </li>
+                        <li>
+                            <p>Provide a filter in the map to allow the user to display only some of the markers.</p>
+                        </li>
+                        <li>
+                            <p>Include more than one type of data on your map (with different marker graphics).</p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>You are required to use ArcGIS. You should consider using Javascript and HTML to create your map. ArcGIS offers many detailed tutorials for different programming languages. Here is a list of websites that you might find useful:</p>
+                    <ul>
+                        <li>
+                            <p><a href="https://developers.arcgis.com/labs/browse/?product=javascript&topic=any" target="_blank">ArGIS JavaScript Tutorial&mdash;ArcGIS</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.w3schools.com/js" target="_blank">JavaScript&mdash;W3Schools</a> (tutorial site)</p>
+                        </li>
                     </ul>
                 </td>
             </tr>
@@ -283,390 +416,683 @@
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>			
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">Mobile App</p>
 
-                    <p>Mobile is everywhere, and the ability to make mobile applications has never been more sought after or desirable than it is now. Android applications are typically written in Java or Kotlin using Android Studio.  iOS applications are written in Swift using XCode (using a Mac).</p>
-                    
-					<p>Other platforms have been created to make it easier to port to multiple platforms.  React Native uses JavaScript to create apps that will run on both platforms.  Flutter uses the Dart language to achieve the same result.</p>
-					
+                    <p>Mobile is everywhere, and the ability to make mobile applications has never been more sought after or desirable than it is now. Android applications are typically written in Java or Kotlin using Android Studio. iOS applications are written in Swift using XCode (using a Mac).</p>
+
+                    <p>Other platforms have been created to make it easier to port to multiple platforms. React Native uses JavaScript to create apps that will run on both platforms. Flutter uses the Dart language to achieve the same result.</p>
+
                     <p>You can read more from sites such as the following:</p>
                     <ul>
-                        <li><p><a href="https://en.wikipedia.org/wiki/Android_software_development" target="_blank">Android Apps - Wikipedia</a> (reference site)</p></li>
-                        <li><p><a href="https://developer.android.com/studio" target="_blank">Android Studio</a> (official site)</p></li>
-						<li><p><a href="https://developer.apple.com/tutorials/app-dev-training" target="_blank">Develop Apps for iOS</a> (official site)</p></li>
-						<li><p><a href="https://reactnative.dev/" target="_blank">React Native</a> (official site)</p></li>
-						<li><p><a href="https://flutter.dev/" target="_blank">Flutter</a> (official site)</p></li>
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Android_software_development" target="_blank">Android Apps - Wikipedia</a> (reference site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://developer.android.com/studio" target="_blank">Android Studio</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://developer.apple.com/tutorials/app-dev-training" target="_blank">Develop Apps for iOS</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://reactnative.dev/" target="_blank">React Native</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://flutter.dev/" target="_blank">Flutter</a> (official site)</p>
+                        </li>
                     </ul>
                 </td>
                 <td>
-					<p>Create a Mobile App using one of the following platforms:</p>
-					<ul>
-						<li><p>Android - Java or Kotlin</p></li>
-						<li><p>iOS - Swift - Note that you need a Mac using XCode for this option</p></li>
-						<li><p><a href="https://reactnative.dev/" target="_blank">React Native</a> - Javascript - Creates Android/iOS compatible apps</p></li>
-						<li><p><a href="https://flutter.dev/" target="_blank">Flutter/Dart</a> - Creates Web/Android/iOS compatible apps</p></li>
-					</ul>	 
+                    <p>Create a Mobile App using one of the following platforms:</p>
+                    <ul>
+                        <li>
+                            <p>Android - Java or Kotlin</p>
+                        </li>
+                        <li>
+                            <p>iOS - Swift - Note that you need a Mac using XCode for this option</p>
+                        </li>
+                        <li>
+                            <p><a href="https://reactnative.dev/" target="_blank">React Native</a> - Javascript - Creates Android/iOS compatible apps</p>
+                        </li>
+                        <li>
+                            <p><a href="https://flutter.dev/" target="_blank">Flutter/Dart</a> - Creates Web/Android/iOS compatible apps</p>
+                        </li>
+                    </ul>
                     <p>The app should have the following characteristics:</p>
-                    
+
                     <ul>
-                        <li><p>Have at least one screen</p></li>
-                        <li><p>Be interactive with the user (e.g. responds to inputs by displaying appropriate outputs)</p></li>
+                        <li>
+                            <p>Have at least one screen</p>
+                        </li>
+                        <li>
+                            <p>Be interactive with the user (e.g. responds to inputs by displaying appropriate outputs)</p>
+                        </li>
                     </ul>
-                    
+
                     <p>Use the <a href="mobile_app/README.md" target="_blank">Mobile App README.md</a> template.</p>
-                    
-                    <p>Stretch Challenges (select one):</p> 
+
+                    <p>Stretch Challenges (select one):</p>
                     <ul>
-                        <li><p>Integrate with a component on the phone such as the camera, microphone, sensor, or location services.</p></li>
-                        <li><p>Incorporate two or more screens</p></li>
-                        <li><p>Store data either in local storage so is persists even if the app closes or if the phone is turned off</p></li>
-                    </ul>                    
+                        <li>
+                            <p>Integrate with a component on the phone such as the camera, microphone, sensor, or location services.</p>
+                        </li>
+                        <li>
+                            <p>Incorporate two or more screens</p>
+                        </li>
+                        <li>
+                            <p>Store data either in local storage so is persists even if the app closes or if the phone is turned off</p>
+                        </li>
+                    </ul>
                 </td>
                 <td>
-                    <p>You should consider using Android Studio and either Java or Kotlin (depending on which language you know best). The app should run on an Android phone.  If you don't have an Android phone, you can use the <a href="https://developer.android.com/studio/run/emulator" target="_blank">emulator</a> provided within Android Studio.  Here is a list of websites that you might find useful when creating an Android app:</p>
+                    <p>You should consider using Android Studio and either Java or Kotlin (depending on which language you know best). The app should run on an Android phone. If you don't have an Android phone, you can use the <a href="https://developer.android.com/studio/run/emulator" target="_blank">emulator</a> provided within Android Studio. Here is a list of websites that you might find useful when creating an Android app:</p>
                     <ul>
-                        <li><p><a href="https://developer.android.com/training/basics/firstapp" target="_blank">Build Your First App</a></p></li>
-                        <li><p><a href="https://developer.android.com/courses/android-basics-kotlin/course" target="_blank">Android Basics in Kotlin</a></p></li>
+                        <li>
+                            <p><a href="https://developer.android.com/training/basics/firstapp" target="_blank">Build Your First App</a></p>
+                        </li>
+                        <li>
+                            <p><a href="https://developer.android.com/courses/android-basics-kotlin/course" target="_blank">Android Basics in Kotlin</a></p>
+                        </li>
                     </ul>
 
                     <p>The following links may be useful for some of the stretch challenges:</p>
                     <ul>
-                        <li><p><a href="https://developer.android.com/guide/topics/permissions/overview" target="_blank">Permissions Overview</a></p></li>
-                        <li><p><a href="https://stackoverflow.com/questions/25175522/how-to-enable-location-access-programmatically-in-android" target="_blank">How to Enable Location Access in Android</a></p></li>
-                        <li><p><a href="https://developer.android.com/guide/components/intents-filters" target="_blank">Starting Activities with an Intent</a></p></li>
-                        <li><p><a href="https://developer.android.com/training/data-storage/shared-preferences" target="_blank">Saving data in Shared Preferences</a></p></li>
-                    </ul>                
+                        <li>
+                            <p><a href="https://developer.android.com/guide/topics/permissions/overview" target="_blank">Permissions Overview</a></p>
+                        </li>
+                        <li>
+                            <p><a href="https://stackoverflow.com/questions/25175522/how-to-enable-location-access-programmatically-in-android" target="_blank">How to Enable Location Access in Android</a></p>
+                        </li>
+                        <li>
+                            <p><a href="https://developer.android.com/guide/components/intents-filters" target="_blank">Starting Activities with an Intent</a></p>
+                        </li>
+                        <li>
+                            <p><a href="https://developer.android.com/training/data-storage/shared-preferences" target="_blank">Saving data in Shared Preferences</a></p>
+                        </li>
+                    </ul>
                 </td>
             </tr>
             <tr id="m_network" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>			
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">Networking</p>
-                    
-                    <p>Communication between two computers (or even two pieces of software on the same computer) can be done using the networking stack.  A network is more than just physical wire (or wireless) that connects a computer to a network; it also includes the data that is transmitted through that connection.  The data is organized into layers according to the Open Systems Interconnection (OSI) model.  These layers include the physical, datalink, network, and transport layers.  These layers are used to package, route, and transmit data between computers.  Common transport layers include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).  On top of all of these layers is the data that we actually want to communicate to another computer.  This data is frequently organized by a message structure that both the sending computer and receiving computer understand.  Defined formats like JSON, HTML, or XML are all commonly used.</p>
 
-                    <p>Any information can be sent on a network connection.  The software could be collaborative (e.g. chat), problem-solving (e.g. provide answer to question), content based (e.g. file or web server), or embedded (e.g. request data from a sensor or turn on a light).</p>
+                    <p>Communication between two computers (or even two pieces of software on the same computer) can be done using the networking stack. A network is more than just physical wire (or wireless) that connects a computer to a network; it also includes the data that is transmitted through that connection. The data is organized into layers according to the Open Systems Interconnection (OSI) model. These layers include the physical, datalink, network, and transport layers. These layers are used to package, route, and transmit data between computers. Common transport layers include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol). On top of all of these layers is the data that we actually want to communicate to another computer. This data is frequently organized by a message structure that both the sending computer and receiving computer understand. Defined formats like JSON, HTML, or XML are all commonly used.</p>
+
+                    <p>Any information can be sent on a network connection. The software could be collaborative (e.g. chat), problem-solving (e.g. provide answer to question), content based (e.g. file or web server), or embedded (e.g. request data from a sensor or turn on a light).</p>
 
                     <p>When developing networking software, there are two types of models we can look at:</p>
 
                     <ul>
-                    <li><p>Client-Server: The server receives requests from many clients, processes each one, and sends the responses back to the client.</p></li>
-                    <li><p>Peer-to-Peer: A computer (peer) communicates directly to another commputer without going through a server.  In this model, there may be a server that is used by a computer to get address information for the other computer.</p></li>
+                        <li>
+                            <p>Client-Server: The server receives requests from many clients, processes each one, and sends the responses back to the client.</p>
+                        </li>
+                        <li>
+                            <p>Peer-to-Peer: A computer (peer) communicates directly to another commputer without going through a server. In this model, there may be a server that is used by a computer to get address information for the other computer.</p>
+                        </li>
                     </ul>
 
                     <p>You can read more on sites such as the following:</p>
                     <ul>
-                        <li><p><a href="https://en.wikipedia.org/wiki/OSI_model" target="_blank">OSI Model&mdash;Wikipedia</a> (open collaboration site)</p></li>
-                        <li><p><a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank">Client-Server model&mdash;Wikipedia</a> (open collaboration site)</p></li>
-                        <li><p><a href="https://www.tutorialspoint.com/Peer-to-Peer-Computing" target="_blank">Peer-to-Peer Computing&mdash;TutorialsPoint</a> (tutorial site)</p></li>
-                        <li><p><a href="https://www.howtogeek.com/190014/htg-explains-what-is-the-difference-between-tcp-and-udp/" target="_blank">What's the Difference Between TCP and UDP?&mdash;How-To Geek</a> (tutorial site)</p></li>
-                    </ul>                    
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/OSI_model" target="_blank">OSI Model&mdash;Wikipedia</a> (open collaboration site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank">Client-Server model&mdash;Wikipedia</a> (open collaboration site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.tutorialspoint.com/Peer-to-Peer-Computing" target="_blank">Peer-to-Peer Computing&mdash;TutorialsPoint</a> (tutorial site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.howtogeek.com/190014/htg-explains-what-is-the-difference-between-tcp-and-udp/" target="_blank">What's the Difference Between TCP and UDP?&mdash;How-To Geek</a> (tutorial site)</p>
+                        </li>
+                    </ul>
                 </td>
                 <td>
                     <p>Write a program that allows one computer to communicate with another computer using either of the following:</p>
                     <ul>
-                        <li><p>Client-Server Model—You will need to write one program for the client and one program for the server.</p></li>
-                        <li><p>Peer-to-Peer Model—You will need to write one program for the peer to both send and receive.</p></li>
+                        <li>
+                            <p>Client-Server Model—You will need to write one program for the client and one program for the server.</p>
+                        </li>
+                        <li>
+                            <p>Peer-to-Peer Model—You will need to write one program for the peer to both send and receive.</p>
+                        </li>
                     </ul>
                     <p>The software should have the following characteristics:</p>
                     <ul>
-                        <li><p>The client or peer should send a request to the server or another peer.  A response should be sent back and used (e.g. displayed)</p></li>
-                        <li><p>You can use either TCP or UDP.</p></li>
+                        <li>
+                            <p>The client or peer should send a request to the server or another peer. A response should be sent back and used (e.g. displayed)</p>
+                        </li>
+                        <li>
+                            <p>You can use either TCP or UDP.</p>
+                        </li>
                     </ul>
-                    
+
                     <p>Use the <a href="networking/README.md" target="_blank">Networking README.md</a> template.</p>
-                    
-                    <p>Stretch Challenges (select one):</p> 
+
+                    <p>Stretch Challenges (select one):</p>
                     <ul>
-                        <li><p>Provide support for at least three different kinds of requests that the server or the peer can respond to.</p></li>
-                        <li><p>Provide a graphical user interface (GUI) for your program instead of the command line.</p></li>
-                        <li><p>Modify the server or the peer to obtain information from a local file or database in response to a request from the client or another peer.</p></li>
-                    </ul>                    
+                        <li>
+                            <p>Provide support for at least three different kinds of requests that the server or the peer can respond to.</p>
+                        </li>
+                        <li>
+                            <p>Provide a graphical user interface (GUI) for your program instead of the command line.</p>
+                        </li>
+                        <li>
+                            <p>Modify the server or the peer to obtain information from a local file or database in response to a request from the client or another peer.</p>
+                        </li>
+                    </ul>
                 </td>
                 <td>
-                    <p>You should consider using Python and standard networking libraries for this module.  Here are some useful notes when using this suggested environment:</p>
+                    <p>You should consider using Python and standard networking libraries for this module. Here are some useful notes when using this suggested environment:</p>
                     <ul>
-                        <li><p>Python already has libraries to read and write from TCP and UDP sockets and servers.  See the links below for information and examples.</p></li>
-                        <li><p>You will need to run two programs at the same time to test your software.  It may be easier to run these programs on separate computers that have different IP addresses.  If you don't have this option, you might consider installing a <a href="https://www.virtualbox.org/" target="_blank">virtual machine</a> running <a href="https://ubuntu.com/download/desktop" target="_blank">Linux</a>, or configuring your software to send and receive on different ports.</p></li>
+                        <li>
+                            <p>Python already has libraries to read and write from TCP and UDP sockets and servers. See the links below for information and examples.</p>
+                        </li>
+                        <li>
+                            <p>You will need to run two programs at the same time to test your software. It may be easier to run these programs on separate computers that have different IP addresses. If you don't have this option, you might consider installing a <a href="https://www.virtualbox.org/" target="_blank">virtual machine</a> running <a href="https://ubuntu.com/download/desktop" target="_blank">Linux</a>, or configuring your software to send and receive on different ports.</p>
+                        </li>
                     </ul>
 
                     <p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
                     <ul>
-                        <li><p><a href="https://docs.python.org/3.6/library/socketserver.html"  target="_blank">Python Server Libraries</a> (official site)</p></li>
-                        <li><p><a href="https://docs.python.org/3.6/library/socket.html"  target="_blank">Python Socket Libraries</a> (official site)</p></li>
-                    </ul>                
+                        <li>
+                            <p><a href="https://docs.python.org/3.6/library/socketserver.html" target="_blank">Python Server Libraries</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://docs.python.org/3.6/library/socket.html" target="_blank">Python Socket Libraries</a> (official site)</p>
+                        </li>
+                    </ul>
                 </td>
             </tr>
             <tr id="m_sql" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>			
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">SQL Relational Databases</p>
-                    
-                    <p>Data can be stored in many different formats.  An efficient method for storing information is in a database.  One common type of database is a relational database, which organizes the data into tables and relates them together using keys.  Libraries have been written to make it easy for the programmer to read and write to and from these databases.  Most relational databases support Structured Query Language, or SQL.  SQL is a language that allows the programmer to easily interact with the database.  Examples of relational databases include the following:  <a href="https://www.oracle.com/database/" target="_blank">Oracle</a>, <a href="https://www.mysql.com/" target="_blank">MySQL</a>, <a href="https://www.microsoft.com/en-us/sql-server/default.aspx" target="_blank">Microsoft SQL Server</a>, <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>, <a href="https://www.sqlite.org/index.html" target="_blank">SQLite</a>, and <a href="https://www.ibm.com/products/db2-database" target="_blank">IBM DB2</a>.</p>
+
+                    <p>Data can be stored in many different formats. An efficient method for storing information is in a database. One common type of database is a relational database, which organizes the data into tables and relates them together using keys. Libraries have been written to make it easy for the programmer to read and write to and from these databases. Most relational databases support Structured Query Language, or SQL. SQL is a language that allows the programmer to easily interact with the database. Examples of relational databases include the following: <a href="https://www.oracle.com/database/" target="_blank">Oracle</a>, <a href="https://www.mysql.com/" target="_blank">MySQL</a>, <a href="https://www.microsoft.com/en-us/sql-server/default.aspx" target="_blank">Microsoft SQL Server</a>, <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>, <a href="https://www.sqlite.org/index.html" target="_blank">SQLite</a>, and <a href="https://www.ibm.com/products/db2-database" target="_blank">IBM DB2</a>.</p>
 
                     <p>You can read more about relational databases and SQL at sites including the following:</p>
                     <ul>
-                        <li><p><a href="https://en.wikipedia.org/wiki/Relational_database" target="_blank">Relational Databases - Wikipedia</a> (open collaboration site)</p></li>
-                        <li><p><a href="https://www.oracle.com/database/what-is-a-relational-database/" target="_blank">Relational Databases - Oracle</a> (company sponsored site)</p></li>
-                        <li><p><a href="https://www.w3schools.com/sql/" target="_blank">SQL - W3Schools</a> (tutorial site)</p></li>
-                    </ul>                    
-                </td>
-                <td>
-                    <p>Write a program that intereacts with a relational database using SQL.  The software must have the following characteristics:</p>
-                    
-                    <ul>
-                        <li><p>You must create a database for your program to use including at least one table to store data into.</p></li>
-                        <li><p>Your software must demonstrate the ability to insert, modify, delete, and retrieve (or query) data.</p></li>
-                        <li><p>This module requires more than just creating the database and determining SQL commands.  You must write software that builds the SQL commands, submits them, receives the results from the database, and uses the results in some way.</p></li>
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Relational_database" target="_blank">Relational Databases - Wikipedia</a> (open collaboration site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.oracle.com/database/what-is-a-relational-database/" target="_blank">Relational Databases - Oracle</a> (company sponsored site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.w3schools.com/sql/" target="_blank">SQL - W3Schools</a> (tutorial site)</p>
+                        </li>
                     </ul>
-                    
-                    <p>Use the <a href="sql_database/README.md" target="_blank">SQL Relational Database README.md</a> template.</p>
-                    
-                    <p>Stretch Challenges (select one):</p>                    
-                    
-                    <ul>
-                        <li><p>Add additional tables to your database and perform a <a href="https://www.sqlitetutorial.net/sqlite-inner-join/" target="_blank">join</a> in your software between two of the tables.</p></li>
-                        <li><p>Use at least two of the <a href="https://www.sqlitetutorial.net/sqlite-aggregate-functions/" target="_blank">aggregate functions</a> to summarize numerical data in your database.</p></li>
-                        <li><p>Demonstrate the use of a column containing a date or time along with a query that demonstrates filtering within a date or time range.</p></li>
-                    </ul>                    
                 </td>
                 <td>
-                    <p>You should consider using Python and SQLite for this module.  SQLite is already support in Python by importing the sqlite3 library. </p>
+                    <p>Write a program that intereacts with a relational database using SQL. The software must have the following characteristics:</p>
+
+                    <ul>
+                        <li>
+                            <p>You must create a database for your program to use including at least one table to store data into.</p>
+                        </li>
+                        <li>
+                            <p>Your software must demonstrate the ability to insert, modify, delete, and retrieve (or query) data.</p>
+                        </li>
+                        <li>
+                            <p>This module requires more than just creating the database and determining SQL commands. You must write software that builds the SQL commands, submits them, receives the results from the database, and uses the results in some way.</p>
+                        </li>
+                    </ul>
+
+                    <p>Use the <a href="sql_database/README.md" target="_blank">SQL Relational Database README.md</a> template.</p>
+
+                    <p>Stretch Challenges (select one):</p>
+
+                    <ul>
+                        <li>
+                            <p>Add additional tables to your database and perform a <a href="https://www.sqlitetutorial.net/sqlite-inner-join/" target="_blank">join</a> in your software between two of the tables.</p>
+                        </li>
+                        <li>
+                            <p>Use at least two of the <a href="https://www.sqlitetutorial.net/sqlite-aggregate-functions/" target="_blank">aggregate functions</a> to summarize numerical data in your database.</p>
+                        </li>
+                        <li>
+                            <p>Demonstrate the use of a column containing a date or time along with a query that demonstrates filtering within a date or time range.</p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>You should consider using Python and SQLite for this module. SQLite is already support in Python by importing the sqlite3 library. </p>
 
                     <p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
                     <ul>
-                        <li><p><a href="https://www.sqlitetutorial.net/" target="_blank">SQLite Tutorial</a> (tutorial site)</p></li>
-                        <li><p><a href="https://docs.python.org/3.8/library/sqlite3.html" target="_blank">Python sqlite3</a> (official site)</p></li>
-                        <li><p><a href="https://www.tutorialspoint.com/sqlite/sqlite_python.htm" target="_blank">TutorialsPoint: SQLite - Python</a> (tutorial site)</p></li>
-                    </ul>                
+                        <li>
+                            <p><a href="https://www.sqlitetutorial.net/" target="_blank">SQLite Tutorial</a> (tutorial site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://docs.python.org/3.8/library/sqlite3.html" target="_blank">Python sqlite3</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.tutorialspoint.com/sqlite/sqlite_python.htm" target="_blank">TutorialsPoint: SQLite - Python</a> (tutorial site)</p>
+                        </li>
+                    </ul>
                 </td>
             </tr>
             <tr id="m_web" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>			
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">Web Apps</p>
-                    
-                    <p>This module will have you create a web app using a framework that will generate web pages dynamically on the host server.  Django for Python and Node or React for JavaScript are two common examples of web app frameworks.</p>
-                    
-                    <p>When a request is made to your web app, the Django framework will call the appropriate Python code (a function in your <code>views.py</code>) file).  The Python code will then parse the request and prepare a response.  To prepare a response, your code might read a database, download some data from another web server, or perform some calculations.  To produce the response, a template HTML file is populated with data created by the Python function.  The response is then automatically sent back by the Django framework.  Using a framework can reduce the time it takes to create web content.  In the case of Django, you also have the benefit of using the Python programming language to process requests.
+
+                    <p>This module will have you create a web app using a framework that will generate web pages dynamically on the host server. Django for Python and Node or React for JavaScript are two common examples of web app frameworks.</p>
+
+                    <p>When a request is made to your web app, the Django framework will call the appropriate Python code (a function in your <code>views.py</code>) file). The Python code will then parse the request and prepare a response. To prepare a response, your code might read a database, download some data from another web server, or perform some calculations. To produce the response, a template HTML file is populated with data created by the Python function. The response is then automatically sent back by the Django framework. Using a framework can reduce the time it takes to create web content. In the case of Django, you also have the benefit of using the Python programming language to process requests.
                     </p>
 
                     <p>You can read more on sites like the following:</p>
                     <ul>
-                        <li><p><a href="https://docs.djangoproject.com/en/3.0/contents/" target="_blank">Django Documentation and Tutorial</a> (official site)</p></li>
-                        <li><p><a href="https://www.tutorialspoint.com/django/index.htm"  target="_blank">Django Tutorial&mdash;TutorialsPoint</a> (tutorial site)</p></li>
-                        <li><p><a href="https://realpython.com/get-started-with-django-1/"  target="_blank">Django Tutorial&mdash;RealPython</a> (tutorial site)</p></li>
-                        <li><p><a href="https://nodejs.dev/learn" target="_blank">Introduction to Node.js</a> (official site)</p></li>
-                    </ul>                    
+                        <li>
+                            <p><a href="https://docs.djangoproject.com/en/3.0/contents/" target="_blank">Django Documentation and Tutorial</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.tutorialspoint.com/django/index.htm" target="_blank">Django Tutorial&mdash;TutorialsPoint</a> (tutorial site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://realpython.com/get-started-with-django-1/" target="_blank">Django Tutorial&mdash;RealPython</a> (tutorial site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://nodejs.dev/learn" target="_blank">Introduction to Node.js</a> (official site)</p>
+                        </li>
+                    </ul>
                 </td>
                 <td>
-					<p>Write a web app using one of the following frameworks:</p>
-					<ul>
-						<li><p>Django - Python</p></li>
-						<li><p>Node - Javascript</p></li>
-						<li><p>React - Javascript</p></li>
-					</ul>
-					
-					The web app must have the following characteristics:</p>
-                    
+                    <p>Write a web app using one of the following frameworks:</p>
                     <ul>
-                        <li><p>Must have at least two HTML pages populated by content determined by your Python (Django) or JavaScript (NodeJS) code. However, if you use React, then you can keep to a single page with multiple interactions.</p></li>
-                        <li><p>Your software must be interactive meaning that the content displayed in your web app must be in some part based on user input.  </p></li>
-                        <li><p>The web app should run on your local computer using the test server provided by your framework.</p></li>
+                        <li>
+                            <p>Django - Python</p>
+                        </li>
+                        <li>
+                            <p>Node - Javascript</p>
+                        </li>
+                        <li>
+                            <p>React - Javascript</p>
+                        </li>
                     </ul>
-                    
+
+                    The web app must have the following characteristics:</p>
+
+                    <ul>
+                        <li>
+                            <p>Must have at least two HTML pages populated by content determined by your Python (Django) or JavaScript (NodeJS) code. However, if you use React, then you can keep to a single page with multiple interactions.</p>
+                        </li>
+                        <li>
+                            <p>Your software must be interactive meaning that the content displayed in your web app must be in some part based on user input. </p>
+                        </li>
+                        <li>
+                            <p>The web app should run on your local computer using the test server provided by your framework.</p>
+                        </li>
+                    </ul>
+
                     <p>Use the <a href="web_app/README.md" target="_blank">Web App README.md</a> template.</p>
-                    
+
                     <p>Stretch Challenges (select one):</p>
-                    
+
                     <ul>
-                        <li><p>Integrate a database into your web app.</p></li>
-                        <li><p>Add an additional (third) dynamically generated web page to your app.</p></li>
+                        <li>
+                            <p>Integrate a database into your web app.</p>
+                        </li>
+                        <li>
+                            <p>Add an additional (third) dynamically generated web page to your app.</p>
+                        </li>
                     </ul>
                 </td>
                 <td>
-                    <p>You are encouraged to use Django with Python for this module.  In addition to the tutorials in the overview section above, the following notes may be useful to you:</p>
+                    <p>You are encouraged to use Django with Python for this module. In addition to the tutorials in the overview section above, the following notes may be useful to you:</p>
                     <ul>
-                        <li><p>You can use pip to install Django: <code>pip install Django</code></p></li>
-                        <li><p>Django projects have several files which do not need to be manually written.  The following commands are useful:</p>
+                        <li>
+                            <p>You can use pip to install Django: <code>pip install Django</code></p>
+                        </li>
+                        <li>
+                            <p>Django projects have several files which do not need to be manually written. The following commands are useful:</p>
                             <ul>
-                            <li><p><code>django-admin startproject my_project_name</code>—This will create the initial project files</p></li>
-                            <li><p><code>python manage.py startapp my_app_name</code>—This will create an app in your project</p></li>
-                            <li><p><code>python manage.py runserver</code>—This will start your web app.  You will need to open a web browser to open the web pages.</p></li>
+                                <li>
+                                    <p><code>django-admin startproject my_project_name</code>—This will create the initial project files</p>
+                                </li>
+                                <li>
+                                    <p><code>python manage.py startapp my_app_name</code>—This will create an app in your project</p>
+                                </li>
+                                <li>
+                                    <p><code>python manage.py runserver</code>—This will start your web app. You will need to open a web browser to open the web pages.</p>
+                                </li>
                             </ul>
                         </li>
-                    </ul>                
+                    </ul>
                 </td>
             </tr>
             <tr id="m_cpp" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>	
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">Language - C++</p>
-                    
-                    <p>The C++ language is an object-oriented language that is used for embedded and application development.  It is based on the C language.  C++ requires the use of a compiler and linker, which are operating system– and processor-specific.  C++ includes the Standard Template Library (STL), which provides support for data structures and threading.</p>
+
+                    <p>The C++ language is an object-oriented language that is used for embedded and application development. It is based on the C language. C++ requires the use of a compiler and linker, which are operating system– and processor-specific. C++ includes the Standard Template Library (STL), which provides support for data structures and threading.</p>
 
                     <p>You can read more on sites such as the following:</p>
                     <ul>
-                        <li><p><a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++ &mdash;Wikipedia</a> (open collaboration site)</p></li>
-                        <li><p><a href="https://www.w3schools.com/cpp/" target="_blank">C++ Tutorial&mdash;W3Schools</a> (tutorial site)</p></li>
-                        <li><p><a href="http://www.cplusplus.com/reference/stl/" target="_blank">C++ STL Containers&mdash;CPlusPlus</a> (reference site)</p></li>
-                    </ul>                    
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++ &mdash;Wikipedia</a> (open collaboration site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.w3schools.com/cpp/" target="_blank">C++ Tutorial&mdash;W3Schools</a> (tutorial site)</p>
+                        </li>
+                        <li>
+                            <p><a href="http://www.cplusplus.com/reference/stl/" target="_blank">C++ STL Containers&mdash;CPlusPlus</a> (reference site)</p>
+                        </li>
+                    </ul>
                 </td>
                 <td>
                     <p>Write one or more programs in C++ that demonstrates the following:</p>
-                
+
                     <ul>
-                        <li><p>Variables</p></li>
-                        <li><p>Expressions</p></li>                    
-                        <li><p>Conditionals</p></li>
-                        <li><p>Loops</p></li>
-                        <li><p>Functions</p></li>                    
-                        <li><p>Classes</p></li>
-                        <li><p>Data structure from STL (such as a vector, list, or map)</p></li>
+                        <li>
+                            <p>Variables</p>
+                        </li>
+                        <li>
+                            <p>Expressions</p>
+                        </li>
+                        <li>
+                            <p>Conditionals</p>
+                        </li>
+                        <li>
+                            <p>Loops</p>
+                        </li>
+                        <li>
+                            <p>Functions</p>
+                        </li>
+                        <li>
+                            <p>Classes</p>
+                        </li>
+                        <li>
+                            <p>Data structure from STL (such as a vector, list, or map)</p>
+                        </li>
                     </ul>
-                    
+
                     <p>Use the <a href="language_cpp/README.md" target="_blank">C++ README.md</a> template.</p>
-                    
+
                     <p>Stretch Challenges (select one):</p>
-                    
+
                     <ul>
-                        <li><p>Modify your program to read and write to a file.</p></li>
-                        <li><p>Modify your program to demonstrates inheritance with virtual functions.</p></li>
-                        <li><p>Modify your program to use the <code>new</code> and <code>delete</code> operators to dynamically create objects.</p></li>
-                    </ul>                    
-                    
+                        <li>
+                            <p>Modify your program to read and write to a file.</p>
+                        </li>
+                        <li>
+                            <p>Modify your program to demonstrates inheritance with virtual functions.</p>
+                        </li>
+                        <li>
+                            <p>Modify your program to use the <code>new</code> and <code>delete</code> operators to dynamically create objects.</p>
+                        </li>
+                    </ul>
+
                 </td>
                 <td>
                     <p>There are multiple options for getting C++, including the following:</p>
 
                     <ul>
-                        <li><p>Install <a href="https://visualstudio.microsoft.com/downloads/" target="_blank">Visual Studio (Free Community Version)</a>.  This is a different tool from Visual Studio Code.  Visual Studio includes C++ tools.</p></li>
-                        <li><p>Install the <a href="https://osdn.net/projects/mingw/" target="_blank">MinGW Gnu Compiler Collection (GCC)</a>.  You should make sure the compiler and linker tools are in your path. You can either <a href="https://code.visualstudio.com/docs/languages/cpp" target="_blank">integrate the GCC into Visual Studio Code</a> or run the GCC tools (g++) from within the Visual Studio Code terminal window.</p></li>
-						<li><p>Install <a href="https://www.jetbrains.com/clion/" target="_blank">CLion</a> from JetBrains which will install the MinGW compiler automatically for you.</p></li>
-                    </ul>                
+                        <li>
+                            <p>Install <a href="https://visualstudio.microsoft.com/downloads/" target="_blank">Visual Studio (Free Community Version)</a>. This is a different tool from Visual Studio Code. Visual Studio includes C++ tools.</p>
+                        </li>
+                        <li>
+                            <p>Install the <a href="https://osdn.net/projects/mingw/" target="_blank">MinGW Gnu Compiler Collection (GCC)</a>. You should make sure the compiler and linker tools are in your path. You can either <a href="https://code.visualstudio.com/docs/languages/cpp" target="_blank">integrate the GCC into Visual Studio Code</a> or run the GCC tools (g++) from within the Visual Studio Code terminal window.</p>
+                        </li>
+                        <li>
+                            <p>Install <a href="https://www.jetbrains.com/clion/" target="_blank">CLion</a> from JetBrains which will install the MinGW compiler automatically for you.</p>
+                        </li>
+                    </ul>
                 </td>
             </tr>
             <tr id="m_java" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>	
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">Language - Java</p>
-                    
-                    <p>The Java language is an object-oriented language that is used for embedded and application development.  Java requires the use of a compiler and a Java Virtual Machine (JVM) which can both be obtained by installing the Java Development Kit (JDK).  Compiled code (often with a .class or .jar extension) will run on any computer that has a JVM.  Java contains a substantial library which includes many classes for data structures (Java Collection Framework), file management, and threading.  In Java, every file contains a single class.  A static main function is created in one of the classes and is used to provide a starting point for the program.</p>
+
+                    <p>The Java language is an object-oriented language that is used for embedded and application development. Java requires the use of a compiler and a Java Virtual Machine (JVM) which can both be obtained by installing the Java Development Kit (JDK). Compiled code (often with a .class or .jar extension) will run on any computer that has a JVM. Java contains a substantial library which includes many classes for data structures (Java Collection Framework), file management, and threading. In Java, every file contains a single class. A static main function is created in one of the classes and is used to provide a starting point for the program.</p>
 
                     <p>You can read more on sites such as the following:</p>
                     <ul>
-                        <li><p><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java&mdash;Wikipedia</a> (open collaboration site)</p></li>
-                        <li><p><a href="https://www.w3schools.com/java/default.asp" target="_blank">Java Tutorial&mdash;W3Schools</a> (tutorial site)</p></li>
-                        <li><p><a href="https://docs.oracle.com/en/java/javase/index.html" target="_blank">Java Reference&mdash;Oracle</a> (official site)</p></li>
-                        <li><p><a href="https://beginnersbook.com/java-collections-tutorials/" target="_blank">Java Collection Frameworks&mdash;BeginnersBook</a> (tutorial site)</p></li>
-                    </ul>                    
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java&mdash;Wikipedia</a> (open collaboration site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.w3schools.com/java/default.asp" target="_blank">Java Tutorial&mdash;W3Schools</a> (tutorial site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://docs.oracle.com/en/java/javase/index.html" target="_blank">Java Reference&mdash;Oracle</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://beginnersbook.com/java-collections-tutorials/" target="_blank">Java Collection Frameworks&mdash;BeginnersBook</a> (tutorial site)</p>
+                        </li>
+                    </ul>
                 </td>
                 <td>
                     <p>Write one or more programs in Java that demonstrates the following:</p>
-                
+
                     <ul>
-                        <li><p>Variables</p></li>
-                        <li><p>Expressions</p></li>                    
-                        <li><p>Conditionals</p></li>                     
-                        <li><p>Loops</p></li>
-                        <li><p>Functions</p></li>                    
-                        <li><p>Classes</p></li>
-                        <li><p>Data structure from Java Collection Framework (such as ArrayList, TreeSet, or HashMap)</p></li>
-                    </ul>       
-					
-					<p>You may use this module also to learn C#.  You may need to modify some of the requirements if you learn C# instead.</p>
-                    
+                        <li>
+                            <p>Variables</p>
+                        </li>
+                        <li>
+                            <p>Expressions</p>
+                        </li>
+                        <li>
+                            <p>Conditionals</p>
+                        </li>
+                        <li>
+                            <p>Loops</p>
+                        </li>
+                        <li>
+                            <p>Functions</p>
+                        </li>
+                        <li>
+                            <p>Classes</p>
+                        </li>
+                        <li>
+                            <p>Data structure from Java Collection Framework (such as ArrayList, TreeSet, or HashMap)</p>
+                        </li>
+                    </ul>
+
                     <p>Use the <a href="language_java/README.md" target="_blank">Java README.md</a> template.</p>
-                    
+
                     <p>Stretch Challenges (select one):</p>
-                    
+
                     <ul>
-                        <li><p>Modify your program to read and write to a file.</p></li>
-                        <li><p>Modify your program to demonstrate inheritance using the <code>extends</code> and <code>abstract</code> keywords.</p></li>
-                        <li><p>Modify your program to create an interface and then use it with the <code>implements</code> keyword.</p></li>
+                        <li>
+                            <p>Modify your program to read and write to a file.</p>
+                        </li>
+                        <li>
+                            <p>Modify your program to demonstrate inheritance using the <code>extends</code> and <code>abstract</code> keywords.</p>
+                        </li>
+                        <li>
+                            <p>Modify your program to create an interface and then use it with the <code>implements</code> keyword.</p>
+                        </li>
                     </ul>
                 </td>
                 <td>
                     <p>To set up your development environment for Java, complete the following:</p>
 
                     <ul>
-                        <li><p>Install the latest version of either <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">JDK (commercial)</a> or <a href="https://jdk.java.net/" target="_blank">OpenJDK (open source)</a> from Oracle.  In industry, there are license considerations between these two options.  For your work in this course, either choice is acceptable.  Make sure that the Java compiler and virtual machine tools are in your environment path.</p></li>
-                        <li><p>You can either <a href="https://code.visualstudio.com/docs/languages/java" target="_blank">integrate Java into Visual Studio Code</a> or run the Java tools (javac and java) from within the Visual Studio Code terminal window.  As another option, you can use a tool like <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ (free community version)</a> to develop and run Java code.</p></li>
-                    </ul>                
+                        <li>
+                            <p>Install the latest version of either <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">JDK (commercial)</a> or <a href="https://jdk.java.net/" target="_blank">OpenJDK (open source)</a> from Oracle. In industry, there are license considerations between these two options. For your work in this course, either choice is acceptable. Make sure that the Java compiler and virtual machine tools are in your environment path.</p>
+                        </li>
+                        <li>
+                            <p>You can either <a href="https://code.visualstudio.com/docs/languages/java" target="_blank">integrate Java into Visual Studio Code</a> or run the Java tools (javac and java) from within the Visual Studio Code terminal window. As another option, you can use a tool like <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ (free community version)</a> to develop and run Java code.</p>
+                        </li>
+                    </ul>
                 </td>
             </tr>
             <tr id="m_kotlin" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>	
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">Language - Kotlin</p>
-                    
-                    <p>The Kotlin language is an object-oriented language that is used for general application development including Android mobile app development.  It is based on the Java language.  Kotlin was designed to provide improvements to the Java language while still supporting the Java libraries.  Library support includes data structures, file operations, and networking.</p>
-        
+
+                    <p>The Kotlin language is an object-oriented language that is used for general application development including Android mobile app development. It is based on the Java language. Kotlin was designed to provide improvements to the Java language while still supporting the Java libraries. Library support includes data structures, file operations, and networking.</p>
+
                     <p>You can read more on sites such as the following:</p>
                     <ul>
-                        <li><p><a href="https://en.wikipedia.org/wiki/Kotlin_(programming_language)" target="_blank">Kotlin&mdash;Wikipedia</a> (open collaboration site)</p></li>
-                        <li><p><a href="https://www.programiz.com/kotlin-programming" target="_blank">Kotlin Tutorial&mdash;Programiz</a> (tutorial site)</p></li>
-                        <li><p><a href="https://kotlinlang.org/" target="_blank">Kotlin</a> (official site)</p></li>
-                        <li><p><a href="https://kotlinlang.org/docs/reference/comparison-to-java.html" target="_blank">Comparison to Java</a> (official site)</p></li>
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Kotlin_(programming_language)" target="_blank">Kotlin&mdash;Wikipedia</a> (open collaboration site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.programiz.com/kotlin-programming" target="_blank">Kotlin Tutorial&mdash;Programiz</a> (tutorial site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://kotlinlang.org/" target="_blank">Kotlin</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://kotlinlang.org/docs/reference/comparison-to-java.html" target="_blank">Comparison to Java</a> (official site)</p>
+                        </li>
                     </ul>
                 </td>
                 <td>
                     <p>Write one or more programs in Kotlin that demonstrates the following:</p>
-                
+
                     <ul>
-                        <li><p>Variables (<a href="https://www.programiz.com/kotlin-programming/variable-types" target="_blank">mutable and immutable</a>)</p></li>
-                        <li><p>Expressions</p></li>                    
-                        <li><p>Conditionals</p></li>                    
-                        <li><p>Loops</p></li>
-                        <li><p>Functions</p></li>   
-                        <li><p>Classes</p></li>
+                        <li>
+                            <p>Variables (<a href="https://www.programiz.com/kotlin-programming/variable-types" target="_blank">mutable and immutable</a>)</p>
+                        </li>
+                        <li>
+                            <p>Expressions</p>
+                        </li>
+                        <li>
+                            <p>Conditionals</p>
+                        </li>
+                        <li>
+                            <p>Loops</p>
+                        </li>
+                        <li>
+                            <p>Functions</p>
+                        </li>
+                        <li>
+                            <p>Classes</p>
+                        </li>
                     </ul>
-                    
+
                     <p>Use the <a href="language_kotlin/README.md" target="_blank">Kotlin README.md</a> template.</p>
-                    
+
                     <p>Stretch Challenges (select one):</p>
-                    
+
                     <ul>
-                        <li><p>Modify your program to demonstrate the creation and modification of <a href="https://kotlinlang.org/docs/reference/collections-overview.html" target="_blank">collections</a>.</p></li>
-                        <li><p>Modify your program to demonstrate <a href="https://kotlinlang.org/docs/reference/data-classes.html" target="_blank">data classes</a>.</p></li>
-                        <li><p>Modify your program to demonstrate the varied uses of the <a href="https://kotlinlang.org/docs/reference/data-classes.html">when</a> keyword.</p></li>
+                        <li>
+                            <p>Modify your program to demonstrate the creation and modification of <a href="https://kotlinlang.org/docs/reference/collections-overview.html" target="_blank">collections</a>.</p>
+                        </li>
+                        <li>
+                            <p>Modify your program to demonstrate <a href="https://kotlinlang.org/docs/reference/data-classes.html" target="_blank">data classes</a>.</p>
+                        </li>
+                        <li>
+                            <p>Modify your program to demonstrate the varied uses of the <a href="https://kotlinlang.org/docs/reference/data-classes.html">when</a> keyword.</p>
+                        </li>
                     </ul>
-					
-					<p>You may use this module also to learn Swift or Dart.  You may need to modify some of the requirements if you learn Swift or Dart instead.</p>
+
+                    <p>You may use this module also to learn Swift or Dart. You may need to modify some of the requirements if you learn Swift or Dart instead.</p>
                 </td>
                 <td>
                     <p>To set up your development environment for Kotlin, complete the following:</p>
-        
+
                     <ul>
-                        <li><p>The Java Development Kit (JDK) is needed since Kotlin is built on top of it.  Install the latest version of either <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">JDK (commercial)</a> or <a href="https://jdk.java.net/" target="_blank">OpenJDK (open source)</a> from Oracle.  In industry, there are license considerations between these two options.  For your work in this course, either choice is acceptable. </p></li>            
-                        <li><p>Install <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ Idea (Free Community Version)</a>.  This is an IDE like Visual Studio Code.  Kotlin support will be installed automically. When you create a project in IntelliJ, select "Kotlin" and "JVM | IDEA".  When you create files, select "Kotlin File/Class" to create .kt files.</p></li>
+                        <li>
+                            <p>The Java Development Kit (JDK) is needed since Kotlin is built on top of it. Install the latest version of either <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">JDK (commercial)</a> or <a href="https://jdk.java.net/" target="_blank">OpenJDK (open source)</a> from Oracle. In industry, there are license considerations between these two options. For your work in this course, either choice is acceptable. </p>
+                        </li>
+                        <li>
+                            <p>Install <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ Idea (Free Community Version)</a>. This is an IDE like Visual Studio Code. Kotlin support will be installed automically. When you create a project in IntelliJ, select "Kotlin" and "JVM | IDEA". When you create files, select "Kotlin File/Class" to create .kt files.</p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr id="m_r" style="background-color:LightGray">
+                <th style="width: 34%">Module</th>
+                <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
+                <th style="width: 33%">Guidance</th>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-weight: bold">Language - R</p>
+                    <p>R is a language and environment for statistical computing and graphics. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories (formerly AT&T, now Lucent Technologies) by John Chambers and colleagues. R can be considered as a different implementation of S. There are some important differences, but much code written for S runs unaltered under R.</p>
+                    <p>R provides a wide variety of statistical (linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, …) and graphical techniques, and is highly extensible. The S language is often the vehicle of choice for research in statistical methodology, and R provides an Open Source route to participation in that activity.</p>
+                    <p>One of R’s strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed. Great care has been taken over the defaults for the minor design choices in graphics, but the user retains full control.</p>
+                    <p>R is available as Free Software under the terms of the Free Software Foundation’s GNU General Public License in source code form. It compiles and runs on a wide variety of UNIX platforms and similar systems (including FreeBSD and Linux), Windows and MacOS.</p>
+                    <p>You can read more on sites such as the following:</p>
+                    <ul>
+                        <li>
+                            <p><a href="https://www.r-project.org/about.html" target="_blank">R Documentation</a></p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.simplilearn.com/what-is-r-article#:~:text=R%20offers%20a%20wide%20variety,for%20data%20importing%20and%20cleaning." target="_blank">What is R</a></p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>Write multiple functions (not necessarily part of a single piece of software) in R that demonstrates the following:</p>
+
+                    <ul>
+                        <li>
+                            <p>Display output to the screen.</p>
+                        </li>
+                        <li>
+                            <p>Use at least 5 different R datatypes in your program</p>
+                        </li>
+                        <li>
+                            <p>Incorporate at least one loop that works with lists or arrays</p>
+                        </li>
+                        <li>
+                            <p>Use Dataframes</p>
+                        </li>
+                    </ul>
+
+                    <p>Use the <a href="language_r/README.md" target="_blank">R README.md</a> template.</p>
+
+                    <p>Stretch Challenges (select one):</p>
+
+                    <ul>
+                        <li>
+                            <p>Incorporate CSV file </p>
+                        </li>
+                        <li>
+                            <p>Create process and send messages to the process</p>
+                        </li>
+                        <li>
+                            <p>Use the <code>case of</code> coding block</p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>To setup your development environment complete the following:</p>
+
+                    <ul>
+                        <li>
+                            <p>Install <a href="https://www.erlang.org/downloads" target="_blank">Erlang</a> You want to make sure that <code>erl</code> shell program is in the path.</p>
+                        </li>
+                        <li>
+                            <p>Visual Studio Code has support for Erlang. The <a href="https://marketplace.visualstudio.com/items?itemName=pgourlain.erlang" target="_blank">Erlang extension</a> can be installed in Visual Studio Code. The <code>erl</code> shell can be executed from the terminal.</p>
+                        </li>
                     </ul>
                 </td>
             </tr>
@@ -674,144 +1100,443 @@
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>	
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">Language - Erlang</p>
-                    
-                    <p>The Erlang language is an example of functional languages like Haskell, F#, and Clojure.  Functional languages (unlike the imperative languages you have learned previously) have the following characterstics:</p>
-					
-					<ul>
-					
-						<li><p>Functions are designed to produce an output from the inputs.</p></li>
-						<li><p>Variables are immutable since functions are only tasked with producing a result.  When dealing with data structures, this means that when we add or remove something we will either reuse parts of the previous structure or we will need to recreate parts of the structure.</p></li>
-						<li><p>Since functions are only concerned with the current task and also since variables are immutable, there are no side effects from our code.  A side effect occurs when running a funciton or changing a variable affects other variables and functions.  Side effects are common in object oriented programming (member functions affect member data).</p></li>
-						
-					</ul>
-        
-					<p>The goal with functional programming is to write code with higher quality due to the strictness of the language.  Like Python, the Erlang language determines variable types automatically.  Other languages like Haskell are strictly typed.</p>
-					
-		            <p>You can read more on sites such as the following:</p>
-		            <ul>
-                        <li><p><a href="https://en.wikipedia.org/wiki/Functional_programming" target="_blank">Erlang&mdash;Wikipedia</a> (open collaboration site)</p></li>
-                        <li><p><a href="https://www.oreilly.com/library/view/programming-erlang-2nd/9781941222454/" target="_blank">Programming Erlang</a> (E-Book via BYU-Idaho - Start with Part 2)</p></li>
-                        <li><p><a href="https://www.erlang.org/doc/apps/stdlib/index.html" target="_blank">Erlang Standard Library Reference Manual</a> (official site)</p></li>
-						<li><p><a href="https://erlangbyexample.org/" target="_blank">Erlang by Example</a> (tutorial site)</p></li>
-            		</ul></td>
-                <td>
-                    <p>Write multiple functions (not necessarily part of a single piece of software) in Erlang that demonstrates the following:</p>
-                
+
+                    <p>The Erlang language is an example of functional languages like Haskell, F#, and Clojure. Functional languages (unlike the imperative languages you have learned previously) have the following characterstics:</p>
+
                     <ul>
-                        <li><p>Display output to the screen using <code>format</code>.</p></li>
-						<li><p>Pattern Matching in function parameters</p></li>
-						<li><p>Recursion</p></li>
-						<li><p>Guards</p></li>
-						<li><p>Lists</p></li>
-						<li><p>Using lambda functions with <code>lists:map</code>, <code>lists:filter</code>, or <code>lists:foldl</code></p></li>
+
+                        <li>
+                            <p>Functions are designed to produce an output from the inputs.</p>
+                        </li>
+                        <li>
+                            <p>Variables are immutable since functions are only tasked with producing a result. When dealing with data structures, this means that when we add or remove something we will either reuse parts of the previous structure or we will need to recreate parts of the structure.</p>
+                        </li>
+                        <li>
+                            <p>Since functions are only concerned with the current task and also since variables are immutable, there are no side effects from our code. A side effect occurs when running a funciton or changing a variable affects other variables and functions. Side effects are common in object oriented programming (member functions affect member data).</p>
+                        </li>
+
                     </ul>
-					
-					<p>You can use this module to learn any Functional Programming language.  If you pick a different language, you may need to modify the requirements.</p>
-                    
-                    <p>Use the <a href="language_erlang/README.md" target="_blank">Erlang README.md</a> template.</p>
-                    
-                    <p>Stretch Challenges (select one):</p>
-                    
+
+                    <p>The goal with functional programming is to write code with higher quality due to the strictness of the language. Like Python, the Erlang language determines variable types automatically. Other languages like Haskell are strictly typed.</p>
+
+                    <p>You can read more on sites such as the following:</p>
                     <ul>
-                        <li><p>Demonstrate throwing and handling exceptions</p></li>
-						<li><p>Create process and send messages to the process</p></li>
-						<li><p>Use the <code>case of</code> coding block</p></li>
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Functional_programming" target="_blank">Erlang&mdash;Wikipedia</a> (open collaboration site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.oreilly.com/library/view/programming-erlang-2nd/9781941222454/" target="_blank">Programming Erlang</a> (E-Book via BYU-Idaho - Start with Part 2)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.erlang.org/doc/apps/stdlib/index.html" target="_blank">Erlang Standard Library Reference Manual</a> (official site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://erlangbyexample.org/" target="_blank">Erlang by Example</a> (tutorial site)</p>
+                        </li>
                     </ul>
                 </td>
                 <td>
-                  <p>To setup your development environment complete the following:</p>
-        
-                        <ul>
-                        <li><p>Install <a href="https://www.erlang.org/downloads" target="_blank">Erlang</a>  You want to make sure that <code>erl</code> shell program is in the path.</p></li>
-						<li><p>Visual Studio Code has support for Erlang.  The <a href="https://marketplace.visualstudio.com/items?itemName=pgourlain.erlang" target="_blank">Erlang extension</a> can be installed in Visual Studio Code.  The <code>erl</code> shell can be executed from the terminal.</p></li>
-                        </ul>
+                    <p>Write multiple functions (not necessarily part of a single piece of software) in Erlang that demonstrates the following:</p>
+
+                    <ul>
+                        <li>
+                            <p>Display output to the screen using <code>format</code>.</p>
+                        </li>
+                        <li>
+                            <p>Pattern Matching in function parameters</p>
+                        </li>
+                        <li>
+                            <p>Recursion</p>
+                        </li>
+                        <li>
+                            <p>Guards</p>
+                        </li>
+                        <li>
+                            <p>Lists</p>
+                        </li>
+                        <li>
+                            <p>Using lambda functions with <code>lists:map</code>, <code>lists:filter</code>, or <code>lists:foldl</code></p>
+                        </li>
+                    </ul>
+
+                    <p>You can use this module to learn any Functional Programming language. If you pick a different language, you may need to modify the requirements.</p>
+
+                    <p>Use the <a href="language_erlang/README.md" target="_blank">Erlang README.md</a> template.</p>
+
+                    <p>Stretch Challenges (select one):</p>
+
+                    <ul>
+                        <li>
+                            <p>Demonstrate throwing and handling exceptions</p>
+                        </li>
+                        <li>
+                            <p>Create process and send messages to the process</p>
+                        </li>
+                        <li>
+                            <p>Use the <code>case of</code> coding block</p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>To setup your development environment complete the following:</p>
+
+                    <ul>
+                        <li>
+                            <p>Install <a href="https://www.erlang.org/downloads" target="_blank">Erlang</a> You want to make sure that <code>erl</code> shell program is in the path.</p>
+                        </li>
+                        <li>
+                            <p>Visual Studio Code has support for Erlang. The <a href="https://marketplace.visualstudio.com/items?itemName=pgourlain.erlang" target="_blank">Erlang extension</a> can be installed in Visual Studio Code. The <code>erl</code> shell can be executed from the terminal.</p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr id="m_javascript" style="background-color:LightGray">
+                <th style="width: 34%">Module</th>
+                <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
+                <th style="width: 33%">Guidance</th>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-weight: bold">Language - JavaScript</p>
+
+                    <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.</p>
+
+                    <p>The core client-side JavaScript language consists of some common programming features that allow you to do things like:</p>
+                    <ul>
+                        <li>
+                            <p>Store useful values inside variables. In the above example for instance, we ask for a new name to be entered then store that name in a variable called name.</p>
+                        </li>
+                        <li>
+                            <p>Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the name variable to create the complete text label, e.g. "Player 1: Chris".</p>
+                        </li>
+                        <li>
+                            <p>Running code in response to certain events occurring on a web page. We used a click event in our example above to detect when the label is clicked and then run the code that updates the text label.</p>
+                        </li>
+                        <li>
+                            <p>And much more!</p>
+                        </li>
+                    </ul>
+                    <p>What is even more exciting however is the functionality built on top of the client-side JavaScript language. So-called Application Programming Interfaces (APIs) provide you with extra superpowers to use in your JavaScript code.</p>
+
+                    <p>APIs are ready-made sets of code building blocks that allow a developer to implement programs that would otherwise be hard or impossible to implement. They do the same thing for programming that ready-made furniture kits do for home building — it is much easier to take ready-cut panels and screw them together to make a bookshelf than it is to work out the design yourself, go and find the correct wood, cut all the panels to the right size and shape, find the correct-sized screws, and then put them together to make a bookshelf.</p>
+
+                    <p>You can read more on sites such as the following:</p>
+                    <ul>
+                        <li>
+                            <p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">JavaScript Documentation</a> (Everything above came from this site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.hackreactor.com/blog/what-is-javascript-used-for" target="_blank">What is JavaScript Used For?</a></p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>Write multiple functions (not necessarily part of a single piece of software) in JavaScript that demonstrates the following:</p>
+
+                    <ul>
+                        <li>
+                            <p>Display output to the screen. This can be done with Node.js writing to the <a href="https://nodejs.dev/en/learn/output-to-the-command-line-using-nodejs/" target="_blank" rel="noopener noreferrer">terminal</a>, or in a <a href="https://www.javascripttutorial.net/javascript-dom/" target="_blank" rel="noopener noreferrer">browser</a> using html.</p>
+                        </li>
+                        <li>
+                            <p>Native Array ES6 functions</p>
+                        </li>
+                        <li>
+                            <p>Recursion</p>
+                        </li>
+                        <li>
+                            <p>Use a JavaScript library written by someone else in your code (could be an npm package if using Node, or a cdn link for any JS library)</p>
+                        </li>
+                    </ul>
+
+                    <p>You can use this module to learn any Functional Programming language. If you pick a different language, you may need to modify the requirements.</p>
+
+                    <p>Use the <a href="language_javascript/README.md" target="_blank">JavaScript README.md</a> template.</p>
+
+                    <p>Stretch Challenges (select one):</p>
+
+                    <ul>
+                        <li>
+                            <p>Demonstrate throwing and handling exceptions</p>
+                        </li>
+                        <li>
+                            <p>Create DOM structures with CSS (if using browser), or use 2 more npm packages if using Node.js.</p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>To setup your development environment complete the following:</p>
+
+                    <ul>
+                        <li>
+                            <p>Client-side JavaScript code runs in the <a href="https://www.youtube.com/watch?v=AD5hxsFJc4o&ab_channel=DaniKrossing" target="_blank">browser</a>
+                        </li>
+                        <li>
+                            <p>If you want to use JavaScript as a backend language (similar to Python), you can <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">install the Node.js runtime environment</a> on your computer.</p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr id="m_csharp" style="background-color:LightGray">
+                <th style="width: 34%">Module</th>
+                <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
+                <th style="width: 33%">Guidance</th>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-weight: bold">Language - C#</p>
+
+                    <p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in .NET. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 11 and earlier. If you want to explore the language through interactive examples, try the introduction to C# tutorials.</p>
+
+                    <p>C# is an object-oriented, component-oriented programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices. At its core, C# is an object-oriented language. You define types and their behavior.</p>
+
+                    <p>Several C# features help create robust and durable applications. Garbage collection automatically reclaims memory occupied by unreachable unused objects. Nullable types guard against variables that don't refer to allocated objects. Exception handling provides a structured and extensible approach to error detection and recovery. Lambda expressions support functional programming techniques. Language Integrated Query (LINQ) syntax creates a common pattern for working with data from any source. Language support for asynchronous operations provides syntax for building distributed systems. C# has a unified type system. All C# types, including primitive types such as int and double, inherit from a single root object type. All types share a set of common operations. Values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined reference types and value types. C# allows dynamic allocation of objects and in-line storage of lightweight structures. C# supports generic methods and types, which provide increased type safety and performance. C# provides iterators, which enable implementers of collection classes to define custom behaviors for client code.</p>
+
+                    <p>C# emphasizes versioning to ensure programs and libraries can evolve over time in a compatible manner. Aspects of C#'s design that were directly influenced by versioning considerations include the separate virtual and override modifiers, the rules for method overload resolution, and support for explicit interface member declarations.</p>
+
+                    <p>You can read more on sites such as the following:</p>
+                    <ul>
+                        <li>
+                            <p><a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" target="_blank">C# Documentation</a> (Everything above came from this site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.pluralsight.com/blog/software-development/everything-you-need-to-know-about-c-#:~:text=What%20is%20C%23%20used%20for,Lots%20and%20lots%20of%20games." target="_blank">What is C# Used For?</a></p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>Write one or more programs in C# that demonstrates the following:</p>
+                    <ul>
+                        <li>
+                            <p>Variables</p>
+                        </li>
+                        <li>
+                            <p>Expressions</p>
+                        </li>
+                        <li>
+                            <p>Conditionals</p>
+                        </li>
+                        <li>
+                            <p>Loops</p>
+                        </li>
+                        <li>
+                            <p>Functions</p>
+                        </li>
+                        <li>
+                            <p>Classes</p>
+                        </li>
+                        <li>
+                            <p>Structures and Unions</p>
+                        </li>
+                    </ul>
+
+                    <p>Use the <a href="language_cSharp/README.md" target="_blank">C# README.md</a> template.</p>
+
+                    <p>Stretch Challenges (select one):</p>
+
+                    <ul>
+                        <li>
+                            <p>Modify your program to read and write to a file.</p>
+                        </li>
+                        <li>
+                            <p>Modify your program to demonstrate inheritance using the <code>extends</code> and <code>abstract</code> keywords.</p>
+                        </li>
+                        <li>
+                            <p>Modify your program to create an interface and then use it with the <code>implements</code> keyword.</p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>To setup your development environment complete the following:</p>
+
+                    <ul>
+                        <li>
+                            <p><a href="https://www.geeksforgeeks.org/setting-environment-c-sharp/" target="_blank" rel="noopener noreferrer">Setting up the environment in C#</a> </p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr id="m_typescript" style="background-color:LightGray">
+                <th style="width: 34%">Module</th>
+                <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
+                <th style="width: 33%">Guidance</th>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-weight: bold">Language - TypeScript</p>
+
+                    <p>TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.</p>
+                    <p>TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor. Catch errors early in your editor.</p>
+                    <p>TypeScript code converts to JavaScript, which runs anywhere JavaScript runs: In a browser, on Node.js or Deno and in your apps.</p>
+                    <p>TypeScript understands JavaScript and uses type inference to give you great tooling without additional code.</p>
+                    <p>You can read more on sites such as the following:</p>
+                    <ul>
+                        <li>
+                            <p><a href="https://www.typescriptlang.org/" target="_blank">TypeScript Documentation</a> (Everything above came from this site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.contentful.com/blog/what-is-typescript-and-why-should-you-use-it/#:~:text=TypeScript%20extends%20JavaScript%20and%20improves,%2C%20tuple%2C%20generics%2C%20etc." target="_blank">What is TypeScript and why should you use it?</a></p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>Write multiple functions (not necessarily part of a single piece of software) in TypeScript that demonstrates the following:</p>
+
+                    <ul>
+                        <li>
+                            <p>Display output to the terminal.</p>
+                        </li>
+                        <li>
+                            <p>Recursion</p>
+                        </li>
+                        <li>
+                            <p>Classes</p>
+                        </li>
+                        <li>
+                            <p>Lists</p>
+                        </li>
+                        <li>
+                            <p>Asynchronous functions</p>
+                        </li>
+                    </ul>
+
+                    <p>Use the <a href="language_typescript/README.md" target="_blank">TypeScript README.md</a> template.</p>
+
+                    <p>Stretch Challenges (select one):</p>
+
+                    <ul>
+                        <li>
+                            <p>Demonstrate throwing and handling exceptions</p>
+                        </li>
+                        <li>
+                            <p>Use TS Lint</p>
+                        </li>
+                        <li>
+                            <p>Incorporate Jest in your project</p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>To setup your development environment complete the following:</p>
+
+                    <ul>
+                        <li>
+                            <p><a href="https://www.digitalocean.com/community/tutorials/typescript-new-project" target="_blank" rel="noopener noreferrer">How to set up a new typescript project</a></a>
+                        </li>
+                    </ul>
                 </td>
             </tr>
             <tr id="m_rust" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>	
-			<tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">Language - Rust</p>
-                    
-                    <p>The Rust language is used for embedded and application development.  While similair to C or C++, it has improvements including memory management and variable ownership.  Support is provided for object-oriented methodologies as well as data structures and threading.  Rust comes with a build environment called Cargo which is used both for library management and building.</p>
-        
-		            <p>You can read more on sites such as the following:</p>
-		            <ul>
-                        <li><p><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" target="_blank">Rust&mdash;Wikipedia</a> (open collaboration site)</p></li>
-                        <li><p><a href="https://www.tutorialspoint.com/rust/index.htm" target="_blank">Rust Tutorial&mdash;TutorialsPoint</a> (tutorial site)</p></li>
-                        <li><p><a href="https://www.rust-lang.org/" target="_blank">Rust</a> (official site)</p></li>
-            		</ul></td>
-                <td>
-                    <p>Write one or more programs in Rust that demonstrates the following:</p>
-                
+
+                    <p>The Rust language is used for embedded and application development. While similair to C or C++, it has improvements including memory management and variable ownership. Support is provided for object-oriented methodologies as well as data structures and threading. Rust comes with a build environment called Cargo which is used both for library management and building.</p>
+
+                    <p>You can read more on sites such as the following:</p>
                     <ul>
-                        <li><p>Variables (<a href="https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html" target="_blank">mutable and unumutable</a>)</p></li>
-                        <li><p>Expressions</p></li>                    
-                        <li><p>Conditionals</p></li>                    
-                        <li><p>Loops</p></li>
-                        <li><p>Functions (<a href="https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html" target="_blank">ownership or reference</a>)</p></li>   
-                    </ul>
-                    
-                    <p>Use the <a href="language_rust/README.md" target="_blank">Rust README.md</a> template.</p>
-                    
-                    <p>Stretch Challenges (select one):</p>
-                    
-                    <ul>
-                        <li><p>Modify your program to use <a href="https://www.tutorialspoint.com/rust/rust_structure.htm" target="_blank">a data structure (e.g. Vec, LinkedList, Hashmap)</a>.</p></li>
-                        <li><p>Modify your program to use <a href="https://www.tutorialspoint.com/rust/rust_slices.htm" target="_blank">slicing</a>.</p></li>
-                        <li><p>Modify your program to demonstrate <a href="https://doc.rust-lang.org/book/ch17-00-oop.html" target="_blank">object oriented</a> techniques using both <code>struct</code> and <code>impl</code>.
+                        <li>
+                            <p><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" target="_blank">Rust&mdash;Wikipedia</a> (open collaboration site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.tutorialspoint.com/rust/index.htm" target="_blank">Rust Tutorial&mdash;TutorialsPoint</a> (tutorial site)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.rust-lang.org/" target="_blank">Rust</a> (official site)</p>
+                        </li>
                     </ul>
                 </td>
                 <td>
-                  <p>To setup your development environment complete the following:</p>
-        
-                        <ul>
-                        <li><p>Install <a href="https://www.rust-lang.org/tools/install" target="_blank">Rust</a>.</p></li>
-                            <li><p>Visual Studio Code has support for Rust.  The <a href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust" target="_blank">Rust extension</a> can be installed in Visual Studio Code.  The cargo build tool can be run from the terminal.</p></li>
-                            <li>
-                              <p>Follow chapter 1 of the <a href="https://doc.rust-lang.org/book/index.html" target="_blank">Rust Programming Language Book</a> for step by step instructions for building a Hello World application using the cargo tool.</p>
-                            </li>
-                        </ul>
+                    <p>Write one or more programs in Rust that demonstrates the following:</p>
+
+                    <ul>
+                        <li>
+                            <p>Variables (<a href="https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html" target="_blank">mutable and unumutable</a>)</p>
+                        </li>
+                        <li>
+                            <p>Expressions</p>
+                        </li>
+                        <li>
+                            <p>Conditionals</p>
+                        </li>
+                        <li>
+                            <p>Loops</p>
+                        </li>
+                        <li>
+                            <p>Functions (<a href="https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html" target="_blank">ownership or reference</a>)</p>
+                        </li>
+                    </ul>
+
+                    <p>Use the <a href="language_rust/README.md" target="_blank">Rust README.md</a> template.</p>
+
+                    <p>Stretch Challenges (select one):</p>
+
+                    <ul>
+                        <li>
+                            <p>Modify your program to use <a href="https://www.tutorialspoint.com/rust/rust_structure.htm" target="_blank">a data structure (e.g. Vec, LinkedList, Hashmap)</a>.</p>
+                        </li>
+                        <li>
+                            <p>Modify your program to use <a href="https://www.tutorialspoint.com/rust/rust_slices.htm" target="_blank">slicing</a>.</p>
+                        </li>
+                        <li>
+                            <p>Modify your program to demonstrate <a href="https://doc.rust-lang.org/book/ch17-00-oop.html" target="_blank">object oriented</a> techniques using both <code>struct</code> and <code>impl</code>.
+                    </ul>
+                </td>
+                <td>
+                    <p>To setup your development environment complete the following:</p>
+
+                    <ul>
+                        <li>
+                            <p>Install <a href="https://www.rust-lang.org/tools/install" target="_blank">Rust</a>.</p>
+                        </li>
+                        <li>
+                            <p>Visual Studio Code has support for Rust. The <a href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust" target="_blank">Rust extension</a> can be installed in Visual Studio Code. The cargo build tool can be run from the terminal.</p>
+                        </li>
+                        <li>
+                            <p>Follow chapter 1 of the <a href="https://doc.rust-lang.org/book/index.html" target="_blank">Rust Programming Language Book</a> for step by step instructions for building a Hello World application using the cargo tool.</p>
+                        </li>
+                    </ul>
                 </td>
             </tr>
             <tr id="m_cyoa" style="background-color:LightGray">
                 <th style="width: 34%">Module</th>
                 <th style="width: 33%">Unique Requirements &amp; Stretch Challenges</th>
                 <th style="width: 33%">Guidance</th>
-            </tr>	
-            <tr >
+            </tr>
+            <tr>
                 <td>
                     <p style="font-weight: bold">Choose Your Own Adventure</p>
-                    
-                    <p>You select the programming language or the type of software to create.  This can be useful if there is a language, technology, or library that aligns well with either your major or interests.</p>
+
+                    <p>You select the programming language or the type of software to create. This can be useful if there is a language, technology, or library that aligns well with either your major or interests.</p>
                 </td>
                 <td>
-                    <p>Like other modules, you will need to write software to demonstrate your capability.  It is highly recommend that you communicate with your teacher before submitting your plan to get pre-approval.  In your plan you need to identify the requirements you will fulfill.  If you are learning a new programming language, you should consider the requirements in the other language modules.</p>
-                    
-                    <p>This module cannot be done for the first or second module in the course.  You must have at least a B in the course to select this module.</p>
-                    
+                    <p>Like other modules, you will need to write software to demonstrate your capability. It is highly recommend that you communicate with your teacher before submitting your plan to get pre-approval. In your plan you need to identify the requirements you will fulfill. If you are learning a new programming language, you should consider the requirements in the other language modules.</p>
+
+                    <p>This module cannot be done for the first or second module in the course. You must have at least a B in the course to select this module.</p>
+
                     <p>Use the <a href="cyoa/README.md" target="_blank">Choose Your Own Adventure README.md</a> template.</p>
-                    
-                    <p>You should propose a stretch challenge in your plan.</p>                    
+
+                    <p>You should propose a stretch challenge in your plan.</p>
                 </td>
                 <td>
-                    <p>If you want to do this module, it is highly recommended to do it for one of your last modules near the end of the course.  You should do initial research and communicate with your teacher at least a week before the plan submittal.</p>
+                    <p>If you want to do this module, it is highly recommended to do it for one of your last modules near the end of the course. You should do initial research and communicate with your teacher at least a week before the plan submittal.</p>
                 </td>
             </tr>
-            
+
         </table>
-        
-        
-		<script src="../../site/js/highlight/highlight.pack.js"></script>
-		<script>hljs.initHighlightingOnLoad();</script>
-        
-</article>
+
+
+        <script src="../../site/js/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+    </article>
 </body>
+
 </html>
