@@ -36,7 +36,7 @@
                 <p>You must write software of your own creation to demonstrate your understanding of the module. Submitting the code you wrote as part of a published tutorial online is not sufficient.</p>
             </li>
             <li>
-                <p>All code must be documented with useful comments.</p>
+                <p>All code must exceed 100 lines (not including setup) and must be documented with useful comments.</p>
             </li>
             <li>
                 <p>The software must include a README.md file at the top folder of the project. The template for each README.md file written in <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown Language</a> is different for each module and is provided in the detailed table below. You must fill out the template completely. This file will be publically viewable in GitHub so make sure to use good spelling, good grammar, and maintain professionalisim.</p>
@@ -50,6 +50,8 @@
         </ul>
 
         <p>If you are modifying software written in a previous module to support your new module, then you should reuse the same GitHub repository. However, the documentation and video need to be updated to reflect the changes made to your software by the new module. Included below is a description of each module.</p>
+
+        <p>NOTE: A project that was done in another course will not be accepted.</p>
 
         <h2>Language Modules</h2>
         <div class="accordion" id="accordionExample">
@@ -752,13 +754,9 @@
                 <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <h4>Module</h4>
-                        <p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in .NET. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 11 and earlier. If you want to explore the language through interactive examples, try the introduction to C# tutorials.</p>
+                        <p>C# is a modern, object-oriented programming language within the .NET framework, catering to secure and robust application development. Rooted in the C family, C# is familiar to developers acquainted with C, C++, Java, and JavaScript. It encompasses major language components and offers interactive tutorials for beginners to explore its capabilities.</p>
 
-                        <p>C# is an object-oriented, component-oriented programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices. At its core, C# is an object-oriented language. You define types and their behavior.</p>
-
-                        <p>Several C# features help create robust and durable applications. Garbage collection automatically reclaims memory occupied by unreachable unused objects. Nullable types guard against variables that don't refer to allocated objects. Exception handling provides a structured and extensible approach to error detection and recovery. Lambda expressions support functional programming techniques. Language Integrated Query (LINQ) syntax creates a common pattern for working with data from any source. Language support for asynchronous operations provides syntax for building distributed systems. C# has a unified type system. All C# types, including primitive types such as int and double, inherit from a single root object type. All types share a set of common operations. Values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined reference types and value types. C# allows dynamic allocation of objects and in-line storage of lightweight structures. C# supports generic methods and types, which provide increased type safety and performance. C# provides iterators, which enable implementers of collection classes to define custom behaviors for client code.</p>
-
-                        <p>C# emphasizes versioning to ensure programs and libraries can evolve over time in a compatible manner. Aspects of C#'s design that were directly influenced by versioning considerations include the separate virtual and override modifiers, the rules for method overload resolution, and support for explicit interface member declarations.</p>
+                        <p>It's fundamentally object-oriented and component-focused, supporting the creation and utilization of software components seamlessly. Offering features like garbage collection, nullable types, robust exception handling, lambda expressions, LINQ, asynchronous operations, a unified type system, and both reference and value types, C# promotes consistent operations across types. Moreover, it supports generic methods, iterators, and emphasizes versioning for evolution while ensuring compatibility, seen in aspects like separate virtual and override modifiers, method overload resolution rules, and explicit interface member declarations.</p>
 
                         <p>You can read more on sites such as the following:</p>
                         <ul>
@@ -1900,6 +1898,15 @@
                             <li>
                                 <p><a href="https://nodejs.dev/learn" target="_blank">Introduction to Node.js</a> (official site)</p>
                             </li>
+                            <li>
+                                <p><a href="https://www.tutorialspoint.com/nodejs/index.htm" target="_blank">Node.js Tutorial&mdash;TutorialsPoint</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://reactjs.org/docs/getting-started.html" target="_blank">React Documentation</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.tutorialspoint.com/reactjs/index.htm" target="_blank">React Tutorial&mdash;TutorialsPoint</a> (tutorial site)</p>
+                            </li>
                         </ul>
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
                         <p>Write a web app using one of the following frameworks:</p>
@@ -1942,7 +1949,7 @@
                             </li>
                         </ul>
                         <h4>Guidance</h4>
-                        <p>You are encouraged to use Django with Python for this module. In addition to the tutorials in the overview section above, the following notes may be useful to you:</p>
+                        <p>Django:</p>
                         <ul>
                             <li>
                                 <p>You can use pip to install Django: <code>pip install Django</code></p>
@@ -1958,6 +1965,34 @@
                                     </li>
                                     <li>
                                         <p><code>python manage.py runserver</code>—This will start your web app. You will need to open a web browser to open the web pages.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Node.js:</p>
+                        <ul>
+                            <li>
+                                <p>The following commands are useful:</p>
+                                <ul>
+                                    <li>
+                                        <p>Use npm to install Node.js packages and frameworks:  <code>npm install package_name</code></p>
+                                    </li>
+                                    <li>
+                                        <p>Initialize a Node.js project:  <code>npm init</code></p>
+                                    </li>
+                                    <li>
+                                        <p>Start your Node.js server:  <code>node server.js</code></p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>React:</p>
+                        <ul>
+                            <li>
+                                <p>The following commands are useful:</p>
+                                <ul>
+                                    <li>
+                                        <p>Create a new React app:  <code>npx create-react-app my-app</code></p>
                                     </li>
                                 </ul>
                             </li>
@@ -1998,7 +2033,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingNineA">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineA" aria-expanded="false" aria-controls="collapseNineA">
-                        Choose Your Own Adventure
+                        Self-Chosen Project
                     </button>
                 </h2>
                 <div id="collapseNineA" class="accordion-collapse collapse" aria-labelledby="headingNineA" data-bs-parent="#accordionExampleA">
@@ -2011,9 +2046,11 @@
 
                         <p>This module cannot be done for the first or second module in the course. You must have at least a B in the course to select this module.</p>
 
-                        <p>Use the <a href="cyoa/README.md" target="_blank">Choose Your Own Adventure README.md</a> template.</p>
+                        <p>Note that the module plan must be submitted ahead of time before submitting the final module (e.g you can't submit the plan and the module on the same day as the instructor won't have time to approve of the self-chosen project.)</p>
 
-                        <p>You should propose a stretch challenge in your plan.</p>
+                        <p>Use the <a href="cyoa/README.md" target="_blank">Self-Chosen Project README.md</a> template.</p>
+
+                        <p>You need to propose a stretch challenge in your plan if you plan on pursuing one.</p>
                         <h4>Guidance</h4>
                         <p>If you want to do this module, it is highly recommended to do it for one of your last modules near the end of the course. You should do initial research and communicate with your teacher at least a week before the plan submittal.</p>
                     </div>
@@ -2026,6 +2063,7 @@
         <script>hljs.initHighlightingOnLoad();</script>
 
     </article>
+
 </body>
 
 </html>
