@@ -37,7 +37,7 @@ This section should be filled out at the end of the Sprint and submitted.  For t
 
 |Question                                                    |Response|
 |------------------------------------------------------------|--------|
-|Are the links about public and working?                     |        |
+|Are the links above public and working?                     |        |
 |Did you complete all the unique requirements for the module?|        |
 |Did you write at least 100 lines of code?                   | N/A    |
 |Did you fully complete the readme.md file?                  |        |

@@ -8,7 +8,9 @@ This section should be filled out during Week 1 and submitted.
 
 ### Section 1.1 - Module Planning
 
-During this course you get to decide what technologies and languages you want to learn.  After looking at the Module Description document in Canvas, select 5 modules that interest you.  You will be responsible for learning the material and creating software to demonstrate what you learned.  The software that you write will be placed in your personal software portfolio. You can change you mind later in the course based on your experiences.  Try to select modules that stretch your current abilities.  Mark only one "X" in each of the five columns.  The "Choose Your Own Adventure" can only be selected starting in Sprint 3.
+During this course you get to decide what technologies and languages you want to learn.  After looking at the Module Description document in Canvas, select 5 modules that interest you.  You will be responsible for learning the material and creating software to demonstrate what you learned.  The software that you write will be placed in your personal software portfolio. You can change you mind later in the course based on your experiences.  Try to select modules that stretch your current abilities.  
+
+You will work on one module in every 2 week Sprint.  During the Sprint, you will spend 4 hours in class meetings, 4 hours on your team project (2 of which during class), and 10 hours on your selected module.  Mark only one "X" in each of the five columns.  The "Choose Your Own Adventure" can only be selected starting in Sprint 3.
 
 |Module                   |Sprint 1|Sprint 2|Sprint 3|Sprint 4|Sprint 5|
 |-------------------------|--------|--------|--------|--------|--------|

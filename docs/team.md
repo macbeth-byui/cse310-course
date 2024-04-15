@@ -10,19 +10,21 @@ This section should be filled out during the first Sprint and submitted by one m
 
 ### Section 1.1 - Initial Project Scope
 
-During this semester, you team will work together to create an application to help students in college.  Your app can be written for the web, mobile device, desktop, or command line.  The app must include some form of data storage in either a database or a file.  During Sprint 2 you will provide a more detailed scope of the project. 
+During this semester, your team will work together to create an application to help students in college.  Your app can be written for the web, mobile device, desktop, or command line.  The app must include some form of data storage in either a database or a file.  During Sprint 2 you will provide a more detailed scope of the project. 
 
 1. Provide a high level description of the software you plan to create:
 
 2. Describe the purpose of the Software:
 
-3. Identify the programming languages, framworks, and libraries you will most likely need to learn and use:
+3. Identify the programming languages, frameworks, and libraries you will most likely need to learn and use:
 
 ### Section 1.2 Communication
 
-1. What tool will use for team assignments (e.g. Trello, MS Planner, Asana)?
+1. What tool will use for team assignments (e.g. Trello, MS Planner, Asana)? 
 
-2. What tool will use for team communication (e.g. MS Teams, Slack, Discord)?
+2. What tool will use for team communication (e.g. MS Teams, Slack, Discord)? 
+
+3. Is every team members connected with the tools that you selected?
 
 ### Section 1.3 Team Roles
 
@@ -47,7 +49,7 @@ Team members will spend 4 hours per Sprint (2 in class and 2 outside of class) w
 |  2   |Prototyping and Detailed Software Planning      |
 |  3   |Core Feature Developemnt \ Sub-Team Development |
 |  4   |Integration & Continued Development             |
-|  5   |Itengration & Continued Development             |
+|  5   |Integration & Continued Development             |
 | Post |Refinement & Demo                               |
 
 Each Sprint you will present at the Team Review Meeting for 5 minutes.  You will use the 4-Square presentation template in Canvas.  During Week 13, you will provide a demo for 15 minutes.  You will use the final demo presentation template in Canvas.
@@ -60,13 +62,13 @@ All deliverables except the final project delivery will be a team pass/fail grad
 
 |Criteria                                     |Possible Points|
 |---------------------------------------------|---------------|
-|Many features implemented in working software|       30      |
+|Many features implemented in working software|       40      |
 |Published in GitHub                          |       20      |
-|Documentation & Comments                     |       10      |
-|Individual Participation                     |       40      |
+|Documentation & Comments                     |       20      |
+|Individual Participation                     |       20      |
 |**Total Points**                             |    **100**    |
 
-The individual participation component is based on your active participation on the team project during the Sprints.  If you participate in only 2 or fewer Sprints then you individually will eceive a 0 on the team project.  At the end of the semester, you will provide a report of your participation (including hours spent as recorded in your module logs).
+The individual participation component is based on your active participation on the team project during the Sprints.  If you participate in only 2 or fewer Sprints then you individually will receive a 0 on the team project.  At the end of the semester, you will provide a report of your participation (including hours spent as recorded in your module logs).
 
 1. Does every team member understand the grading rubric for the project?
 
@@ -81,6 +83,8 @@ This section should be filled out during the second Sprint and submitted by one 
 2. Software Description:
 
 3. Make a list of features that you plan to include in your software by the end of Week 13:
+
+4. Identify the programming languages, frameworks, and libraries you plan on using:
 
 ### Section 2.2 - Updated Team Roles
 
@@ -114,9 +118,9 @@ This section should be filled out during Week 13.
 
 3. Referring back to the list of planned requirements in Part 2 above, make a list of all the features.  Include in your list features that you added that were not originally planned.
 
-### Section 3.2 - Miscellaneous
+### Section 3.2 - Retrospection
 
 1. Did all team members create a fork of the public GitHub repository to include in their own personal software portfolio?
 
-2. Spend at least 10 minutes as a team have a retrospection meeting (also called a lessons learned).  Identify 3 things that went well and 3 things that did not go well.  Scope your observations about the team and not about specific individuals.  For the things that did not go well, identify how you can improve in future team projects.
+2. Spend at least 10 minutes as a team have a retrospection meeting (also called a lessons learned).  Identify 3 things that went well and 3 things that did not go well.  Scope your observations to be about the team and not about specific individuals.  For the things that did not go well, identify how you can improve in future team projects.
 

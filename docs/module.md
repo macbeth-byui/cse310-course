@@ -51,7 +51,7 @@ During the Sprint, you will spend 4 hours in class meetings, 4 hours on your tea
 
 This section should be filled out during the Sprint. 
 
-Record all CSE 310 work that you do in and outside of class.  You will need to sum of these hours at the end of the Sprint. Note that `IM` stands for Individual Module and `TP` stands for Team Project.  Note that the hours you report will affect your grades.
+Record all CSE 310 work that you do on your individual module or the team project.  Don't include time spent in the Planning, Stand-Up, Team Review, and Individual Review meetings during class.  You will need to sum of these hours at the end of the Sprint. Note that `IM` stands for Individual Module and `TP` stands for Team Project.  Note that the hours you report will affect your grades.
 
 |Date      |Start Time|IM or TP|Description                                 |Hours:Minutes|
 |----------|----------|--------|--------------------------------------------|-------------|
@@ -77,7 +77,7 @@ This section should be filled out at the end of the Sprint and submitted.
 
 |Question                                                    |Response|
 |------------------------------------------------------------|--------|
-|Are the links about public and working?                     |        |
+|Are the links above public and working?                     |        |
 |Did you complete all the unique requirements for the module?|        |
 |Did you write at least 100 lines of code?                   |        |
 |Did you add comments to your code?                          |        |
