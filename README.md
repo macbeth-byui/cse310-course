@@ -1,3 +1,3 @@
-# cse310-course
+# CSE 310 - Applied Programming
 
-Bro Macbeth's Sections
+The docs folder contains all of the markdown and powerpoint templates used in the course.
