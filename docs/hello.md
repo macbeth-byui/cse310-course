@@ -45,12 +45,12 @@ This section should be filled out at the end of the Sprint and submitted.  For t
 
 4. In each Sprint, you will have the opportunity to complete an optional Stretch Challenge for bonus points.  You will normally report what you did here.  There is no Stretch Challenge for Hello World.
 
-5. Using the log above, fill in the total hours and minutes you spent on the individual module and the team project below:
+5. Using the log above, fill in the total hours and minutes you spent on the individual module:
 
 |Activity         |Total Hours:Minutes|
-|-----------------|--------------------|
-|Individual Module|                    |
-|Team Project     |                    |
+|-----------------|-------------------|
+|Individual Module|                   |
+
 
 6. What strategies (behavioral and technical) worked well during this Sprint?  What did not work well?  List some possible ways that you can improve next Sprint.
 

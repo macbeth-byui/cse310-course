@@ -80,7 +80,6 @@ This section should be filled out at the end of the Sprint and submitted.
 |Are the links above public and working?                     |        |
 |Did you complete all the unique requirements for the module?|        |
 |Did you write at least 100 lines of code?                   |        |
-|Did you add comments to your code?                          |        |
 |Did you fully complete the readme.md file?                  |        |
 |Did you put the readme.md file in GitHub in the top folder? |        |
 
@@ -88,12 +87,11 @@ This section should be filled out at the end of the Sprint and submitted.
 
 5. Did you change your selected module during the middle of the Sprint?  If yes, then describe what you changed it to, when you changed it, and why you changed it.
 
-6. Using the log above, fill in the total hours and minutes you spent on the individual module and the team project below:
+6. Using the log above, fill in the total hours and minutes you spent on the individual module:
 
-|Activity         |Total Hours:Minutes |
-|-----------------|--------------------|
-|Individual Module|                    |
-|Team Project     |                    |
+|Activity         |Total Hours:Minutes|
+|-----------------|-------------------|
+|Individual Module|                   |
 
 7. What strategies (behavioral and technical) worked well during this Sprint?  What did not work well?  List some possible ways that you can improve next Sprint.
 

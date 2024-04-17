@@ -4,13 +4,13 @@ Canvas Team Number:
 
 Team Member Names:
 
-## Part 1 - Team Project Initial Planning
+## Part 1 - Initial Planning
 
 This section should be filled out during the first Sprint and submitted by one member of the team.
 
 ### Section 1.1 - Initial Project Scope
 
-During this semester, your team will work together to create an application to help students in college.  Your app can be written for the web, mobile device, desktop, or command line.  The app must include some form of data storage in either a database or a file.  During Sprint 2 you will provide a more detailed scope of the project. 
+During this semester, your team will work together to create an application to help students in college.  Your app can be written for the web, mobile device, desktop, or terminal.  The app must include some form of data storage in either a database or a file.  During Sprint 2 you will provide a more detailed scope of the project. 
 
 1. Provide a high level description of the software you plan to create:
 
@@ -58,21 +58,20 @@ Each Sprint you will present at the Team Review Meeting for 5 minutes.  You will
 
 ### Section 1.5 - Grading
 
-All deliverables except the final project delivery will be a team pass/fail grade.  The final project delivery will be a combination team and individual grade as follows:
+All deliverables except the final project delivery will be a team pass/fail grade.  The final project delivery will be a team grade as follows:
 
 |Criteria                                     |Possible Points|
 |---------------------------------------------|---------------|
 |Many features implemented in working software|       40      |
-|Published in GitHub                          |       20      |
-|Documentation & Comments                     |       20      |
-|Individual Participation                     |       20      |
+|Published in GitHub                          |       40      |
+|Readme.md Documentation                      |       20      |
 |**Total Points**                             |    **100**    |
 
-The individual participation component is based on your active participation on the team project during the Sprints.  If you participate in only 2 or fewer Sprints then you individually will receive a 0 on the team project.  At the end of the semester, you will provide a report of your participation (including hours spent as recorded in your module logs).
+Each team member will report their individual participation each Sprint using a Canvas quiz.  These points will represent the individual grade on the project.
 
 1. Does every team member understand the grading rubric for the project?
 
-## Part 2 - Team Project Feature Planning
+## Part 2 - Final Planning
 
 This section should be filled out during the second Sprint and submitted by one member of the team.
 
@@ -82,7 +81,7 @@ This section should be filled out during the second Sprint and submitted by one 
 
 2. Software Description:
 
-3. Make a list of features that you plan to include in your software by the end of Week 13:
+3. Make a list of features that you plan to include in your software by the end of Week 13.  List your features in terms of priority (highest priority items listed first):
 
 4. Identify the programming languages, frameworks, and libraries you plan on using:
 
@@ -99,7 +98,7 @@ You can change the roles of team members if desired.  Provide the updated list o
 |Create & Display Presentations  |                    |
 |Submit Team Assignments         |                    |
 
-## Part 3 - Team Project Results
+## Part 3 - Results
 
 This section should be filled out during Week 13.
 
