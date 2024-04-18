@@ -12,7 +12,9 @@ This section should be filled out during the Sprint. For the Hello World program
 
 ### Section 2.1 Time Log
 
-Record all CSE 310 work that you do in and outside of class.  You will need to calculate the sum of these hours at the end of the Sprint.  Note that `IM` stands for Individual Module and `TP` stands for Team Project.  Note that the hours you report will affect your grades.
+Record all CSE 310 work that you do on your individual module (Hello World this week) or the team project.  Include time learning, practicing, developing, testing, and documenting.  Don't include time spent in the 4 class meetings (Planning, Stand-Up, Team Review, and Individual Review).  You will need to sum of these hours at the end of the Sprint. Note that the hours you report will affect your grades.
+
+Note that `IM` stands for Individual Module and `TP` stands for Team Project.
 
 |Date      |Start Time|IM or TP|Description                                 |Hours:Minutes|
 |----------|----------|--------|--------------------------------------------|-------------|
