@@ -62,8 +62,8 @@ All deliverables except the final project delivery will be a team pass/fail grad
 
 |Criteria                                     |Possible Points|
 |---------------------------------------------|---------------|
-|Many features implemented in working software|       40      |
-|Published in GitHub                          |       40      |
+|Published in GitHub                          |       50      |
+|Many features implemented in working software|       30      |
 |Readme.md Documentation                      |       20      |
 |**Total Points**                             |    **100**    |
 
@@ -83,7 +83,17 @@ This section should be filled out during the second Sprint and submitted by one 
 
 3. Make a list of features that you plan to include in your software by the end of Week 13.  List your features in terms of priority (highest priority items listed first):
 
-4. Identify the programming languages, frameworks, and libraries you plan on using:
+|Feature #|Description                                               |
+|---------|----------------------------------------------------------|
+|         |                                                          |
+|         |                                                          |
+|         |                                                          |
+|         |                                                          |
+
+_Note: Add more rows as needed._
+
+
+4. Identify the programming languages, frameworks, and libraries you will be using:
 
 ### Section 2.2 - Updated Team Roles
 
@@ -115,11 +125,20 @@ This section should be filled out during Week 13.
 |Did you fully complete the readme.md file?                  |        |
 |Did you put the readme.md file in GitHub in the top folder? |        |
 
-3. Referring back to the list of planned requirements in Part 2 above, make a list of all the features.  Include in your list features that you added that were not originally planned.
+3. Referring back to the list of planned requirements in Part 2 above, make a list of all the features and their status (Completed, In Progress, Not Started).  Include in your list features that you added or attempted that were not originally planned.
+
+|Feature #|Status     |Description                                               |
+|---------|-----------|----------------------------------------------------------|
+|         |           |                                                          |
+|         |           |                                                          |
+|         |           |                                                          |
+|         |           |                                                          |
+
+_Note: Add more rows as needed._
 
 ### Section 3.2 - Retrospection
 
 1. Did all team members create a fork of the public GitHub repository to include in their own personal software portfolio?
 
-2. Spend at least 10 minutes as a team have a retrospection meeting (also called a lessons learned).  Identify 3 things that went well and 3 things that did not go well.  Scope your observations to be about the team and not about specific individuals.  For the things that did not go well, identify how you can improve in future team projects.
+2. Spend at least 10 minutes as a team have a retrospection meeting (also called a lessons learned).  Identify 3 things that went well and 3 things that did not go well.  Scope your observations to the team and not about specific individuals.  For the things that did not go well, identify how you can improve in future team projects.
 
