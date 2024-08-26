@@ -30,7 +30,7 @@
 
         <h2>Time Expectation</h2>
 
-        <p>Each Sprint you will be expected to spend the following time:</p>
+        <p>Each Sprint you will be expected to spend at least the following amount of time:</p>
         
         <ul>
             <li>
@@ -55,13 +55,13 @@
                 <p>You must write software of your own creation to demonstrate your understanding of the module. Submitting the code you wrote as part of a published tutorial online is not sufficient.  A project you wrote in a previous or current course is not acceptable.</p>
             </li>
             <li>
-                <p>All software must be sufficiently large engough to meet the unique module requirements.</p>
+                <p>All software must be sufficiently large engough to satisfy the 5 unique requirements that exist for each module.</p>
             </li>
             <li>
                 <p>The software must include a README.md file at the top folder of the project. You must use this template:  <a href="readme.md" target="_blank">readme.md</a>.  As with everything you submit, make sure this is done professionally since it is in a public repository.  Your code should contain useful comments as well.</p>
             </li>
             <li>
-                <p>A 5 minute video demonstrating the execution of the software and a walkthrough of the code must be created and uploaded publicly (or unlisted if desired) to a site like YouTube.</p>
+                <p>A video demonstrating the execution of the software and a walkthrough of the code must be created and uploaded publicly (or unlisted if desired) to a site like YouTube.</p>
             </li>
             <li>
                 <p>All the code including the README.md file must be published in a public GitHub repository. Each module must be in a <strong>separate GitHub repository</strong>. The name of the repository should reflect the software you wrote (e.g. MenuPlanner) or the technology that you used (e.g. KotlinPractice). Don't use generic names like "Module1" or "CSE310Project2".</p>
@@ -127,15 +127,25 @@
                             </li>
                         </ul>
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
-                        <p>Develop software that interacts with a cloud database. The software must have the following characteristics:</p>
-                        <ul>
+                        <p>Develop software that interacts with a cloud database. The following 5 things must be done:</p>
+                        <ol>
                             <li>
-                                <p>You must create a database using a cloud service for your program to use including at least one table to store data into.</p>
+                                <p>Create a cloud database with at least one table (In Firestore, a table is called a collection).</p>
                             </li>
                             <li>
-                                <p>Your software must demonstrate the ability to insert, modify, delete, and retrieve (or query) data.</p>
+                                <p>Software should query data from the database.</p>
                             </li>
-                        </ul>
+                            <li>
+                                <p>Software should add new data to the database.</p>
+                            </li>
+                            <li>
+                                <p>Software should update data from the database.</p>
+                            </li>
+                            <li>
+                                <p>Software should delete data from the database.</p>
+                            </li>
+                        </ol>
+                        
 
                         <p>Stretch Challenges (select one):</p>
                         <ul>
@@ -235,21 +245,25 @@
                             </li>
                         </ul>
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
-                        Write software to analyze a set of data to answer two questions about that data as detailed below:</p>
-                        <ul>
+                        Write software to analyze a set of data.  The following 5 things must be done:</p>
+                        <ol>
                             <li>
-                                <p>Find a free dataset that interests you.</p>
+                                <p>Find or create a dataset that interests you.</p>
                             </li>
                             <li>
-                                <p>Identify the two questions about the dataset on your own. You might change your questions after you explore the data further.</p>
+                                <p>Use software to analyze and answer two questions about the data.</p>
                             </li>
                             <li>
-                                <p>Write a program in any programming language using a statistics library (e.g. R or Python Pandas) to analyze the dataset and provide an answer to your questions. </p>
+                                <p>Software analysis should include a filter.</p>
                             </li>
                             <li>
-                                <p>You must demonstrate the ability to do one or more of the following to achieve each answer: filter, sort, aggregate (sum, average, count), or data conversion. </p>
+                                <p>Software analysis should include a sort.</p>
                             </li>
-                        </ul>
+                            <li>
+                                <p>Software analysis should include an aggregation.</p>
+                            </li>
+
+                        </ol>
                         <p>You can also use this module to explore Machine Learning. You will need to propose a project different requirements in your project plan.</p>
 
 
@@ -360,20 +374,30 @@
                             </li>
                         </ul>
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
-                        <p>Write a simple game using any game framework such as PyGame, Arcade (Python), or Godot.  You can also create your own by using graphics packages like OpenGL or Raylib.</p>
+                        <p>Write a simple game using any game framework (e.g PyGame, Arcade (Python), or Godot).  The following 5 things must be done:</p>
 
-                        <p>The game must have the following characteristics:</p>
-                        <ul>
+                        <ol>
                             <li>
-                                <p>The game must display graphics</p>
+                                <p>The game must display a background</p>
+                            </li>
+                            <li>
+                                <p>The game must have at least 1 un-movable object</p>
+                            </li>
+                    
+                            <li>
+                                <p>The game must have at least 1 moveable object</p>
+                            </li>
+                    
+                            <li>
+                                <p>The game must include collisions of at least 2 objects</p>
                             </li>
                             <li>
                                 <p>The game must take user input from the keyboard or mouse</p>
                             </li>
-                            <li>
-                                <p>The game must have moveable objects</p>
-                            </li>
-                        </ul>
+
+
+                            
+                        </ol>
 
 
                         <p>Stretch Challenges (select one):</p>
@@ -468,15 +492,24 @@
                             </li>
                         </ul>
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
-                        <p>Create a website or mobile app that generates a map using a mapping library like ArcGIS or Google Maps. The map must include markers showing useful information. The map must have the following characterstics:</p>
-                        <ul>
+                        <p>Create a website or mobile app that generates a map using a mapping library like ArcGIS or Google Maps. The following 5 things must be done:</p>
+                        <ol>
                             <li>
-                                <p>You must have at least 20 markers on the map</p>
+                                <p>Display a basemap (e.g. roads, satellite, topographical, etc)</p>
                             </li>
                             <li>
-                                <p>When the user clicks on a marker, a popup must be displayed showing information about the marker. If you are using a mobile app, you can display the information in something native to the platform (e.g. Android Toast).</p>
+                                <p>Place at least 20 markers on the map</p>
                             </li>
-                        </ul>
+                            <li>
+                                <p>Store information about each marker in the map</p>
+                            </li>                            
+                            <li>
+                                <p>Provide the ability to click on a marker and display the information about the marker.</p>
+                            </li>
+                            <li>
+                                <p>Provide a title on the website or app.</p>
+                            </li>                            
+                        </ol>
 
 
                         <p>Stretch Challenges (select one):</p>
@@ -584,16 +617,29 @@
                                 <p><a href="https://flutter.dev/" target="_blank">Flutter/Dart</a> - Creates Web/Android/iOS compatible apps</p>
                             </li>
                         </ul>
-                        <p>The app must have the following characteristics:</p>
+                        <p>The following 5 things must be done:</p>
 
-                        <ul>
+                        <ol>
                             <li>
-                                <p>Have at least one screen</p>
+                                <p>The app should have at least one screen</p>
                             </li>
                             <li>
-                                <p>Be interactive with the user (e.g. responds to inputs by displaying appropriate outputs)</p>
+                                <p>Provide at least 1 input from the user (e.g. tap, double-tap, swipe)</p>
                             </li>
-                        </ul>
+
+                            <li>
+                                <p>The display should change after the input from the user.</p>
+                            </li>
+
+                            <li>
+                                <p>Display a picture</p>
+                            </li>
+
+                            <li>
+                                <p>Provide a custom icon for the app on the phone</p>
+                            </li>
+
+                        </ol>
 
 
                         <p>Stretch Challenges (select one):</p>
@@ -719,15 +765,24 @@
                                 <p>Peer-to-Peer Model—You will need to write one program for the peer to both send and receive.</p>
                             </li>
                         </ul>
-                        <p>The software must have the following characteristics:</p>
-                        <ul>
+                        <p>The following 5 things must be done:</p>
+                        <ol>
                             <li>
-                                <p>The client or peer must send a request to the server or another peer. A response must be sent back and used (e.g. displayed)</p>
+                                <p>The server (or peer) listens for connections on an ip address (localhost is okay) and a port number you select</p>
                             </li>
                             <li>
-                                <p>You can use either TCP or UDP.</p>
+                                <p>The client (or peer) connects to an already waiting server (or peer)</p>
                             </li>
-                        </ul>
+                            <li>
+                                <p>The client (or peer) sends at least one type of request message to the server (or peer)</p>
+                            </li>
+                            <li>
+                                <p>The server (or peer) processes the request and sends a response back to the client (or peer)</p>
+                            </li>
+                            <li>
+                                <p>The server (or peer) can handle a client disconnecting allowing another client to connect</p>
+                            </li>
+                        </ol>
 
 
                         <p>Stretch Challenges (select one):</p>
@@ -736,7 +791,7 @@
                                 <p>Provide support for at least three different kinds of requests that the server or the peer can respond to.</p>
                             </li>
                             <li>
-                                <p>Provide a graphical user interface (GUI) for your program instead of the command line.</p>
+                                <p>Provide support for two or more clients (or peers) to connect to the server at the same time.</p>
                             </li>
                             <li>
                                 <p>Modify the server or the peer to obtain information from a local file or database in response to a request from the client or another peer.</p>
@@ -822,19 +877,24 @@
                             </li>
                         </ul>
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
-                        <p>Write a program that intereacts with a relational database using SQL. The software must have the following characteristics:</p>
-
-                        <ul>
+                        <p>Develop software that interacts with a SQL relational database. The following 5 things must be done:</p>
+                        <ol>
                             <li>
-                                <p>You must create a database for your program to use including at least one table to store data into.</p>
+                                <p>Create a SQL database with at least one table (your software can create the table or you can use already existing table).</p>
                             </li>
                             <li>
-                                <p>Your software must demonstrate the ability to insert, modify, delete, and retrieve (or query) data.</p>
+                                <p>Software should query data from the database.</p>
                             </li>
                             <li>
-                                <p>This module requires more than just creating the database and determining SQL commands. You must write software that builds the SQL commands, submits them, receives the results from the database, and uses the results in some way.</p>
+                                <p>Software should add new data to the database.</p>
                             </li>
-                        </ul>
+                            <li>
+                                <p>Software should update data from the database.</p>
+                            </li>
+                            <li>
+                                <p>Software should delete data from the database.</p>
+                            </li>
+                        </ol>
 
 
                         <p>Stretch Challenges (select one):</p>
@@ -953,19 +1013,26 @@
                             </li>
                         </ul>
 
-                        The web app must have the following characteristics:</p>
+                        <p>The following 5 things must be done:</p>
 
-                        <ul>
+                        <ol>
                             <li>
-                                <p>Must have at least two HTML pages populated by content determined by your code. However, if you use React, then you can keep to a single page with multiple interactions.</p>
+                                <p>Generate at least 1 HTML page from the app.</p>
                             </li>
                             <li>
-                                <p>Your software must be interactive meaning that the content displayed in your web app must be in some part based on user input. </p>
+                                <p>Include pictures and/or CSS that are stored with the app code.</p>
                             </li>
                             <li>
-                                <p>The web app must run on your local computer using the test server provided by your framework.  If desired, you can host your web app on a cloud server.</p>
+                                <p>Accept input from the user (e.g. form, button, etc)</p>
                             </li>
-                        </ul>
+                            <li>
+                                <p>Perform error checking on the input from the user</p>
+                            </li>
+
+                            <li>
+                                <p>Modify content of HTML generated by the app based on user input</p>
+                            </li>                            
+                        </ol>
 
 
                         <p>Stretch Challenges (select one):</p>
@@ -977,6 +1044,10 @@
                             <li>
                                 <p>Add an additional (third) dynamically generated web page to your app.</p>
                             </li>
+                            <li>
+                                <p>Integrate a Python or Javascript library to perform work on the user input</p>
+                            </li>
+
                         </ul>
                         <h4>Guidance</h4>
                         <p>Django:</p>
@@ -1084,15 +1155,9 @@
                             </li>
                         </ul>
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
-                        <p>Write one or more programs in C++ that demonstrates the following:</p>
+                        <p>Write one or more programs in C++ that demonstrates the following 5 things:</p>
 
-                        <ul>
-                            <li>
-                                <p>Variables</p>
-                            </li>
-                            <li>
-                                <p>Expressions</p>
-                            </li>
+                        <ol>
                             <li>
                                 <p>Conditionals</p>
                             </li>
@@ -1108,7 +1173,7 @@
                             <li>
                                 <p>Data structure from STL (such as a vector, list, or map)</p>
                             </li>
-                        </ul>
+                        </ol>
 
 
                         <p>Stretch Challenges (select one):</p>
@@ -1201,15 +1266,9 @@
                             </li>
                         </ul>
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
-                        <p>Write one or more programs in Java that demonstrates the following:</p>
+                        <p>Write one or more programs in Java that demonstrates the following 5 things:</p>
 
-                        <ul>
-                            <li>
-                                <p>Variables</p>
-                            </li>
-                            <li>
-                                <p>Expressions</p>
-                            </li>
+                        <ol>
                             <li>
                                 <p>Conditionals</p>
                             </li>
@@ -1225,7 +1284,7 @@
                             <li>
                                 <p>Data structure from Java Collection Framework (such as ArrayList, TreeSet, or HashMap)</p>
                             </li>
-                        </ul>
+                        </ol>
 
 
                         <p>Stretch Challenges (select one):</p>
@@ -1315,14 +1374,11 @@
                             </li>
                         </ul>
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
-                        <p>Write one or more programs in Kotlin that demonstrates the following:</p>
+                        <p>Write one or more programs in Kotlin that demonstrates the following 5 things:</p>
 
-                        <ul>
+                        <ol>
                             <li>
                                 <p>Variables (<a href="https://www.programiz.com/kotlin-programming/variable-types" target="_blank">mutable and immutable</a>)</p>
-                            </li>
-                            <li>
-                                <p>Expressions</p>
                             </li>
                             <li>
                                 <p>Conditionals</p>
@@ -1336,7 +1392,7 @@
                             <li>
                                 <p>Classes</p>
                             </li>
-                        </ul>
+                        </ol>
 
 
                         <p>Stretch Challenges (select one):</p>
@@ -1444,12 +1500,9 @@
                             </li>
                         </ul>
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
-                        <p>Write multiple functions (not necessarily part of a single piece of software) in Erlang that demonstrates the following:</p>
+                        <p>Write multiple functions (not necessarily part of a single piece of software) in Erlang that demonstrates the following 5 things:</p>
 
-                        <ul>
-                            <li>
-                                <p>Display output to the screen using <code>format</code>.</p>
-                            </li>
+                        <ol>
                             <li>
                                 <p>Pattern Matching in function parameters</p>
                             </li>
@@ -1465,7 +1518,7 @@
                             <li>
                                 <p>Using lambda functions with <code>lists:map</code>, <code>lists:filter</code>, or <code>lists:foldl</code></p>
                             </li>
-                        </ul>
+                        </ol>
 
                         <p>You can use this module to learn any Functional Programming language. If you pick a different language, you may need to modify the requirements.</p>
 
@@ -1554,25 +1607,25 @@
                             </li>
                         </ul>
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
-                        <p>Write multiple functions (not necessarily part of a single piece of software) in TypeScript that demonstrates the following:</p>
+                        <p>Write multiple functions (not necessarily part of a single piece of software) in TypeScript that demonstrates the following 5 things:</p>
 
-                        <ul>
+                        <ol>
                             <li>
-                                <p>Display output to the terminal.</p>
+                                <p>Varaibles with data types</p>
                             </li>
                             <li>
-                                <p>Recursion</p>
+                                <p>Functions with data types</p>
                             </li>
                             <li>
                                 <p>Classes</p>
                             </li>
                             <li>
-                                <p>Lists</p>
+                                <p>Arrays</p>
                             </li>
                             <li>
-                                <p>Asynchronous functions</p>
+                                <p>Tuples</p>
                             </li>
-                        </ul>
+                        </ol>
 
 
                         <p>Stretch Challenges (select one):</p>
@@ -1658,36 +1711,36 @@
                         <h4>Unique Requirements &amp; Stretch Challenges</h4>
                         <p>Write one or more programs in Rust that demonstrates the following:</p>
 
-                        <ul>
+                        <ol>
                             <li>
                                 <p>Variables (<a href="https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html" target="_blank">mutable and unumutable</a>)</p>
-                            </li>
-                            <li>
-                                <p>Expressions</p>
-                            </li>
-                            <li>
-                                <p>Conditionals</p>
                             </li>
                             <li>
                                 <p>Loops</p>
                             </li>
                             <li>
-                                <p>Functions (<a href="https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html" target="_blank">ownership or reference</a>)</p>
+                                <p>Functions (<a href="https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html" target="_blank">transfer ownership or borrow reference</a>)</p>
                             </li>
-                        </ul>
+                            <li>
+                                <p>The <code>vec</code> (list) data structure</p>
+                            </li>                            
+                            <li>
+                                <p>The <code>match</code> keyword</p>
+                            </li>
+                        </ol>
 
 
                         <p>Stretch Challenges (select one):</p>
 
                         <ul>
                             <li>
-                                <p>Modify your program to use <a href="https://www.tutorialspoint.com/rust/rust_structure.htm" target="_blank">a data structure (e.g. Vec, LinkedList, Hashmap)</a>.</p>
+                                <p>Modify your program to use <a href="https://doc.rust-lang.org/book/ch05-01-defining-structs.html" target="_blank"><code>struct</code></a>.</p>
                             </li>
                             <li>
-                                <p>Modify your program to use <a href="https://www.tutorialspoint.com/rust/rust_slices.htm" target="_blank">slicing</a>.</p>
+                                <p>Modify your program to use either <code>Option</code> or <code>Result</code> as the return type of a function.
                             </li>
                             <li>
-                                <p>Modify your program to demonstrate <a href="https://doc.rust-lang.org/book/ch17-00-oop.html" target="_blank">object oriented</a> techniques using both <code>struct</code> and <code>impl</code>.
+                                <p>Modify your program to use <a href="https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html" target="_blank"><code>enum</code></a>.</p>
                         </ul>
                         <h4>Guidance</h4>
                         <p>To setup your developmenthenvironment complete the following:</p>
