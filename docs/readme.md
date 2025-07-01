@@ -1,10 +1,7 @@
-## Overview
+# Project Title (Update)
 
-**Project Title**:
+Add a description of your project here.
 
-**Project Description**:
-
-**Project Goals**:
 
 ## Instructions for Build and Use
 
