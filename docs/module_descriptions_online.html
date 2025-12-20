@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="site/style.css" />
+    <title>CSE 310 - Module Summary</title>
+    <link rel="shortcut icon" href="site/310-taylor.png" type="image/x-icon">
+</head>
+
+<body>
+    <header id="courseTitle">
+        <span class="icon-byui-logo"></span>
+        <h1>CSE 310 | Applied Programming</h1>
+    </header>
+    <article>
+        <h1>Module Descriptions</h1>
+
+        <h2>Overview</h2>
+
+        <p>In this course, you will select 6 modules to complete individually. Available modules are listed at the bottom of this page.</p>
+
+        <p>Each module will require you to use your current programming knowledge to learn new languages, tools, techniques, and libraries. You should select modules that you have little or now experience with.  If you want to build your knowledge in something you have already done before, you can ask your teacher for permission.  Additionally, you can build upon software written from a previous module. For example, over three modules you could first learn Kotlin, then create an Android app with that Kotlin code, and then finally you can connect your Android app with a cloud database like Firestore.</p>
+
+        <p>Each module will be completed in a two week Sprint. You will need to submit a plan on the Wednesday of the first week. During the Sprint you will need to keep track of how much time you spend working on your module. By the end of the second week, you will need to submit your demonstration software for the module. Your module will be graded based on both requirements listed below and time expectations.</p>
+
+        <h2>Time Expectation</h2>
+
+        <p>Each Sprint you will be expected to spend at least 12 hours working on your module project.  
+
+        <h2>Common Requirements for all Modules</h2>
+
+        <p>The software you write for each module has the following common requirements:</p>
+        <ul>
+            <li>
+                <p>You must write software of your own creation to demonstrate your understanding of the module. Submitting the code you wrote as part of a published tutorial online is not sufficient.</p>
+            </li>
+            <li>
+                <p>All code must exceed 100 lines (not including setup) and must be documented with useful comments.</p>
+            </li>
+            <li>
+                <p>The software must include a README.md file at the top folder of the project. The template for each README.md file written in <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown Language</a> is different for each module and is provided in the detailed table below. You must fill out the template completely. This file will be publically viewable in GitHub so make sure to use good spelling, good grammar, and maintain professionalisim.</p>
+            </li>
+            <li>
+                <p>A 4-5 minute video demonstrating the execution of the software and a walkthrough of the code must be created and uploaded publicly (or unlisted if desired) to a site like YouTube. A link to the video must be included in the README.md file. The video should serve as a training video for someone else to learn what you learned.</p>
+            </li>
+            <li>
+                <p>All the code including the README.md file must be published in a public GitHub repository. Each module must be in a <strong>separate GitHub repository</strong>. The name of the repository should reflect the software you wrote (e.g. MenuPlanner) or the technology that you used (e.g. KotlinPractice). Don't use generic names like "Module1" or "CSE310Project2".</p>
+            </li>
+        </ul>
+
+        <p>If you are modifying software written in a previous module to support your new module, then you should reuse the same GitHub repository. However, the documentation and video need to be updated to reflect the changes made to your software by the new module.</p>
+
+        <h2>Grading</h2>
+
+        <p>Your modules are graded based on the time you spent (minimum of 12 hours), the published demonstration software in GitHub, and documentation including your video. The rubric is very much "checklist-based". Feedback is best obtained during the Sprint while you are working on the project and when you demo your software.  If you would like feedback after the Sprint, it is best to meet with your teacher.  Even though you are being asked to learn the material on your own, your teacher is your coach and mentor.  You can get help at any time on your project.  (The teachers really like it when you ask for help!!)</p>
+
+        <h2>Resources</h2>
+
+        <p>There are many resources available to you to learn material in these modules.  The descriptions below provide some suggested links to consider.  In general, you are expected to use the following resources:</p>
+        <ul>
+            <li>
+                <p>Official Reference Websites</p>
+            </li>
+            <li>
+                <p>Tutorial Websites</p>
+            </li>
+            <li>
+                <p>AI Tools such as ChatGPT</p>
+            </li>
+            <li>
+                <p>Videos from sites like YouTube</p>
+            </li>
+            <li>
+                <p>Actual Books from the Library (or E-Book on Safari Online via the McKay Library)</p>
+            </li>
+            <li>
+                <p>Your teacher, peers, and other knowledgable friends and family</p>
+            </li>
+        </ul>
+
+        <p>In your README file, you will be asked to provide a list of website sources that you found helpful.</p>
+
+        <h2>Modules</h2>
+        <div class="accordion" id="accordionExample">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOneA">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneA" aria-expanded="false" aria-controls="collapseOneA">
+                        Cloud Databases
+                    </button>
+                </h2>
+                <div id="collapseOneA" class="accordion-collapse collapse" aria-labelledby="headingOneA" data-bs-parent="#accordionExampleA">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>Cloud data storage is a convenient solution which removes the requirement for an individual or company to maintain their own database server. Tools like <a href="https://firebase.google.com/" target="_blank">Google Firebase</a>, <a href="https://aws.amazon.com/dynamodb/" target="_blank">Amazon DynamoDB</a>, and <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> will provide you a database which you can access using an API (function calls from a library). The use of these cloud databases is frequently free for simple projects, but will cost when scaled up. Cloud databases provide a mix of various types of databases, including relational and key/value. A key/value database (which is recommended in the instructions) will store data into maps that can be queried either in whole, in parts, or in filtered parts. A key/value database is also commonly called a NoSQL database. The APIs for each database will vary and provide these capabilities. </p>
+
+                        <p>You can read more on sites like the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://www.mongodb.com/cloud-database" target="_blank">Overview of Cloud Databases - MongoDB (company-sponsored site)</a></p>
+                            </li>
+                            <li>
+                                <p><a href="https://learning.oreilly.com/library/view/an-introduction-to/9781492044857/ch01.html" target="_blank">An Introduction to Cloud Databases: Chapter 1 (electronic book)</a></p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.guru99.com/nosql-tutorial.html" target="_blank">NoSQL Tutorial - Guru99 (tutorial site)</a></p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Develop software that interacts with a cloud database. The following 5 things must be done:</p>
+                        <ol>
+                            <li>
+                                <p>Create a cloud database with at least one table (In Firestore, a table is called a collection).</p>
+                            </li>
+                            <li>
+                                <p>Software should query data from the database.</p>
+                            </li>
+                            <li>
+                                <p>Software should add new data to the database.</p>
+                            </li>
+                            <li>
+                                <p>Software should update data from the database.</p>
+                            </li>
+                            <li>
+                                <p>Software should delete data from the database.</p>
+                            </li>
+                        </ol>
+                        
+
+                        <p>Stretch Challenges (select one):</p>
+                        <ul>
+                            <li>
+                                <p>Receive notifications in your software when data in the cloud changes.</p>
+                            </li>
+                            <li>
+                                <p>Create two or more tables that are related to each other.</p>
+                            </li>
+                            <li>
+                                <p>Implement user authentication.</p>
+                            </li>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>You should consider using Python and Firestore (part of Google Firebase) for this module. Here are some useful notes when using this suggested environment:</p>
+                        <ul>
+                            <li>
+                                <p>Use <code>firebase-admin</code> to access a Firestore database from Python. You can use pip to install: <code>pip install firebase-admin</code></p>
+                            </li>
+                            <li>
+                                <p>You will need to create a free Firebase account, create a Firebase project, and create a Firestore database in the project.</p>
+                            </li>
+                            <li>
+                                <p>During the process of getting your account and database set up, you will need to download a Service Account File, which is a JSON file. This file along with the project name will be needed when you initialize your connection to the Firestore database within your code. The Service Account File is secret and should not be shared in the GitHub repository.</p>
+                            </li>
+                        </ul>
+
+                        <p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://firebase.google.com/docs/firestore" target="_blank">Firestore Tutorial</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://console.firebase.google.com/" target="_blank">Firebase Console</a> (official site)</p>
+                            </li>
+                            <!-- <li>
+                                <p><a href="https://cloud.google.com/docs/authentication/getting-started" target="_blank">Google Authentication—Creating a Service Account</a> (official site)</p>
+                            </li> -->
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>Customer Relationship Management: Build a CRM system for managing customer interactions and sales data stored in the cloud.</p>
+                            </li>
+                            <li>
+                                <p>Health and Fitness Tracker: Develop a health and fitness tracking app that stores user activity and health data in the cloud.</p>
+                            </li>
+                            <li>
+                                <p>Music Playlist Manager: Create a music playlist manager that allows users to create and share playlists, with song information stored in the cloud.</p>
+                            </li>
+                            <li>
+                                <p>Language Learning App: Develop a language learning app that stores user progress and achievements in the cloud.</p>
+                            </li>
+                            <li>
+                                <p>Weather Dashboard: Build a weather dashboard that fetches weather data from an API and stores user preferences in the cloud.</p>
+                            </li>
+                            <li>
+                                <p>Personal Finance Manager: Develop a personal finance manager that connects to a cloud database to track income, expenses, and budgets.</p>
+                            </li>
+                            <li>
+                                <p>Notes and Documents Organizer: Create a cloud-based notes and documents organizer that lets users store and manage their files securely.</p>
+                            </li>
+                            <li>
+                                <p>To-Do List: Create a to-do list application that stores tasks in a cloud database. Users can add, edit, and delete tasks.</p>
+                            </li>
+                            <li>
+                                <p>Event Planner: Build an event planning application that stores event details, guest lists, and RSVPs in the cloud.</p>
+                            </li>
+                            <li>
+                                <p>E-Commerce Platform: Create a small-scale e-commerce platform with product listings and user accounts, all managed in the cloud.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwoA">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoA" aria-expanded="false" aria-controls="collapseTwoA">
+                        Data Analysis
+                    </button>
+                </h2>
+                <div id="collapseTwoA" class="accordion-collapse collapse" aria-labelledby="headingTwoA" data-bs-parent="#accordionExampleA">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>As the processing power of computers has increased, the world has become able to capture the large amounts of data that it produces. Surveys, transactions, and observations are captured every hour of every day. A data scientist has the skills to capture, organize, and analyze large amounts of data and look for patterns, trends, and statistical relevance between datasets. Since the possibilities of data analysis are endless, programming languages are used to write customized software to analyze data. Some languages, like R, were designed specifically for data analysis. Libraries like <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>, <a href="https://pola.rs/" target="_blank">Polars</a>, <a href="https://numpy.org/" target="_blank">NumPy</a>, <a href="https://matplotlib.org/" target="_blank">Matplotlib</a>, <a href="https://scrapy.org/" target="_blank">Scrapy</a>, <a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank">BeautifulSoup</a>, and <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a> provide the capabilities to do the analysis with the familar Python programming language.</p>
+
+                        <p>You can read more from sites such as the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/Data_science" target="_blank">Data Science&mdash;Wikipedia</a> (open collaboration site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://pandas.pydata.org/docs/getting_started/overview.html" target="_blank">Overview of Pandas</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.r-project.org/about.html" target="_blank">R Programming Language</a> (official site)</p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        Write software to analyze a set of data.  The following 5 things must be done:</p>
+                        <ol>
+                            <li>
+                                <p>Find or create a dataset that interests you.</p>
+                            </li>
+                            <li>
+                                <p>Use software to analyze and answer two questions about the data.</p>
+                            </li>
+                            <li>
+                                <p>Software analysis should include a filter.</p>
+                            </li>
+                            <li>
+                                <p>Software analysis should include a sort.</p>
+                            </li>
+                            <li>
+                                <p>Software analysis should include an aggregation.</p>
+                            </li>
+
+                        </ol>
+                        <p>You can also use this module to explore Machine Learning. You will need to propose a project different requirements in your project plan.</p>
+
+
+                        <p>Stretch Challenges (select one):</p>
+                        <ul>
+                            <li>
+                                <p>Update your software so it draws a graph showing some of the results.</p>
+                            </li>
+                            <li>
+                                <p>Identify a third question from your dataset and write code to answer it.</p>
+                            </li>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>You should consider using Python and Pandas for this module. You should also consider using Kaggle to obtain a free dataset. Here are some useful notes when using this suggested environment:</p>
+                        <ul>
+                            <li>
+                                <p>You need to install Pandas on your computer. You can use pip to install: <code>pip install pandas</code>.</p>
+                            </li>
+                            <li>
+                                <p>You can download a dataset from <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle.com</a>. You should look for a dataset that has good documentation, which will help you understand the data.</p>
+                            </li>
+                        </ul>
+
+                        <p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://pandas.pydata.org/docs/user_guide/10min.html#min" target="_blank">Pandas 10 Minute Tutorial</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html" target="_blank">Pandas Getting Started Tutorials</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.kaggle.com/code/faressayah/data-science-best-practices-using-pandas-titanic" target="_blank">Pandas Example with <i>Titanic</i> Data</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.kaggle.com/kashnitsky/topic-1-exploratory-data-analysis-with-pandas" target="_blank">Exploratory Data Analysis with Pandas</a> (tutorial site)</p>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>Stock Market Analysis: Analyze historical stock price data to identify trends, calculate returns, and visualize stock performance.</p>
+                            </li>
+                            <li>
+                                <p>E-Commerce Sales Analysis: Analyze sales data from an online store to identify top-selling products, customer behavior, and seasonal trends.</p>
+                            </li>
+                            <li>
+                                <p>Weather Data Analysis: Analyze historical weather data to identify climate trends, temperature variations, and extreme weather events.</p>
+                            </li>
+                            <li>
+                                <p>Healthcare Data Analysis: Analyze healthcare data to identify patient demographics, disease patterns, and healthcare resource utilization.</p>
+                            </li>
+                            <li>
+                                <p>Housing Market Analysis: Analyze housing market data to identify price trends, housing demand, and regional variations.</p>
+                            </li>
+                            <li>
+                                <p>Sports Data Analysis: Analyze sports statistics to evaluate player performance, team rankings, and historical trends.</p>
+                            </li>
+                            <li>
+                                <p>Restaurant Reviews Analysis: Analyze restaurant reviews to identify popular cuisines, customer preferences, and review sentiment.</p>
+                            </li>
+                            <li>
+                                <p>Education Data Analysis: Analyze educational data to assess student performance, graduation rates, and educational disparities.</p>
+                            </li>
+                            <li>
+                                <p>Job Market Analysis: Analyze job market data to identify in-demand skills, salary trends, and job openings.</p>
+                            </li>
+                            <li>
+                                <p>Environmental Data Analysis: Analyze environmental data (e.g., air quality, pollution) to identify environmental trends and potential health impacts.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThreeA">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeA" aria-expanded="false" aria-controls="collapseThreeA">
+                        Game Framework
+                    </button>
+                </h2>
+                <div id="collapseThreeA" class="accordion-collapse collapse" aria-labelledby="headingThreeA" data-bs-parent="#accordionExampleA">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>Games bring entertainment and education to many people using their computers and devices. However, we frequently don't realize the software code that is running behind those games. Games have several components to them, including the following:</p>
+                        <ul>
+                            <li>
+                                <p>User Interface including Graphics and Sound</p>
+                            </li>
+                            <li>
+                                <p>Event Processing (Keyboard, Mouse)</p>
+                            </li>
+                            <li>
+                                <p>Game Logic and Story</p>
+                            </li>
+                            <li>
+                                <p>Network, Database and Notifications</p>
+                            </li>
+                        </ul>
+
+                        <p>With so many moving components in a game, it is useful to use a game platform for development. There are several inluding <a href="https://unity.com/" target="_blank">Unity</a>, <a href="https://aws.amazon.com/lumberyard/" target="_blank">Lumberyard</a>, <a href="https://www.unrealengine.com/en-US/" target="_blank">Unreal Engine</a>, <a href="https://www.cryengine.com/" target="_blank">Cryengine</a>, and <a href="https://godotengine.org/" target="_blank">Godot</a>.  Many of these platforms contain professional tools for graphics and animation. There are also several tools using Python including <a href="https://arcade.academy/" target="_blank">Arcade</a>, <a href="https://www.pygame.org/" target="_blank">PyGame</a>, <a href="https://kivy.org/" target="_blank">Kivy</a>, and <a href="https://www.panda3d.org/" target="_blank">Panda3D</a>.</p>
+                        <p>You can read more from sites such as the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/Game_engine" target="_blank">Game Engines&mdash;Wikipedia</a> (open collaboration site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/List_of_game_engines" target="_blank">List of Game Engines&mdash;Wikipedia </a> (open collaboration site)</p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Write a simple game using any game framework (e.g PyGame, Arcade (Python), or Godot).  The following 5 things must be done:</p>
+
+                        <ol>
+                            <li>
+                                <p>The game must display a background</p>
+                            </li>
+                            <li>
+                                <p>The game must have at least 1 un-movable object</p>
+                            </li>
+                    
+                            <li>
+                                <p>The game must have at least 1 moveable object</p>
+                            </li>
+                    
+                            <li>
+                                <p>The game must include collisions of at least 2 objects</p>
+                            </li>
+                            <li>
+                                <p>The game must take user input from the keyboard or mouse</p>
+                            </li>
+
+
+                            
+                        </ol>
+
+
+                        <p>Stretch Challenges (select one):</p>
+                        <ul>
+                            <li>
+                                <p>Allow the user to save and load the game.</p>
+                            </li>
+                            <li>
+                                <p>Add music or sound effects to the game.</p>
+                            </li>
+                            <li>
+                                <p>Provide levels in your game that change the difficulty of the game.</p>
+                            </li>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>You should consider using either Python with Arcade for this module. Here are some useful notes when using this suggested environment:</p>
+                        <ul>
+                            <li>
+                                <p>You need to install Arcade on your computer. You can use pip to install: <code>pip install arcade</code>.</p>
+                            </li>
+                            <li>
+                                <p>You should consider using Sprite classes in Arcade for any moving objects in the game.</p>
+                            </li>
+                            <li>
+                                <p>If you have any picture or sound files you want to include with your game, make sure they are in the same folder as your Python code.</p>
+                            </li>
+                        </ul>
+
+                        <p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://api.arcade.academy/en/latest/example_code/index.html" target="_blank">Arcade Examples</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://realpython.com/arcade-python-game-framework/" target="_blank">Arcade Tutorial&mdash;RealPython</a> (tutorial site)</p>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>Classic Pong Game: Create a simple Pong game, where two players can control paddles to bounce a ball back and forth.</p>
+                            </li>
+                            <li>
+                                <p>Space Invaders Copy: Build a Space Invaders-style game, featuring alien enemies and a player-controlled spaceship.</p>
+                            </li>
+                            <li>
+                                <p>Flappy Bird: Create a Flappy Bird-inspired game, where players navigate a bird through obstacles.</p>
+                            </li>
+                            <li>
+                                <p>Memory Matching Game: Develop a memory matching game, featuring a grid of cards that players flip to find matching pairs.</p>
+                            </li>
+                            <li>
+                                <p>Tic-Tac-Toe: Implement a classic Tic-Tac-Toe game, allowing two players to take turns.</p>
+                            </li>
+                            <li>
+                                <p>Snake Game: Develop a Snake game, where players control a growing snake to eat food and avoid collisions.</p>
+                            </li>
+                            <li>
+                                <p>Chess Game: Design a two-player Chess game, featuring standard chess rules and gameplay.</p>
+                            </li>
+                            <li>
+                                <p>Asteroids Clone: Build an Asteroids-inspired game, where players pilot a spaceship to destroy asteroids.</p>
+                            </li>
+                            <li>
+                                <p>Card Game: Create a card battle game, featuring collectible cards and strategic gameplay.</p>
+                            </li>
+                            <li>
+                                <p>Sudoku: Develop a Sudoku puzzle solver game, allowing players to input and solve Sudoku puzzles.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFourA">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourA" aria-expanded="false" aria-controls="collapseFourA">
+                        GIS Mapping
+                    </button>
+                </h2>
+                <div id="collapseFourA" class="accordion-collapse collapse" aria-labelledby="headingFourA" data-bs-parent="#accordionExampleA">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>Geographic Information Systems (GIS) involves the organization of information on a map. The information can be physical (cities, landmarks, mountains, trails), economic (median incomes, tax rates, employment), social (gender, ethnicity, family, religion), or event driven (earthquake, lightning, crime, activity). Using maps, decisions can be made, trends can be found, and information can be obtained. The components in GIS include user interfaces, data storage, and analysis.</p>
+
+                        <p>You can read more from sites such as the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://education.nationalgeographic.org/resource/geographic-information-system-gis/" target="_blank">Geographic Information System&mdash;National Geographic (encyclopedia)</a></p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.esri.com/en-us/what-is-gis/careers" target="_blank">Careers in GIS&mdash;Esri (company sponsored site)</a></p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Create a website or mobile app that generates a map using a mapping library like ArcGIS or Google Maps. The following 5 things must be done:</p>
+                        <ol>
+                            <li>
+                                <p>Display a basemap (e.g. roads, satellite, topographical, etc)</p>
+                            </li>
+                            <li>
+                                <p>Place at least 20 markers on the map</p>
+                            </li>
+                            <li>
+                                <p>Store information about each marker in the map</p>
+                            </li>                            
+                            <li>
+                                <p>Provide the ability to click on a marker and display the information about the marker.</p>
+                            </li>
+                            <li>
+                                <p>Provide a title on the website or app.</p>
+                            </li>                            
+                        </ol>
+
+
+                        <p>Stretch Challenges (select one):</p>
+                        <ul>
+                            <li>
+                                <p>Obtain data automatically from a server publically available on the internet so that your map is always up to date.</p>
+                            </li>
+                            <li>
+                                <p>Provide a filter in the map to allow the user to display only some of the markers.</p>
+                            </li>
+                            <li>
+                                <p>Include more than one type of data on your map (with different marker graphics).</p>
+                            </li>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>You should consider using ArcGIS, Javascript and HTML to create your map. ArcGIS offers many detailed tutorials for different programming languages. Here is a list of websites that you might find useful:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://developers.arcgis.com/javascript/latest/tutorials/display-a-map/" target="_blank">ArGIS JavaScript Tutorial&mdash;ArcGIS</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.w3schools.com/js" target="_blank">JavaScript&mdash;W3Schools</a> (tutorial site)<ha>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>Local Landmarks Map: Create a map that displays notable landmarks in your local area, such as parks, museums, and historical sites.</p>
+                            </li>
+                            <li>
+                                <p>City Event Map: Develop an app that displays upcoming events in your city on an interactive map, allowing users to click on markers for event details.</p>
+                            </li>
+                            <li>
+                                <p>Public Transportation Tracker: Build a real-time public transportation tracker that shows the locations of buses, trams, or subways on a map.</p>
+                            </li>
+                            <li>
+                                <p>Weather Radar Map: Develop a weather app that displays live weather radar data on an interactive map, allowing users to track storms and precipitation.</p>
+                            </li>
+                            <li>
+                                <p>Hiking Trail Finder: Create an app that helps users discover nearby hiking trails, complete with trail information and difficulty levels.</p>
+                            </li>
+                            <li>
+                                <p>Environmental Pollution Map: Create a map that visualizes environmental pollution data, such as air quality and water contamination, for a specific region.</p>
+                            </li>
+                            <li>
+                                <p>Restaurant Locater: Build an app that uses GIS to help users find nearby restaurants, displaying their locations and user reviews on a map.</p>
+                            </li>
+                            <li>
+                                <p>Property Prices Heatmap: Build a real estate app that displays property prices as a heatmap, helping users identify areas with affordable housing.</p>
+                            </li>
+                            <li>
+                                <p>National Park Guide: Build an app that serves as a guide to national parks, providing maps, trail information, and visitor centers.</p>
+                            </li>
+                            <li>
+                                <p>Air Quality Index Map: Create a real-time air quality map that displays air quality index values for different locations in your city.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFiveA">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveA" aria-expanded="false" aria-controls="collapseFiveA">
+                        Mobile App
+                    </button>
+                </h2>
+                <div id="collapseFiveA" class="accordion-collapse collapse" aria-labelledby="headingFiveA" data-bs-parent="#accordionExampleA">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>Mobile is everywhere, and the ability to make mobile applications has never been more sought after or desirable than it is now. Android applications are typically written in Java or Kotlin using Android Studio. iOS applications are written in Swift using XCode (using a Mac).</p>
+
+                        <p>Other platforms have been created to make it easier to port to multiple platforms. React Native uses JavaScript to create apps that will run on both platforms. Flutter uses the Dart language to achieve the same result.</p>
+
+                        <p>You can read more from sites such as the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/Android_software_development" target="_blank">Android Apps - Wikipedia</a> (reference site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://developer.android.com/studio" target="_blank">Android Studio</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://developer.apple.com/tutorials/app-dev-training" target="_blank">Develop Apps for iOS</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://reactnative.dev/" target="_blank">React Native</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://flutter.dev/" target="_blank">Flutter</a> (official site)</p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Create a Mobile App using one of the following platforms:</p>
+                        <ul>
+                            <li>
+                                <p>Android - Java or Kotlin</p>
+                            </li>
+                            <li>
+                                <p>iOS - Swift - Note that you need a Mac using XCode for this option</p>
+                            </li>
+                            <li>
+                                <p>React Native - Javascript - Creates Android/iOS compatible apps</p>
+                            </li>
+                            <li>
+                                <p>Flutter/Dart - Creates Web/Android/iOS compatible apps</p>
+                            </li>
+                        </ul>
+                        <p>The following 5 things must be done:</p>
+
+                        <ol>
+                            <li>
+                                <p>The app should have at least one screen</p>
+                            </li>
+                            <li>
+                                <p>Provide at least 1 input from the user (e.g. tap, double-tap, swipe)</p>
+                            </li>
+
+                            <li>
+                                <p>The display should change after the input from the user.</p>
+                            </li>
+
+                            <li>
+                                <p>Display a picture</p>
+                            </li>
+
+                            <li>
+                                <p>Provide a custom icon for the app on the phone</p>
+                            </li>
+
+                        </ol>
+
+
+                        <p>Stretch Challenges (select one):</p>
+                        <ul>
+                            <li>
+                                <p>Integrate with a component on the phone such as the camera, microphone, sensor, or location services.</p>
+                            </li>
+                            <li>
+                                <p>Incorporate two or more screens</p>
+                            </li>
+                            <li>
+                                <p>Store data either in local storage so is persists even if the app closes or if the phone is turned off</p>
+                            </li>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>You should consider using Android Studio and either Java or Kotlin (depending on which language you know best). The app should run on an Android phone. If you don't have an Android phone, you can use the <a href="https://developer.android.com/studio/run/emulator" target="_blank">emulator</a> provided within Android Studio. Here is a list of websites that you might find useful when creating an Android app:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://developer.android.com/training/basics/firstapp" target="_blank">Build Your First App</a></p>
+                            </li>
+                            <li>
+                                <p><a href="https://developer.android.com/courses/android-basics-kotlin/course" target="_blank">Android Basics in Kotlin</a></p>
+                            </li>
+                        </ul>
+
+                        <p>The following links may be useful for some of the stretch challenges:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://developer.android.com/guide/topics/permissions/overview" target="_blank">Permissions Overview</a></p>
+                            </li>
+                            <li>
+                                <p><a href="https://developer.android.com/develop/sensors-and-location/location" target="_blank">How to Enable Location Access in Android</a></p>
+                            </li>
+                            <li>
+                                <p><a href="https://developer.android.com/guide/components/intents-filters" target="_blank">Starting Activities with an Intent</a></p>
+                            </li>
+                            <li>
+                                <p><a href="https://developer.android.com/training/data-storage/shared-preferences" target="_blank">Saving data in Shared Preferences</a></p>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>Flashcard App: Develop a flashcard app for studying various subjects with user-generated flashcard sets.</p>
+                            </li>
+                            <li>
+                                <p>Language Learning App: Develop an app for learning new languages, including vocabulary quizzes and pronunciation guides. </p>
+                            </li>
+                            <li>
+                                <p>News Aggregator: Create an app that aggregates news articles from different sources and displays them to users.</p>
+                            </li>
+                            <li>
+                                <p>Travel Journal: Build a travel journal app that lets users record their travel experiences with photos and notes.</p>
+                            </li>
+                            <li>
+                                <p>Drawing and Painting App: Build an app that allows users to draw, paint, and save their artwork.</p>
+                            </li>
+                            <li>
+                                <p>Online Marketplace: Create a platform for buying and selling items, similar to a classified ads website.</p>
+                            </li>
+                            <li>
+                                <p>Language Translator: Develop an app that translates text or speech from one language to another.</p>
+                            </li>
+                            <li>
+                                <p>Event Booking App: Develop an app for booking tickets to concerts, movies, or sporting events.</p>
+                            </li>
+                            <li>
+                                <p>Health and Fitness App: Create a health and fitness app that offers workout routines, diet tracking, and health statistics.</p>
+                            </li>
+                            <li>
+                                <p>Travel Planner: Build a travel planning app that helps users organize their trips, including itinerary creation and travel tips.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSixA">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixA" aria-expanded="false" aria-controls="collapseSixA">
+                        Networking
+                    </button>
+                </h2>
+                <div id="collapseSixA" class="accordion-collapse collapse" aria-labelledby="headingSixA" data-bs-parent="#accordionExampleA">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>Communication between two computers (or even two pieces of software on the same computer) can be done using the networking stack. A network is more than just physical wire (or wireless) that connects a computer to a network; it also includes the data that is transmitted through that connection. The data is organized into layers according to the Open Systems Interconnection (OSI) model. These layers include the physical, datalink, network, and transport layers. These layers are used to package, route, and transmit data between computers. Common transport layers include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol). On top of all of these layers is the data that we actually want to communicate to another computer. This data is frequently organized by a message structure that both the sending computer and receiving computer understand. Defined formats like JSON, HTML, or XML are all commonly used.</p>
+
+                        <p>Any information can be sent on a network connection. The software could be collaborative (e.g. chat), problem-solving (e.g. provide answer to question), content based (e.g. file or web server), or embedded (e.g. request data from a sensor or turn on a light).</p>
+
+                        <p>When developing networking software, there are two types of models we can look at:</p>
+
+                        <ul>
+                            <li>
+                                <p>Client-Server: The server receives requests from many clients, processes each one, and sends the responses back to the client.</p>
+                            </li>
+                            <li>
+                                <p>Peer-to-Peer: A computer (peer) communicates directly to another commputer without going through a server. In this model, there may be a server that is used by a computer to get address information for the other computer.</p>
+                            </li>
+                        </ul>
+
+                        <p>You can read more on sites such as the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/OSI_model" target="_blank">OSI Model&mdash;Wikipedia</a> (open collaboration site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank">Client-Server model&mdash;Wikipedia</a> (open collaboration site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.tutorialspoint.com/Peer-to-Peer-Computing" target="_blank">Peer-to-Peer Computing&mdash;TutorialsPoint</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.howtogeek.com/190014/htg-explains-what-is-the-difference-between-tcp-and-udp/" target="_blank">What's the Difference Between TCP and UDP?&mdash;How-To Geek</a> (tutorial site)</p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Write a program that allows one computer to communicate with another computer using either of the following:</p>
+                        <ul>
+                            <li>
+                                <p>Client-Server Model—You will need to write one program for the client and one program for the server.</p>
+                            </li>
+                            <li>
+                                <p>Peer-to-Peer Model—You will need to write one program for the peer to both send and receive.</p>
+                            </li>
+                        </ul>
+                        <p>The following 5 things must be done:</p>
+                        <ol>
+                            <li>
+                                <p>The server (or peer) listens for connections on an ip address (localhost is okay) and a port number you select</p>
+                            </li>
+                            <li>
+                                <p>The client (or peer) connects to an already waiting server (or peer)</p>
+                            </li>
+                            <li>
+                                <p>The client (or peer) sends at least one type of request message to the server (or peer)</p>
+                            </li>
+                            <li>
+                                <p>The server (or peer) processes the request and sends a response back to the client (or peer)</p>
+                            </li>
+                            <li>
+                                <p>The server (or peer) can handle a client disconnecting allowing another client to connect</p>
+                            </li>
+                        </ol>
+
+
+                        <p>Stretch Challenges (select one):</p>
+                        <ul>
+                            <li>
+                                <p>Provide support for at least three different kinds of requests that the server or the peer can respond to.</p>
+                            </li>
+                            <li>
+                                <p>Provide support for two or more clients (or peers) to connect to the server at the same time.</p>
+                            </li>
+                            <li>
+                                <p>Modify the server or the peer to obtain information from a local file or database in response to a request from the client or another peer.</p>
+                            </li>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>You should consider using Python and standard networking libraries for this module. Here are some useful notes when using this suggested environment:</p>
+                        <ul>
+                            <li>
+                                <p>Python already has libraries to read and write from TCP and UDP sockets and servers. See the links below for information and examples.</p>
+                            </li>
+                            <li>
+                                <p>You will need to run two programs (client and server or 2 peers) at the same time to test your software. You can do this on your own computer by using localhost (127.0.0.1) and different port numbers.  You can also use two separate computers.  Another option is that you can consider installing a <a href="https://www.virtualbox.org/" target="_blank">virtual machine</a> running <a href="https://ubuntu.com/download/desktop" target="_blank">Linux</a>.</p>
+                            </li>
+                        </ul>
+
+                        <p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://docs.python.org/3.13/library/socketserver.html" target="_blank">Python Server Libraries</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://docs.python.org/3.13/library/socket.html" target="_blank">Python Socket Libraries</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://realpython.com/python-sockets/" target="_blank">Socket Programming in Python</a> (tutorial site)</p>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>Simple Chat Application: Create a basic chat application where clients can connect to a server, send messages, and receive responses.</p>
+                            </li>
+                            <li>
+                                <p>File Transfer Server: Develop a server that allows clients to upload and download files securely over the network. </p>
+                            </li>
+                            <li>
+                                <p>Remote Control Application: Build a remote control app that enables clients to control a server's desktop or perform actions remotely. </p>
+                            </li>
+                            <li>
+                                <p>Quiz Game Server: Build a server for hosting a multiplayer quiz game where clients can connect and compete.</p>
+                            </li>
+                            <li>
+                                <p>Weather Information Server: Create a server that provides real-time weather information to clients based on their location.</p>
+                            </li>
+                            <li>
+                                <p>File Sharing (Peer-to-Peer): Develop a peer-to-peer file-sharing application where users can share files directly with each other.</p>
+                            </li>
+                            <li>
+                                <p>Peer Discovery Service: Create a service that helps peers discover and connect with each other on a local network.</p>
+                            </li>
+                            <li>
+                                <p>Local Network Game: Build a multiplayer game that runs on a local network, allowing peers to join and play together.</p>
+                            </li>
+                            <li>
+                                <p>Secure Peer Communication: Create a secure peer-to-peer communication platform with end-to-end encryption.</p>
+                            </li>
+                            <li>
+                                <p>Peer-to-Peer Video Streaming: Develop a peer-to-peer video streaming application for sharing video content directly between users.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSevenA">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenA" aria-expanded="false" aria-controls="collapseSevenA">
+                        SQL Relational Databases
+                    </button>
+                </h2>
+                <div id="collapseSevenA" class="accordion-collapse collapse" aria-labelledby="headingSevenA" data-bs-parent="#accordionExampleA">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>Data can be stored in many different formats. An efficient method for storing information is in a database. One common type of database is a relational database, which organizes the data into tables and relates them together using keys. Libraries have been written to make it easy for the programmer to read and write to and from these databases. Most relational databases support Structured Query Language, or SQL. SQL is a language that allows the programmer to easily interact with the database. Examples of relational databases include the following: , <a href="https://www.mysql.com/" target="_blank">MySQL</a>, <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>, and <a href="https://www.sqlite.org/index.html" target="_blank">SQLite</a>.</p>
+
+                        <p>You can read more about relational databases and SQL at sites including the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/Relational_database" target="_blank">Relational Databases - Wikipedia</a> (open collaboration site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.oracle.com/database/what-is-a-relational-database/" target="_blank">Relational Databases - Oracle</a> (company sponsored site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.w3schools.com/sql/" target="_blank">SQL - W3Schools</a> (tutorial site)</p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Develop software that interacts with a SQL relational database. The following 5 things must be done:</p>
+                        <ol>
+                            <li>
+                                <p>Create a SQL database with at least one table (your software can create the table or you can use already existing table).</p>
+                            </li>
+                            <li>
+                                <p>Software should query data from the database.</p>
+                            </li>
+                            <li>
+                                <p>Software should add new data to the database.</p>
+                            </li>
+                            <li>
+                                <p>Software should update data from the database.</p>
+                            </li>
+                            <li>
+                                <p>Software should delete data from the database.</p>
+                            </li>
+                        </ol>
+
+
+                        <p>Stretch Challenges (select one):</p>
+
+                        <ul>
+                            <li>
+                                <p>Add additional tables to your database and perform a <a href="https://www.sqlitetutorial.net/sqlite-inner-join/" target="_blank">join</a> in your software between two of the tables.</p>
+                            </li>
+                            <li>
+                                <p>Use at least two of the <a href="https://www.sqlitetutorial.net/sqlite-aggregate-functions/" target="_blank">aggregate functions</a> to summarize numerical data in your database.</p>
+                            </li>
+                            <li>
+                                <p>Demonstrate the use of a column containing a date or time along with a query that demonstrates filtering within a date or time range.</p>
+                            </li>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>You should consider using Python and ulLite for this module. SQLite is already support in Python by importing the sqlite3 library. </p>
+
+                        <p>Here is a list of websites that you might find useful when working in the suggested environment:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://www.sqlitetutorial.net/" target="_blank">SQLite Tutorial</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://docs.python.org/3.13/library/sqlite3.html" target="_blank">Python sqlite3</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.tutorialspoint.com/sqlite/sqlite_python.htm" target="_blank">TutorialsPoint: SQLite - Python</a> (tutorial site)</p>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>Student Records: Develop a program to manage student records, including adding new students, updating grades, and generating reports.</p>
+                            </li>
+                            <li>
+                                <p>Employee Directory: Build an employee directory application that stores employee information, such as names, contact details, and departments.</p>
+                            </li>
+                            <li>
+                                <p>Inventory Management: Create an inventory management system that tracks product quantities, restocking, and sales.</p>
+                            </li>
+                            <li>
+                                <p>Recipe Database: Develop a recipe database where users can store and retrieve recipes, including ingredients and instructions.</p>
+                            </li>
+                            <li>
+                                <p>Social Media Analytics: Create a tool for analyzing social media data, tracking trends, and generating reports.</p>
+                            </li>
+                            <li>
+                                <p>Survey and Feedback System: Build a survey and feedback collection system with customizable forms and reporting.</p>
+                            </li>
+                            <li>
+                                <p>Health Tracker Dashboard: Develop a health tracking dashboard that displays and analyzes personal health data, such as fitness and dietary information.</p>
+                            </li>
+                            <li>
+                                <p>Expense Tracker: Develop an expense tracker app that records daily expenses and provides spending summaries.</p>
+                            </li>
+                            <li>
+                                <p>Library Catalog: Build a library catalog system to manage books, authors, and borrowing records.</p>
+                            </li>
+                            <li>
+                                <p>Movie Rating Database: Build a platform where users can track movies they've watched and give ratings. </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEightA">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEightA" aria-expanded="false" aria-controls="collapseEightA">
+                        Web Apps
+                    </button>
+                </h2>
+                <div id="collapseEightA" class="accordion-collapse collapse" aria-labelledby="headingEightA" data-bs-parent="#accordionExampleA">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>This module will have you create a web app using a framework that will generate web pages dynamically on the host server. Django for Python and Node or React for JavaScript are two common examples of web app frameworks.</p>
+
+                        <p>When a request is made to your web app, the Django framework will call the appropriate Python code (a function in your <code>views.py</code>) file). The Python code will then parse the request and prepare a response. To prepare a response, your code might read a database, download some data from another web server, or perform some calculations. To produce the response, a template HTML file is populated with data created by the Python function. The response is then automatically sent back by the Django framework. Using a framework can reduce the time it takes to create web content. In the case of Django, you also have the benefit of using the Python programming language to process requests.
+                        </p>
+
+                        <p>You can read more on sites like the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://docs.djangoproject.com/en/5.1/contents/" target="_blank">Django Documentation and Tutorial</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.tutorialspoint.com/django/index.htm" target="_blank">Django Tutorial&mdash;TutorialsPoint</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://realpython.com/get-started-with-django-1/" target="_blank">Django Tutorial&mdash;RealPython</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://nodejs.dev/learn" target="_blank">Introduction to Node.js</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.tutorialspoint.com/nodejs/index.htm" target="_blank">Node.js Tutorial&mdash;TutorialsPoint</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://reactjs.org/docs/getting-started.html" target="_blank">React Documentation</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.tutorialspoint.com/reactjs/index.htm" target="_blank">React Tutorial&mdash;TutorialsPoint</a> (tutorial site)</p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Write a web app using a framework such as::</p>
+                        <ul>
+                            <li>
+                                <p>Django - Python</p>
+                            </li>
+                            <li>
+                                <p>Node - Javascript</p>
+                            </li>
+                            <li>
+                                <p>React - Javascript</p>
+                            </li>
+                        </ul>
+
+                        <p>The following 5 things must be done:</p>
+
+                        <ol>
+                            <li>
+                                <p>Generate at least 1 HTML page from the app.</p>
+                            </li>
+                            <li>
+                                <p>Include pictures and/or CSS that are stored with the app code.</p>
+                            </li>
+                            <li>
+                                <p>Accept input from the user (e.g. form, button, etc)</p>
+                            </li>
+                            <li>
+                                <p>Perform error checking on the input from the user</p>
+                            </li>
+
+                            <li>
+                                <p>Modify content of HTML generated by the app based on user input</p>
+                            </li>                            
+                        </ol>
+
+
+                        <p>Stretch Challenges (select one):</p>
+
+                        <ul>
+                            <li>
+                                <p>Integrate a database into your web app.</p>
+                            </li>
+                            <li>
+                                <p>Add an additional (third) dynamically generated web page to your app.</p>
+                            </li>
+                            <li>
+                                <p>Integrate a Python or Javascript library to perform work on the user input</p>
+                            </li>
+
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>Consider using Django with Python.  You can use pip to install Django: <code>pip install django</code></p>
+                        <p>Django projects have several files which do not need to be manually written. The following commands are useful:</p>
+                        <ul>
+                            <li>
+                                <p><code>django-admin startproject my_project_name</code>—This will create the initial project files</p>
+                            </li>
+                            <li>
+                                <p><code>python manage.py startapp my_app_name</code>—This will create an app in your project</p>
+                            </li>
+                            <li>
+                                <p><code>python manage.py runserver</code>—This will start your web app. You will need to open a web browser to open the web pages.</p>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>Portfolio Website: Build a portfolio website for showcasing your projects and achievements, including interactive galleries.</p>
+                            </li>
+                            <li>
+                                <p>Online Forum/Discussion Board: Create a forum where users can post and discuss topics, complete with user accounts and moderation.</p>
+                            </li>
+                            <li>
+                                <p>Event Booking System: Build an event booking and registration system for organizing and managing events.</p>
+                            </li>
+                            <li>
+                                <p>File Upload and Storage: Build a file upload and storage service with user accounts and file management.</p>
+                            </li>
+                            <li>
+                                <p>Online Learning Platform: Build an e-learning platform with features for course creation, student enrollment, and progress tracking.</p>
+                            </li>
+                            <li>
+                                <p>Collaborate Code Editor: Develop a real-time collaborative code editor where multiple users can edit and code together.</p>
+                            </li>
+                            <li>
+                                <p>Music Player: Build a web-based music player with features for creating playlists and streaming music from various sources.</p>
+                            </li>
+                            <li>
+                                <p>Task Automation: Build a task automation tool that allows users to schedule and automate repetitive tasks.</p>
+                            </li>
+                            <li>
+                                <p>E-Commerce Store: Develop an e-commerce website with product listings, shopping carts, and secure checkout.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        C++
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>The C++ language is an object-oriented language that is used for embedded and application development. It is based on the C language. C++ requires the use of a compiler and linker, which are operating system– and processor-specific. C++ includes the Standard Template Library (STL), which provides support for data structures and threading.</p>
+
+                        <p>You can read more on sites such as the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++ &mdash;Wikipedia</a> (open collaboration site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.w3schools.com/cpp/" target="_blank">C++ Tutorial&mdash;W3Schools</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="http://www.cplusplus.com/reference/stl/" target="_blank">C++ STL Containers&mdash;CPlusPlus</a> (reference site)</p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Write one or more programs in C++ that demonstrates the following 5 things:</p>
+
+                        <ol>
+                            <li>
+                                <p>Conditionals</p>
+                            </li>
+                            <li>
+                                <p>Loops</p>
+                            </li>
+                            <li>
+                                <p>Functions</p>
+                            </li>
+                            <li>
+                                <p>Classes</p>
+                            </li>
+                            <li>
+                                <p>Data structure from STL (such as a vector, list, or map)</p>
+                            </li>
+                        </ol>
+
+
+                        <p>Stretch Challenges (select one):</p>
+
+                        <ul>
+                            <li>
+                                <p>Modify your program to read and write to a file.</p>
+                            </li>
+                            <li>
+                                <p>Modify your program to demonstrates inheritance with virtual functions.</p>
+                            </li>
+                            <li>
+                                <p>Modify your program to use the <code>new</code> and <code>delete</code> operators to dynamically create objects.</p>
+                            </li>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>There are multiple options for getting C++, including the following:</p>
+
+                        <ul>
+                            <li>
+                                <p>Windows: Install <a href="https://visualstudio.microsoft.com/downloads/" target="_blank">Visual Studio (Free Community Version)</a>. This is a different tool from Visual Studio Code. Visual Studio includes C++ tools.</p>
+                            </li>
+                            <li>
+                                <p>Windows: Install the <a href="https://github.com/skeeto/w64devkit/releases" target="_blank">MinGW Gnu Compiler Collection (GCC)</a>. You should make sure the compiler and linker tools are in your path. You can either <a href="https://code.visualstudio.com/docs/languages/cpp" target="_blank">integrate the GCC into Visual Studio Code</a> or run the GCC tools (g++) from within the Visual Studio Code terminal window.</p>
+                            </li>
+                            <li>
+                                <p>MAC: Install <a href="https://developer.apple.com/xcode/" target="_blank">XCode</a>.</p>
+                            </li>
+                            <li>
+                                <p>Windows/Mac: Install <a href="https://www.jetbrains.com/clion/" target="_blank">CLion</a> from JetBrains which will install the MinGW compiler automatically for you.</p>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                        <li>
+                            <p>Calculator Application: Create a simple command-line calculator that performs basic arithmetic operations. Implement error handling for invalid inputs.</p>
+                        </li>
+                        <li>
+                            <p>To-Do List Manager: Build a console-based to-do list application. Allow users to add, remove, and view tasks.</p>
+                        </li>                        
+                        <li>
+                            <p>Simple Text Editor: Develop a basic text editor that allows users to open, edit, and save text files.</p>
+                        </li>
+                        <li>
+                            <p>Basic Calculator with GUI: Build a simple graphical calculator application using a library like Qt or SFML.</p>
+                        </li>                        
+                        <li>
+                            <p>File Reader/Analyzer: Create a program that reads a text file, counts the occurrences of each word, and displays the results.</p>
+                        </li>                        
+                        <li>
+                            <p>Basic Inventory System: Design a program to manage a simple inventory system with items, quantities, and prices.</p>
+                        </li>                        
+                        <li>
+                            <p>Hangman Game: Build a command-line version of the Hangman game where players guess a hidden word.</p>
+                        </li>                        
+                        <li>
+                            <p>Simple Web Scraper: Develop a program that scrapes data from a website and stores it in a structured format.</p>
+                        </li>                        
+                        <li>
+                            <p>Chess Game: Develop a simplified version of chess where two players can make moves and capture pieces.</p>
+                        </li>
+                        <li>
+                            <p>Music Player: Develop a basic command-line music player that plays audio files.</p>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Java
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>The Java language is an object-oriented language that is used for embedded and application development. Java requires the use of a compiler and a Java Virtual Machine (JVM) which can both be obtained by installing the Java Development Kit (JDK). Compiled code (often with a .class or .jar extension) will run on any computer that has a JVM. Java contains a substantial library which includes many classes for data structures (Java Collection Framework), file management, and threading. In Java, every file contains a single class. A static main function is created in one of the classes and is used to provide a starting point for the program.</p>
+
+                        <p>You can read more on sites such as the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java&mdash;Wikipedia</a> (open collaboration site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.w3schools.com/java/default.asp" target="_blank">Java Tutorial&mdash;W3Schools</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://docs.oracle.com/en/java/javase/24/index.html" target="_blank">Java JDK 24 documentation&mdash;Oracle</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://beginnersbook.com/java-collections-tutorials/" target="_blank">Java Collection Frameworks&mdash;BeginnersBook</a> (tutorial site)</p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Write one or more programs in Java that demonstrates the following 5 things:</p>
+
+                        <ol>
+                            <li>
+                                <p>Conditionals</p>
+                            </li>
+                            <li>
+                                <p>Loops</p>
+                            </li>
+                            <li>
+                                <p>Functions</p>
+                            </li>
+                            <li>
+                                <p>Classes</p>
+                            </li>
+                            <li>
+                                <p>Data structure from Java Collection Framework (such as ArrayList, TreeSet, or HashMap)</p>
+                            </li>
+                        </ol>
+
+
+                        <p>Stretch Challenges (select one):</p>
+
+                        <ul>
+                            <li>
+                                <p>Modify your program to read and write to a file.</p>
+                            </li>
+                            <li>
+                                <p>Modify your program to demonstrate inheritance using the <code>extends</code> and <code>abstract</code> keywords.</p>
+                            </li>
+                            <li>
+                                <p>Modify your program to create an interface and then use it with the <code>implements</code> keyword.</p>
+                            </li>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>To set up your development environment for Java, complete the following:</p>
+
+                        <ul>
+                            <li>
+                                <p>Install the latest version of either <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">JDK (commercial)</a> or <a href="https://jdk.java.net/" target="_blank">OpenJDK (open source)</a> from Oracle. In industry, there are license considerations between these two options. For your work in this course, either choice is acceptable. Make sure that the Java compiler and virtual machine tools are in your environment path.</p>
+                            </li>
+                            <li>
+                                <p>You can either <a href="https://code.visualstudio.com/docs/languages/java" target="_blank">integrate Java into Visual Studio Code</a> or run the Java tools (javac and java) from within the Visual Studio Code terminal window. As another option, you can use a tool like <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ (free community version)</a> to develop and run Java code.</p>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>Expense Tracker: Create a program that helps users track their daily expenses and provides insights into spending habits.</p>
+                            </li>
+                            <li>
+                                <p>Text-based RPG Game: Design a text-based role-playing game with character creation, battles, and a storyline.</p>
+                            </li>
+                            <li>
+                                <p>Weather Forecast App: Create an application that retrieves weather data from an online API and displays current weather conditions and forecasts.</p>
+                            </li>
+                            <li>
+                                <p>Basic Social Media Platform: Develop a simplified social media platform where users can create profiles, post updates, and follow other users.</p>
+                            </li>
+                            <li>
+                                <p>Stock Portfolio Tracker: Build an application that tracks stock prices and allows users to manage their stock portfolios.</p>
+                            </li>
+                            <li>
+                                <p>Task Scheduler with Calendar: Create a task scheduler with an integrated calendar that allows users to manage events and tasks.</p>
+                            </li>
+                            <li>
+                                <p>Movie Recommendation System: Create a movie recommendation system that suggests movies to users based on their preferences and viewing history.</p>
+                            </li>
+                            <li>
+                                <p>Guess the Number Game: Develop a number guessing game where the computer generates a random number, and the player has to guess it within a limited number of attempts.</p>
+                            </li>
+                            <li>
+                                <p>Student Gradebook: Create a program to maintain a student gradebook, including adding, updating, and calculating grades.</p>
+                            </li>
+                            <li>
+                                <p>Basic Paint Program: Create a simple paint program with drawing tools like brushes, shapes, and colors.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Kotlin
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>The Kotlin language is an object-oriented language that is used for general application development including Android mobile app development. It is based on the Java language. Kotlin was designed to provide improvements to the Java language while still supporting the Java libraries. Library support includes data structures, file operations, and networking.</p>
+
+                        <p>You can read more on sites such as the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/Kotlin_(programming_language)" target="_blank">Kotlin&mdash;Wikipedia</a> (open collaboration site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.programiz.com/kotlin-programming" target="_blank">Kotlin Tutorial&mdash;Programiz</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://kotlinlang.org/" target="_blank">Kotlin</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://kotlinlang.org/docs/reference/comparison-to-java.html" target="_blank">Comparison to Java</a> (official site)</p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Write one or more programs in Kotlin that demonstrates the following 5 things:</p>
+
+                        <ol>
+                            <li>
+                                <p>Variables (<a href="https://www.programiz.com/kotlin-programming/variable-types" target="_blank">mutable and immutable</a>)</p>
+                            </li>
+                            <li>
+                                <p>Conditionals</p>
+                            </li>
+                            <li>
+                                <p>Loops</p>
+                            </li>
+                            <li>
+                                <p>Functions</p>
+                            </li>
+                            <li>
+                                <p>Classes</p>
+                            </li>
+                        </ol>
+
+
+                        <p>Stretch Challenges (select one):</p>
+
+                        <ul>
+                            <li>
+                                <p>Modify your program to demonstrate the creation and modification of <a href="https://kotlinlang.org/docs/reference/collections-overview.html" target="_blank">collections</a>.</p>
+                            </li>
+                            <li>
+                                <p>Modify your program to demonstrate <a href="https://kotlinlang.org/docs/reference/data-classes.html" target="_blank">data classes</a>.</p>
+                            </li>
+                            <li>
+                                <p>Modify your program to demonstrate the varied uses of the <a href="https://kotlinlang.org/docs/control-flow.html#when-expressions-and-statements">when</a> keyword.</p>
+                            </li>
+                        </ul>
+
+                        <p>You may use this module also to learn Swift or Dart. You may need to modify some of the requirements if you learn Swift or Dart instead.</p>
+                        <h4>Guidance</h4>
+                        <p>To set up your development environment for Kotlin, complete the following:</p>
+
+                        <ul>
+                            <li>
+                                <p>The Java Development Kit (JDK) is needed since Kotlin is built on top of it. Install the latest version of either <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">JDK (commercial)</a> or <a href="https://jdk.java.net/" target="_blank">OpenJDK (open source)</a> from Oracle. In industry, there are license considerations between these two options. For your work in this course, either choice is acceptable. </p>
+                            </li>
+                            <li>
+                                <p>Install <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ Idea (Free Community Version)</a>. This is an IDE like Visual Studio Code. Kotlin support will be installed automically. When you create a project in IntelliJ, select "Kotlin" and "JVM | IDEA". When you create files, select "Kotlin File/Class" to create .kt files.</p>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>Task Manager: Create a console-based task manager application that allows users to add, remove, and list tasks.</p>
+                            </li>
+                            <li>
+                                <p>Basic Calculator: Create a basic calculator application with support for arithmetic operations and user-friendly input handling.</p>
+                            </li>
+                            <li>
+                                <p>Simple Note-taking App: Design a note-taking app that lets users create, edit, and organize notes.</p>
+                            </li>
+                            <li>
+                                <p>Password Manager: Build a secure password manager that stores and retrieves user passwords.</p>
+                            </li>
+                            <li>
+                                <p>Blogging Platform: Design a blogging platform where users can create and publish blog posts.</p>
+                            </li>
+                            <li>
+                                <p>Contact Manager: Develop a contact manager application that allows users to add, edit, and search for contacts.</p>
+                            </li>
+                            <li>
+                                <p>Basic Drawing App: Create a simple drawing application that allows users to draw shapes and lines.</p>
+                            </li>
+                            <li>
+                                <p>Recipe Organizer: Create an app for managing recipes, allowing users to add, search, and organize recipes by categories.</p>
+                            </li>
+                            <li>
+                                <p>Basic Chess Game: Develop a simplified version of chess where two players can make moves and capture pieces.</p>
+                            </li>
+                            <li>
+                                <p>Hangman Game: Build a command-line version of the Hangman game where players guess a hidden word.</p>
+                            </li>
+                        </ul>
+                        </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Erlang
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>The Erlang language is an example of functional languages like Haskell, F#, and Clojure. Functional languages (unlike the imperative languages you have learned previously) have the following characterstics:</p>
+
+                        <ul>
+
+                            <li>
+                                <p>Functions are designed to produce an output from the inputs.</p>
+                            </li>
+                            <li>
+                                <p>Variables are immutable since functions are only tasked with producing a result. When dealing with data structures, this means that when we add or remove something we will either reuse parts of the previous structure or we will need to recreate parts of the structure.</p>
+                            </li>
+                            <li>
+                                <p>Since functions are only concerned with the current task and also since variables are immutable, there are no side effects from our code. A side effect occurs when running a funciton or changing a variable affects other variables and functions. Side effects are common in object oriented programming (member functions affect member data).</p>
+                            </li>
+
+                        </ul>
+
+                        <p>The goal with functional programming is to write code with higher quality due to the strictness of the language. Like Python, the Erlang language determines variable types automatically. Other languages like Haskell are strictly typed.</p>
+
+                        <p>You can read more on sites such as the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/Functional_programming" target="_blank">Erlang&mdash;Wikipedia</a> (open collaboration site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.oreilly.com/library/view/programming-erlang-2nd/9781941222454/" target="_blank">Programming Erlang</a> (E-Book via BYU-Idaho - Start with Part 2)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.erlang.org/doc/apps/stdlib/index.html" target="_blank">Erlang Standard Library Reference Manual</a> (official site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.tutorialspoint.com/erlang/index.htm" target="_blank">Erlang Tutorial&mdash;TutorialsPoint</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://learnyousomeerlang.com/contents" target="_blank">Learn You Some Erlang</a> (tutorial site)</p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Write multiple functions (not necessarily part of a single piece of software) in Erlang that demonstrates the following 5 things:</p>
+
+                        <ol>
+                            <li>
+                                <p>Pattern Matching in function parameters</p>
+                            </li>
+                            <li>
+                                <p>Recursion</p>
+                            </li>
+                            <li>
+                                <p>Guards</p>
+                            </li>
+                            <li>
+                                <p>Lists</p>
+                            </li>
+                            <li>
+                                <p>Using lambda functions with <code>lists:map</code>, <code>lists:filter</code>, or <code>lists:foldl</code></p>
+                            </li>
+                        </ol>
+
+                        <p>You can use this module to learn any Functional Programming language. If you pick a different language, you may need to modify the requirements.</p>
+
+
+                        <p>Stretch Challenges (select one):</p>
+
+                        <ul>
+                            <li>
+                                <p>Demonstrate throwing and handling exceptions</p>
+                            </li>
+                            <li>
+                                <p>Create process and send messages to the process</p>
+                            </li>
+                            <li>
+                                <p>Use the <code>case of</code> coding block</p>
+                            </li>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>To setup your development environment complete the following:</p>
+
+                        <ul>
+                            <li>
+                                <p>Install <a href="https://www.erlang.org/downloads" target="_blank">Erlang</a> You want to make sure that <code>erl</code> shell program is in the path.</p>
+                            </li>
+                            <li>
+                                <p>Visual Studio Code has support for Erlang. The <a href="https://marketplace.visualstudio.com/items?itemName=pgourlain.erlang" target="_blank">Erlang extension</a> can be installed in Visual Studio Code. The <code>erl</code> shell can be executed from the terminal.</p>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>List Manipulation: Write functions to manipulate lists, such as reversing a list, finding the length, or checking if a list is a palindrome.</p>
+                            </li>
+                            <li>
+                                <p>Factorial Calculator: Write functions to calculate the factorial of a number using recursion.</p>
+                            </li>
+                            <li>
+                                <p>Fibonacci Sequence Generator: Create functions that generate the Fibonacci sequence up to a given number using recursion.</p>
+                            </li>
+                            <li>
+                                <p>Pattern Matching Game: Create a simple pattern matching game where the player has to guess the correct pattern.</p>
+                            </li>
+                            <li>
+                                <p>Recursive File Search: Build a program that recursively searches for files with a specific extension in a directory tree.</p>
+                            </li>
+                            <li>
+                                <p>Functional Tic-Tac-Toe: Build a console-based Tic-Tac-Toe game using functional programming principles.</p>
+                            </li>
+                            <li>
+                                <p>Sudoku Solver: Write a Sudoku solver using functional programming techniques.</p>
+                            </li>
+                            <li>
+                                <p>Natural Language Processor: Develop a program that performs basic natural language processing tasks, such as text tokenization and sentiment analysis.</p>
+                            </li>
+                            <li>
+                                <p>Basic Calculator: Create a functional calculator application that performs basic arithmetic operations and displays the results.</p>
+                            </li>
+                            <li>
+                                <p>Image Processor: Implement a simple image processing tool using functional programming to apply filters and transformations to images.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        TypeScript
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor. Catch errors early in your editor. TypeScript code converts to JavaScript, which runs anywhere JavaScript runs: In a browser, on Node.js or Deno and in your apps. TypeScript understands JavaScript and uses type inference to give you great tooling without additional code.</p>
+                        <p>You can read more on sites such as the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://www.typescriptlang.org/" target="_blank">TypeScript Documentation</a></p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.contentful.com/blog/what-is-typescript-and-why-should-you-use-it/#:~:text=TypeScript%20extends%20JavaScript%20and%20improves,%2C%20tuple%2C%20generics%2C%20etc." target="_blank">What is TypeScript and why should you use it?</a></p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Write multiple functions (not necessarily part of a single piece of software) in TypeScript that demonstrates the following 5 things:</p>
+
+                        <ol>
+                            <li>
+                                <p>Variables with data types</p>
+                            </li>
+                            <li>
+                                <p>Functions with data types</p>
+                            </li>
+                            <li>
+                                <p>Classes</p>
+                            </li>
+                            <li>
+                                <p>Arrays</p>
+                            </li>
+                            <li>
+                                <p>Tuples</p>
+                            </li>
+                        </ol>
+
+
+                        <p>Stretch Challenges (select one):</p>
+
+                        <ul>
+                            <li>
+                                <p>Demonstrate throwing and handling exceptions</p>
+                            </li>
+                            <li>
+                                <p>Use ES Lint</p>
+                            </li>
+                            <li>
+                                <p>Incorporate Jest in your project</p>
+                            </li>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>To setup your development environment complete the following:</p>
+
+                        <ul>
+                            <li>
+                                <p><a href="https://www.w3schools.com/typescript/typescript_getstarted.php" target="_blank">TypeScript Tutorial&mdash;W3Schools</a> (tutorial site)</a>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>File Uploader and Downloader: Write a program that allows users to upload and download files from a server.</p>
+                            </li>
+                            <li>
+                                <p>Basic Drawing App: Create a simple drawing application in the browser using TypeScript and HTML5 Canvas.</p>
+                            </li>
+                            <li>
+                                <p>Authentication System: Build a user authentication system, including registration, login, and user profile management.</p>
+                            </li>
+                            <li>
+                                <p>CRUD API: Create a simple CRUD (Create, Read, Update, Delete) API using TypeScript and Express.js.</p>
+                            </li>
+                            <li>
+                                <p>Recursive Directory Scanner: Write a TypeScript script that recursively scans a directory, lists its contents, and displays the file structure.</p>
+                            </li>
+                            <li>
+                                <p>List Sorting Algorithms: Implement sorting algorithms (e.g., bubble sort, quicksort) and compare their performance on large datasets.</p>
+                            </li>
+                            <li>
+                                <p>Async/Await Example: Write asynchronous functions that fetch data from an API and display the results in the terminal.</p>
+                            </li>
+                            <li>
+                                <p>Recursive Fibonacci: Write a program to calculate and display Fibonacci numbers using recursion.</p>
+                            </li>
+                            <li>
+                                <p>Basic Note-taking App: Build a note-taking application that allows users to create, edit, and organize notes.</p>
+                            </li>
+                            <li>
+                                <p>Basic Quiz or Survey Generator: Create a tool for designing and taking quizzes and surveys with customizable questions and options.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Rust
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>The Rust language is used for embedded and application development. While similair to C or C++, it has improvements including memory management and variable ownership. Support is provided for object-oriented methodologies as well as data structures and threading. Rust comes with a build environment called Cargo which is used both for library management and building.</p>
+
+                        <p>You can read more on sites such as the following:</p>
+                        <ul>
+                            <li>
+                                <p><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" target="_blank">Rust&mdash;Wikipedia</a> (open collaboration site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.tutorialspoint.com/rust/index.htm" target="_blank">Rust Tutorial&mdash;TutorialsPoint</a> (tutorial site)</p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.rust-lang.org/" target="_blank">Rust</a> (official site)</p>
+                            </li>
+                        </ul>
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Write one or more programs in Rust that demonstrates the following:</p>
+
+                        <ol>
+                            <li>
+                                <p>Variables (<a href="https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html" target="_blank">mutable and unumutable</a>)</p>
+                            </li>
+                            <li>
+                                <p>Loops</p>
+                            </li>
+                            <li>
+                                <p>Functions (<a href="https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html" target="_blank">transfer ownership or borrow reference</a>)</p>
+                            </li>
+                            <li>
+                                <p>The <code>vec</code> (list) data structure</p>
+                            </li>                            
+                            <li>
+                                <p>The <code>match</code> keyword</p>
+                            </li>
+                        </ol>
+
+
+                        <p>Stretch Challenges (select one):</p>
+
+                        <ul>
+                            <li>
+                                <p>Modify your program to use <a href="https://doc.rust-lang.org/book/ch05-01-defining-structs.html" target="_blank"><code>struct</code></a>.</p>
+                            </li>
+                            <li>
+                                <p>Modify your program to use either <code>Option</code> or <code>Result</code> as the return type of a function.
+                            </li>
+                            <li>
+                                <p>Modify your program to use <a href="https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html" target="_blank"><code>enum</code></a>.</p>
+                        </ul>
+                        <h4>Guidance</h4>
+                        <p>To setup your development environment complete the following:</p>
+
+                        <ul>
+                            <li>
+                                <p>Install <a href="https://www.rust-lang.org/tools/install" target="_blank">Rust</a>.</p>
+                            </li>
+                            <li>
+                                <p><a href="https://code.visualstudio.com/docs/languages/rust" target="_blank">Visual Studio Code</a> has support for Rust. Install the rust-analyzer extension. The cargo build tool can be run from the terminal.</p>
+                            </li>
+                            <li>
+                                <p>Follow chapter 1 of the <a href="https://doc.rust-lang.org/book/index.html" target="_blank">Rust Programming Language Book</a> for step by step instructions for building a Hello World application using the cargo tool.</p>
+                            </li>
+                        </ul>
+                        <h4>Possible Project Ideas</h4>
+                        <ul>
+                            <li>
+                                <p>Basic File I/O: Write a program that reads from and writes to text files, demonstrating file input/output operations.</p>
+                            </li>
+                            <li>
+                                <p>Factorial Calculator: Write a program to calculate the factorial of a number using recursion.</p>
+                            </li>
+                            <li>
+                                <p>Basic Web Scraper: Build a program that scrapes data from a website and displays specific information.</p>
+                            </li>
+                            <li>
+                                <p>File Encryption and Decryption: Create a program for encrypting and decrypting files using cryptographic algorithms.</p>
+                            </li>
+                            <li>
+                                <p>Password Manager: Build a secure password manager that allows users to store and retrieve passwords.</p>
+                            </li>
+                            <li>
+                                <p>Basic API Client: Write a program that consumes data from a public API and presents it to the user.</p>
+                            </li>
+                            <li>
+                                <p>Markdown to HTML Converter: Create a program that converts Markdown files to HTML, showcasing text processing.</p>
+                            </li>
+                            <li>
+                                <p>Basic API Server: Develop a simple RESTful API server to handle CRUD operations.</p>
+                            </li>
+                            <li>
+                                <p>Fibonacci Sequence Generator: Develop a program to generate and display Fibonacci numbers up to a specified limit.</p>
+                            </li>
+                            <li>
+                                <p>Hangman Game: Build a command-line version of the Hangman game where players guess a hidden word.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNineA">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineA" aria-expanded="false" aria-controls="collapseNineA">
+                        Choose Your Own Adventure
+                    </button>
+                </h2>
+                <div id="collapseNineA" class="accordion-collapse collapse" aria-labelledby="headingNineA" data-bs-parent="#accordionExampleA">
+                    <div class="accordion-body">
+                        <h4>Module</h4>
+                        <p>You select the programming language or the type of software to create. This can be useful if there is a language, technology, or library that aligns well with either your major or interests.</p>
+
+                        <h4>Unique Requirements &amp; Stretch Challenges</h4>
+                        <p>Like other modules, you will need to write software to demonstrate your capability. It is highly recommend that you communicate with your teacher before submitting your plan to get pre-approval. In your plan you need to identify the requirements you will fulfill. If you are learning a new programming language, you should consider the requirements in the other language modules.</p>
+
+                        <p>This module cannot be done for the first or second module in the course.</p>
+
+                        <p>Note that the module plan must be submitted ahead of time before submitting the final module (e.g you can't submit the plan and the module on the same day as the instructor won't have time to approve of the self-chosen project.)</p>
+
+                        <p>You need to propose a stretch challenge in your plan if you plan on pursuing one.</p>
+                        <h4>Guidance</h4>
+                        <p>If you want to do this module, it is highly recommended to do it for one of your last modules near the end of the course. You should do initial research and communicate with your teacher at least a week before the plan submittal.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="site/js/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+    </article>
+
+</body>
+
+</html>
